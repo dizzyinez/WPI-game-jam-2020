@@ -16,7 +16,7 @@ file(GLOB_RECURSE INCS_H "include/*.h" "include/*.hpp")
 add_executable(${PROJECT_NAME} ${SRC_FILES} ${INCS_H})
 # set_target_properties(${PROJECT_NAME} PROPERTIES VERSION ${PROJECT_VERSION})
 
-include_directories(
+include_directories(c   
 "${CMAKE_SOURCE_DIR}/libs/SDL2/include/SDL2"
 "${CMAKE_SOURCE_DIR}/libs/SDL2Image/include/SDL2"
 "${CMAKE_SOURCE_DIR}/libs/SDL2ttf/include/SDL2"
@@ -43,11 +43,11 @@ macro(find_library_wrapper)
     message("-- Library ${ARGV1} found as ${${ARGV0}}")   
 endmacro()
 
-find_library_wrapper(sdlmain SDL2main)
-find_library_wrapper(sdl SDL2)
-find_library_wrapper(sdlimage SDL2_image)
-find_library_wrapper(sdlttf SDL2_ttf)
-find_library_wrapper(sdlmixer SDL2_mixer)
+find_library_wrapper(sdlmain libSDL2main.a)
+find_library_wrapper(sdl libSDL2.dll.a)
+find_library_wrapper(sdlimage libSDL2_image.dll.a)
+find_library_wrapper(sdlttf libSDL2_ttf.dll.a)
+find_library_wrapper(sdlmixer libSDL2_mixer.dll.a)
 find_library_wrapper(enet libenet.a)
 
 target_link_libraries(${PROJECT_NAME}

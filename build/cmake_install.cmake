@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020
+# Install script for directory: R:/Dev/games/GameJam/WPI-game-jam-2020
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "R:/Dev/games/GameJam/WPI-game-jam-2020/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

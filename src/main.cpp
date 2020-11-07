@@ -7,6 +7,7 @@ const int SCREEN_HEIGHT = 720;
 
 int main(int argc, char *argv[])
 {
+    std::cout << "test0" << std::endl;
     SDL_Window* window = NULL;
     SDL_Surface* screenSurface = NULL;
 
@@ -33,7 +34,7 @@ int main(int argc, char *argv[])
             
             //Update the surface
             SDL_UpdateWindowSurface( window );
-
+            std::cout << "test1" << std::endl;
             //Wait two seconds
             SDL_Delay( 2000 );
         }
