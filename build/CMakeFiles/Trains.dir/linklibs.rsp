@@ -1,0 +1,1 @@
+ ../libs/SDL2/lib/libSDL2main.a ../libs/SDL2/lib/libSDL2.dll.a ../libs/SDL2Image/lib/libSDL2_image.dll.a ../libs/SDL2/lib/libSDL2.dll.a ../libs/SDL2/lib/libSDL2.dll.a ../libs/ENet/lib/libenet.a ../libs/SDL2Image/lib/libSDL2_image.dll.a ../libs/ENet/lib/libenet.a -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 

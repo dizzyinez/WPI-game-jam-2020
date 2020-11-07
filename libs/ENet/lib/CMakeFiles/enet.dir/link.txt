@@ -1,0 +1,2 @@
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\ar.exe qc libenet.a CMakeFiles/enet.dir/callbacks.c.obj CMakeFiles/enet.dir/compress.c.obj CMakeFiles/enet.dir/host.c.obj CMakeFiles/enet.dir/list.c.obj CMakeFiles/enet.dir/packet.c.obj CMakeFiles/enet.dir/peer.c.obj CMakeFiles/enet.dir/protocol.c.obj CMakeFiles/enet.dir/unix.c.obj CMakeFiles/enet.dir/win32.c.obj
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\ranlib.exe libenet.a

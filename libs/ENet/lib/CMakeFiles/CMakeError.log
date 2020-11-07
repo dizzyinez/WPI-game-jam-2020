@@ -1,0 +1,255 @@
+Determining if the function fcntl exists failed with the following output:
+Change Dir: R:/Dev/games/GameJam/WPI-game-jam-2020/libs/ENet/lib/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe cmTC_76e68/fast && C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_76e68.dir\build.make CMakeFiles/cmTC_76e68.dir/build
+mingw32-make.exe[1]: Entering directory 'R:/Dev/games/GameJam/WPI-game-jam-2020/libs/ENet/lib/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_76e68.dir/CheckFunctionExists.c.obj
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe   -DCHECK_FUNCTION_EXISTS=fcntl -o CMakeFiles\cmTC_76e68.dir\CheckFunctionExists.c.obj -c R:\Dev\applications\cmake\share\cmake-3.18\Modules\CheckFunctionExists.c
+Linking C executable cmTC_76e68.exe
+R:\Dev\applications\cmake\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_76e68.dir\link.txt --verbose=1
+R:\Dev\applications\cmake\bin\cmake.exe -E rm -f CMakeFiles\cmTC_76e68.dir/objects.a
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\ar.exe cr CMakeFiles\cmTC_76e68.dir/objects.a @CMakeFiles\cmTC_76e68.dir\objects1.rsp
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe  -DCHECK_FUNCTION_EXISTS=fcntl -Wl,--whole-archive CMakeFiles\cmTC_76e68.dir/objects.a -Wl,--no-whole-archive -o cmTC_76e68.exe -Wl,--out-implib,libcmTC_76e68.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_76e68.dir\linklibs.rsp
+CMakeFiles\cmTC_76e68.dir/objects.a(CheckFunctionExists.c.obj):CheckFunctionExists.c:(.text+0x15): undefined reference to `fcntl'
+collect2.exe: error: ld returned 1 exit status
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_76e68.dir\build.make:107: cmTC_76e68.exe] Error 1
+mingw32-make.exe[1]: Leaving directory 'R:/Dev/games/GameJam/WPI-game-jam-2020/libs/ENet/lib/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:139: cmTC_76e68/fast] Error 2
+
+
+
+Determining if the function poll exists failed with the following output:
+Change Dir: R:/Dev/games/GameJam/WPI-game-jam-2020/libs/ENet/lib/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe cmTC_d818b/fast && C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_d818b.dir\build.make CMakeFiles/cmTC_d818b.dir/build
+mingw32-make.exe[1]: Entering directory 'R:/Dev/games/GameJam/WPI-game-jam-2020/libs/ENet/lib/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d818b.dir/CheckFunctionExists.c.obj
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe   -DCHECK_FUNCTION_EXISTS=poll -o CMakeFiles\cmTC_d818b.dir\CheckFunctionExists.c.obj -c R:\Dev\applications\cmake\share\cmake-3.18\Modules\CheckFunctionExists.c
+Linking C executable cmTC_d818b.exe
+R:\Dev\applications\cmake\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_d818b.dir\link.txt --verbose=1
+R:\Dev\applications\cmake\bin\cmake.exe -E rm -f CMakeFiles\cmTC_d818b.dir/objects.a
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\ar.exe cr CMakeFiles\cmTC_d818b.dir/objects.a @CMakeFiles\cmTC_d818b.dir\objects1.rsp
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe  -DCHECK_FUNCTION_EXISTS=poll -Wl,--whole-archive CMakeFiles\cmTC_d818b.dir/objects.a -Wl,--no-whole-archive -o cmTC_d818b.exe -Wl,--out-implib,libcmTC_d818b.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_d818b.dir\linklibs.rsp
+CMakeFiles\cmTC_d818b.dir/objects.a(CheckFunctionExists.c.obj):CheckFunctionExists.c:(.text+0x15): undefined reference to `poll'
+collect2.exe: error: ld returned 1 exit status
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_d818b.dir\build.make:107: cmTC_d818b.exe] Error 1
+mingw32-make.exe[1]: Leaving directory 'R:/Dev/games/GameJam/WPI-game-jam-2020/libs/ENet/lib/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:139: cmTC_d818b/fast] Error 2
+
+
+
+Determining if the function getaddrinfo exists failed with the following output:
+Change Dir: R:/Dev/games/GameJam/WPI-game-jam-2020/libs/ENet/lib/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe cmTC_b3290/fast && C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_b3290.dir\build.make CMakeFiles/cmTC_b3290.dir/build
+mingw32-make.exe[1]: Entering directory 'R:/Dev/games/GameJam/WPI-game-jam-2020/libs/ENet/lib/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b3290.dir/CheckFunctionExists.c.obj
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe   -DCHECK_FUNCTION_EXISTS=getaddrinfo -o CMakeFiles\cmTC_b3290.dir\CheckFunctionExists.c.obj -c R:\Dev\applications\cmake\share\cmake-3.18\Modules\CheckFunctionExists.c
+Linking C executable cmTC_b3290.exe
+R:\Dev\applications\cmake\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_b3290.dir\link.txt --verbose=1
+R:\Dev\applications\cmake\bin\cmake.exe -E rm -f CMakeFiles\cmTC_b3290.dir/objects.a
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\ar.exe cr CMakeFiles\cmTC_b3290.dir/objects.a @CMakeFiles\cmTC_b3290.dir\objects1.rsp
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe  -DCHECK_FUNCTION_EXISTS=getaddrinfo -Wl,--whole-archive CMakeFiles\cmTC_b3290.dir/objects.a -Wl,--no-whole-archive -o cmTC_b3290.exe -Wl,--out-implib,libcmTC_b3290.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_b3290.dir\linklibs.rsp
+CMakeFiles\cmTC_b3290.dir/objects.a(CheckFunctionExists.c.obj):CheckFunctionExists.c:(.text+0x15): undefined reference to `getaddrinfo'
+collect2.exe: error: ld returned 1 exit status
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_b3290.dir\build.make:107: cmTC_b3290.exe] Error 1
+mingw32-make.exe[1]: Leaving directory 'R:/Dev/games/GameJam/WPI-game-jam-2020/libs/ENet/lib/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:139: cmTC_b3290/fast] Error 2
+
+
+
+Determining if the function getnameinfo exists failed with the following output:
+Change Dir: R:/Dev/games/GameJam/WPI-game-jam-2020/libs/ENet/lib/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe cmTC_9e52b/fast && C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_9e52b.dir\build.make CMakeFiles/cmTC_9e52b.dir/build
+mingw32-make.exe[1]: Entering directory 'R:/Dev/games/GameJam/WPI-game-jam-2020/libs/ENet/lib/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9e52b.dir/CheckFunctionExists.c.obj
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe   -DCHECK_FUNCTION_EXISTS=getnameinfo -o CMakeFiles\cmTC_9e52b.dir\CheckFunctionExists.c.obj -c R:\Dev\applications\cmake\share\cmake-3.18\Modules\CheckFunctionExists.c
+Linking C executable cmTC_9e52b.exe
+R:\Dev\applications\cmake\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_9e52b.dir\link.txt --verbose=1
+R:\Dev\applications\cmake\bin\cmake.exe -E rm -f CMakeFiles\cmTC_9e52b.dir/objects.a
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\ar.exe cr CMakeFiles\cmTC_9e52b.dir/objects.a @CMakeFiles\cmTC_9e52b.dir\objects1.rsp
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe  -DCHECK_FUNCTION_EXISTS=getnameinfo -Wl,--whole-archive CMakeFiles\cmTC_9e52b.dir/objects.a -Wl,--no-whole-archive -o cmTC_9e52b.exe -Wl,--out-implib,libcmTC_9e52b.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_9e52b.dir\linklibs.rsp
+CMakeFiles\cmTC_9e52b.dir/objects.a(CheckFunctionExists.c.obj):CheckFunctionExists.c:(.text+0x15): undefined reference to `getnameinfo'
+collect2.exe: error: ld returned 1 exit status
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_9e52b.dir\build.make:107: cmTC_9e52b.exe] Error 1
+mingw32-make.exe[1]: Leaving directory 'R:/Dev/games/GameJam/WPI-game-jam-2020/libs/ENet/lib/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:139: cmTC_9e52b/fast] Error 2
+
+
+
+Determining if the function gethostbyname_r exists failed with the following output:
+Change Dir: R:/Dev/games/GameJam/WPI-game-jam-2020/libs/ENet/lib/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe cmTC_0534f/fast && C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_0534f.dir\build.make CMakeFiles/cmTC_0534f.dir/build
+mingw32-make.exe[1]: Entering directory 'R:/Dev/games/GameJam/WPI-game-jam-2020/libs/ENet/lib/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0534f.dir/CheckFunctionExists.c.obj
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe   -DCHECK_FUNCTION_EXISTS=gethostbyname_r -o CMakeFiles\cmTC_0534f.dir\CheckFunctionExists.c.obj -c R:\Dev\applications\cmake\share\cmake-3.18\Modules\CheckFunctionExists.c
+Linking C executable cmTC_0534f.exe
+R:\Dev\applications\cmake\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_0534f.dir\link.txt --verbose=1
+R:\Dev\applications\cmake\bin\cmake.exe -E rm -f CMakeFiles\cmTC_0534f.dir/objects.a
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\ar.exe cr CMakeFiles\cmTC_0534f.dir/objects.a @CMakeFiles\cmTC_0534f.dir\objects1.rsp
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe  -DCHECK_FUNCTION_EXISTS=gethostbyname_r -Wl,--whole-archive CMakeFiles\cmTC_0534f.dir/objects.a -Wl,--no-whole-archive -o cmTC_0534f.exe -Wl,--out-implib,libcmTC_0534f.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_0534f.dir\linklibs.rsp
+CMakeFiles\cmTC_0534f.dir/objects.a(CheckFunctionExists.c.obj):CheckFunctionExists.c:(.text+0x15): undefined reference to `gethostbyname_r'
+collect2.exe: error: ld returned 1 exit status
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_0534f.dir\build.make:107: cmTC_0534f.exe] Error 1
+mingw32-make.exe[1]: Leaving directory 'R:/Dev/games/GameJam/WPI-game-jam-2020/libs/ENet/lib/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:139: cmTC_0534f/fast] Error 2
+
+
+
+Determining if the function gethostbyaddr_r exists failed with the following output:
+Change Dir: R:/Dev/games/GameJam/WPI-game-jam-2020/libs/ENet/lib/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe cmTC_9e4ad/fast && C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_9e4ad.dir\build.make CMakeFiles/cmTC_9e4ad.dir/build
+mingw32-make.exe[1]: Entering directory 'R:/Dev/games/GameJam/WPI-game-jam-2020/libs/ENet/lib/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9e4ad.dir/CheckFunctionExists.c.obj
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe   -DCHECK_FUNCTION_EXISTS=gethostbyaddr_r -o CMakeFiles\cmTC_9e4ad.dir\CheckFunctionExists.c.obj -c R:\Dev\applications\cmake\share\cmake-3.18\Modules\CheckFunctionExists.c
+Linking C executable cmTC_9e4ad.exe
+R:\Dev\applications\cmake\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_9e4ad.dir\link.txt --verbose=1
+R:\Dev\applications\cmake\bin\cmake.exe -E rm -f CMakeFiles\cmTC_9e4ad.dir/objects.a
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\ar.exe cr CMakeFiles\cmTC_9e4ad.dir/objects.a @CMakeFiles\cmTC_9e4ad.dir\objects1.rsp
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe  -DCHECK_FUNCTION_EXISTS=gethostbyaddr_r -Wl,--whole-archive CMakeFiles\cmTC_9e4ad.dir/objects.a -Wl,--no-whole-archive -o cmTC_9e4ad.exe -Wl,--out-implib,libcmTC_9e4ad.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_9e4ad.dir\linklibs.rsp
+CMakeFiles\cmTC_9e4ad.dir/objects.a(CheckFunctionExists.c.obj):CheckFunctionExists.c:(.text+0x15): undefined reference to `gethostbyaddr_r'
+collect2.exe: error: ld returned 1 exit status
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_9e4ad.dir\build.make:107: cmTC_9e4ad.exe] Error 1
+mingw32-make.exe[1]: Leaving directory 'R:/Dev/games/GameJam/WPI-game-jam-2020/libs/ENet/lib/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:139: cmTC_9e4ad/fast] Error 2
+
+
+
+Determining if the function inet_pton exists failed with the following output:
+Change Dir: R:/Dev/games/GameJam/WPI-game-jam-2020/libs/ENet/lib/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe cmTC_749f3/fast && C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_749f3.dir\build.make CMakeFiles/cmTC_749f3.dir/build
+mingw32-make.exe[1]: Entering directory 'R:/Dev/games/GameJam/WPI-game-jam-2020/libs/ENet/lib/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_749f3.dir/CheckFunctionExists.c.obj
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe   -DCHECK_FUNCTION_EXISTS=inet_pton -o CMakeFiles\cmTC_749f3.dir\CheckFunctionExists.c.obj -c R:\Dev\applications\cmake\share\cmake-3.18\Modules\CheckFunctionExists.c
+Linking C executable cmTC_749f3.exe
+R:\Dev\applications\cmake\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_749f3.dir\link.txt --verbose=1
+R:\Dev\applications\cmake\bin\cmake.exe -E rm -f CMakeFiles\cmTC_749f3.dir/objects.a
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\ar.exe cr CMakeFiles\cmTC_749f3.dir/objects.a @CMakeFiles\cmTC_749f3.dir\objects1.rsp
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe  -DCHECK_FUNCTION_EXISTS=inet_pton -Wl,--whole-archive CMakeFiles\cmTC_749f3.dir/objects.a -Wl,--no-whole-archive -o cmTC_749f3.exe -Wl,--out-implib,libcmTC_749f3.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_749f3.dir\linklibs.rsp
+CMakeFiles\cmTC_749f3.dir/objects.a(CheckFunctionExists.c.obj):CheckFunctionExists.c:(.text+0x15): undefined reference to `inet_pton'
+collect2.exe: error: ld returned 1 exit status
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_749f3.dir\build.make:107: cmTC_749f3.exe] Error 1
+mingw32-make.exe[1]: Leaving directory 'R:/Dev/games/GameJam/WPI-game-jam-2020/libs/ENet/lib/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:139: cmTC_749f3/fast] Error 2
+
+
+
+Determining if the function inet_ntop exists failed with the following output:
+Change Dir: R:/Dev/games/GameJam/WPI-game-jam-2020/libs/ENet/lib/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe cmTC_9ef88/fast && C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_9ef88.dir\build.make CMakeFiles/cmTC_9ef88.dir/build
+mingw32-make.exe[1]: Entering directory 'R:/Dev/games/GameJam/WPI-game-jam-2020/libs/ENet/lib/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9ef88.dir/CheckFunctionExists.c.obj
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe   -DCHECK_FUNCTION_EXISTS=inet_ntop -o CMakeFiles\cmTC_9ef88.dir\CheckFunctionExists.c.obj -c R:\Dev\applications\cmake\share\cmake-3.18\Modules\CheckFunctionExists.c
+Linking C executable cmTC_9ef88.exe
+R:\Dev\applications\cmake\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_9ef88.dir\link.txt --verbose=1
+R:\Dev\applications\cmake\bin\cmake.exe -E rm -f CMakeFiles\cmTC_9ef88.dir/objects.a
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\ar.exe cr CMakeFiles\cmTC_9ef88.dir/objects.a @CMakeFiles\cmTC_9ef88.dir\objects1.rsp
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe  -DCHECK_FUNCTION_EXISTS=inet_ntop -Wl,--whole-archive CMakeFiles\cmTC_9ef88.dir/objects.a -Wl,--no-whole-archive -o cmTC_9ef88.exe -Wl,--out-implib,libcmTC_9ef88.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_9ef88.dir\linklibs.rsp
+CMakeFiles\cmTC_9ef88.dir/objects.a(CheckFunctionExists.c.obj):CheckFunctionExists.c:(.text+0x15): undefined reference to `inet_ntop'
+collect2.exe: error: ld returned 1 exit status
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_9ef88.dir\build.make:107: cmTC_9ef88.exe] Error 1
+mingw32-make.exe[1]: Leaving directory 'R:/Dev/games/GameJam/WPI-game-jam-2020/libs/ENet/lib/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:139: cmTC_9ef88/fast] Error 2
+
+
+
+Performing C SOURCE FILE Test HAS_MSGHDR_FLAGS failed with the following output:
+Change Dir: R:/Dev/games/GameJam/WPI-game-jam-2020/libs/ENet/lib/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe cmTC_f36b8/fast && C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_f36b8.dir\build.make CMakeFiles/cmTC_f36b8.dir/build
+mingw32-make.exe[1]: Entering directory 'R:/Dev/games/GameJam/WPI-game-jam-2020/libs/ENet/lib/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f36b8.dir/src.c.obj
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe   -DHAS_MSGHDR_FLAGS -o CMakeFiles\cmTC_f36b8.dir\src.c.obj -c R:\Dev\games\GameJam\WPI-game-jam-2020\libs\ENet\lib\CMakeFiles\CMakeTmp\src.c
+R:\Dev\games\GameJam\WPI-game-jam-2020\libs\ENet\lib\CMakeFiles\CMakeTmp\src.c:3:10: fatal error: sys/socket.h: No such file or directory
+ #include <sys/socket.h>
+          ^~~~~~~~~~~~~~
+compilation terminated.
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_f36b8.dir\build.make:84: CMakeFiles/cmTC_f36b8.dir/src.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'R:/Dev/games/GameJam/WPI-game-jam-2020/libs/ENet/lib/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:139: cmTC_f36b8/fast] Error 2
+
+
+Source file was:
+
+#include <sys/types.h>
+#include <sys/socket.h>
+
+int main()
+{
+  (void)sizeof(((struct msghdr *)0)->msg_flags);
+  return 0;
+}
+
+Determining size of socklen_t failed with the following output:
+Change Dir: R:/Dev/games/GameJam/WPI-game-jam-2020/libs/ENet/lib/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe cmTC_bb9b5/fast && C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_bb9b5.dir\build.make CMakeFiles/cmTC_bb9b5.dir/build
+mingw32-make.exe[1]: Entering directory 'R:/Dev/games/GameJam/WPI-game-jam-2020/libs/ENet/lib/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_bb9b5.dir/HAS_SOCKLEN_T.c.obj
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe    -o CMakeFiles\cmTC_bb9b5.dir\HAS_SOCKLEN_T.c.obj -c R:\Dev\games\GameJam\WPI-game-jam-2020\libs\ENet\lib\CMakeFiles\CheckTypeSize\HAS_SOCKLEN_T.c
+R:\Dev\games\GameJam\WPI-game-jam-2020\libs\ENet\lib\CMakeFiles\CheckTypeSize\HAS_SOCKLEN_T.c:2:10: fatal error: sys/socket.h: No such file or directory
+ #include "sys/socket.h"
+          ^~~~~~~~~~~~~~
+compilation terminated.
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_bb9b5.dir\build.make:84: CMakeFiles/cmTC_bb9b5.dir/HAS_SOCKLEN_T.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'R:/Dev/games/GameJam/WPI-game-jam-2020/libs/ENet/lib/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:139: cmTC_bb9b5/fast] Error 2
+
+
+R:/Dev/games/GameJam/WPI-game-jam-2020/libs/ENet/lib/CMakeFiles/CheckTypeSize/HAS_SOCKLEN_T.c:
+#include "sys/types.h"
+#include "sys/socket.h"
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__PPC64__)
+# define KEY '_','_','P','P','C','6','4','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#elif defined(__PPC__)
+# define KEY '_','_','P','P','C','_','_'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__aarch64__)
+# define KEY '_','_','a','a','r','c','h','6','4','_','_'
+#elif defined(__ARM_ARCH_7A__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','A','_','_'
+#elif defined(__ARM_ARCH_7S__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','S','_','_'
+#endif
+
+#define SIZE (sizeof(socklen_t))
+static char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
