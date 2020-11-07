@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "r:/Dev/games/GameJam/WPI-game-jam-2020/build"
+			"value" : "c:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -79,7 +79,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "18"
+			"value" : "19"
 		},
 		{
 			"name" : "CMAKE_CACHE_PATCH_VERSION",
@@ -91,7 +91,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "2"
+			"value" : "0"
 		},
 		{
 			"name" : "CMAKE_COLOR_MAKEFILE",
@@ -119,7 +119,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "R:/Dev/applications/cmake/bin/cmake.exe"
+			"value" : "C:/Program Files/CMake/bin/cmake.exe"
 		},
 		{
 			"name" : "CMAKE_CPACK_COMMAND",
@@ -131,7 +131,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "R:/Dev/applications/cmake/bin/cpack.exe"
+			"value" : "C:/Program Files/CMake/bin/cpack.exe"
 		},
 		{
 			"name" : "CMAKE_CTEST_COMMAND",
@@ -143,7 +143,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "R:/Dev/applications/cmake/bin/ctest.exe"
+			"value" : "C:/Program Files/CMake/bin/ctest.exe"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER",
@@ -155,10 +155,10 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "No help, variable specified on the command line."
+					"value" : "CXX compiler"
 				}
 			],
-			"type" : "FILEPATH",
+			"type" : "STRING",
 			"value" : "C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/x86_64-w64-mingw32-g++.exe"
 		},
 		{
@@ -299,10 +299,10 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "No help, variable specified on the command line."
+					"value" : "C compiler"
 				}
 			],
-			"type" : "FILEPATH",
+			"type" : "STRING",
 			"value" : "C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/x86_64-w64-mingw32-gcc.exe"
 		},
 		{
@@ -459,7 +459,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "R:/Dev/applications/cmake/bin/cmake-gui.exe"
+			"value" : "C:/Program Files/CMake/bin/cmake-gui.exe"
 		},
 		{
 			"name" : "CMAKE_EXECUTABLE_FORMAT",
@@ -647,7 +647,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "R:/Dev/games/GameJam/WPI-game-jam-2020"
+			"value" : "C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1091,7 +1091,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "R:/Dev/applications/cmake/share/cmake-3.18"
+			"value" : "C:/Program Files/CMake/share/cmake-3.19"
 		},
 		{
 			"name" : "CMAKE_SHARED_LINKER_FLAGS",
@@ -1327,7 +1327,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "R:/Dev/games/GameJam/WPI-game-jam-2020/build"
+			"value" : "C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/build"
 		},
 		{
 			"name" : "Trains_SOURCE_DIR",
@@ -1339,7 +1339,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "R:/Dev/games/GameJam/WPI-game-jam-2020"
+			"value" : "C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020"
 		},
 		{
 			"name" : "enet",
@@ -1351,7 +1351,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "R:/Dev/games/GameJam/WPI-game-jam-2020/libs/ENet/lib/libenet.a"
+			"value" : "C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/libs/ENet/lib/libenet.a"
 		},
 		{
 			"name" : "sdl",
@@ -1363,7 +1363,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "R:/Dev/games/GameJam/WPI-game-jam-2020/libs/SDL2/lib/libSDL2.dll.a"
+			"value" : "C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/libs/SDL2/lib/libSDL2.dll.a"
 		},
 		{
 			"name" : "sdlimage",
@@ -1375,7 +1375,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "R:/Dev/games/GameJam/WPI-game-jam-2020/libs/SDL2Image/lib/libSDL2_image.dll.a"
+			"value" : "C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/libs/SDL2Image/lib/libSDL2_image.dll.a"
 		},
 		{
 			"name" : "sdlmain",
@@ -1387,7 +1387,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "R:/Dev/games/GameJam/WPI-game-jam-2020/libs/SDL2/lib/libSDL2main.a"
+			"value" : "C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/libs/SDL2/lib/libSDL2main.a"
 		},
 		{
 			"name" : "sdlmixer",
@@ -1399,7 +1399,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "R:/Dev/games/GameJam/WPI-game-jam-2020/libs/SDL2Mixer/lib/libSDL2_mixer.dll.a"
+			"value" : "C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/libs/SDL2Mixer/lib/libSDL2_mixer.dll.a"
 		},
 		{
 			"name" : "sdlttf",
@@ -1411,7 +1411,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "R:/Dev/games/GameJam/WPI-game-jam-2020/libs/SDL2ttf/lib/libSDL2_ttf.dll.a"
+			"value" : "C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/libs/SDL2ttf/lib/libSDL2_ttf.dll.a"
 		}
 	],
 	"kind" : "cache",

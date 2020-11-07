@@ -1,17 +1,17 @@
 [
 {
-  "directory": "R:/Dev/games/GameJam/WPI-game-jam-2020/build",
-  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\X86_64~2.EXE  @CMakeFiles/Trains.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Trains.dir\\src\\Client.cpp.obj -c R:\\Dev\\games\\GameJam\\WPI-game-jam-2020\\src\\Client.cpp",
-  "file": "R:/Dev/games/GameJam/WPI-game-jam-2020/src/Client.cpp"
+  "directory": "C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/build",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\X86_64~2.EXE  @CMakeFiles/Trains.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Trains.dir\\src\\Client.cpp.obj -c C:\\Users\\Ryan\\Documents\\GitHub\\WPI-game-jam-2020\\src\\Client.cpp",
+  "file": "C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/src/Client.cpp"
 },
 {
-  "directory": "R:/Dev/games/GameJam/WPI-game-jam-2020/build",
-  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\X86_64~2.EXE  @CMakeFiles/Trains.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Trains.dir\\src\\Server.cpp.obj -c R:\\Dev\\games\\GameJam\\WPI-game-jam-2020\\src\\Server.cpp",
-  "file": "R:/Dev/games/GameJam/WPI-game-jam-2020/src/Server.cpp"
+  "directory": "C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/build",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\X86_64~2.EXE  @CMakeFiles/Trains.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Trains.dir\\src\\Server.cpp.obj -c C:\\Users\\Ryan\\Documents\\GitHub\\WPI-game-jam-2020\\src\\Server.cpp",
+  "file": "C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/src/Server.cpp"
 },
 {
-  "directory": "R:/Dev/games/GameJam/WPI-game-jam-2020/build",
-  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\X86_64~2.EXE  @CMakeFiles/Trains.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Trains.dir\\src\\main.cpp.obj -c R:\\Dev\\games\\GameJam\\WPI-game-jam-2020\\src\\main.cpp",
-  "file": "R:/Dev/games/GameJam/WPI-game-jam-2020/src/main.cpp"
+  "directory": "C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/build",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\X86_64~2.EXE  @CMakeFiles/Trains.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Trains.dir\\src\\main.cpp.obj -c C:\\Users\\Ryan\\Documents\\GitHub\\WPI-game-jam-2020\\src\\main.cpp",
+  "file": "C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/src/main.cpp"
 }
 ]

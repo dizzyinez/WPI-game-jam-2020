@@ -38,7 +38,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "Trains::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Trains-Debug-c31226bd47fff1a977d7.json",
+					"jsonFile" : "target-Trains-Debug-d36289d2ce5e8df1e2a2.json",
 					"name" : "Trains",
 					"projectIndex" : 0
 				}
@@ -48,12 +48,12 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "R:/Dev/games/GameJam/WPI-game-jam-2020/build",
-		"source" : "R:/Dev/games/GameJam/WPI-game-jam-2020"
+		"build" : "C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/build",
+		"source" : "C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020"
 	},
 	"version" : 
 	{
 		"major" : 2,
-		"minor" : 1
+		"minor" : 2
 	}
 }
