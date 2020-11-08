@@ -1,15 +1,30 @@
 #include "core/game.hpp"
 #include <algorithm>
-
+#include <SDL.h>
 void Game::Update()
 {
+        SDL_Event event;
+        while (SDL_PollEvent(&event))
+        {
+                if (event.type == SDL_QUIT)
+                {
+                        std::cout << "game closed" << std::endl;
+                        Game::running = false;
+                }
+        }
         scenes.back()->Update();
+}
+
+void Game::Render(float alpha)
+{
+        scenes.back()->Render(alpha);
 }
 
 void Game::push_scene(Scene* scene)
 {
         //add the scene to the list
         scenes.emplace_back(scene);
+        scene->Init();
 }
 void Game::pop_scene(Scene* scene)
 {

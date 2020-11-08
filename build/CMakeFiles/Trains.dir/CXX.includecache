@@ -29,12 +29,18 @@ core/Scene.hpp
 ../include/core/core/Scene.hpp
 vector
 -
+SDL.h
+-
 
 ../include/math/v2d.hpp
 
 ../include/scenes/gameworld.hpp
 core/Scene.hpp
 ../include/scenes/core/Scene.hpp
+SDL.h
+-
+SDL_image.h
+-
 
 ../libs/SDL2/include/SDL2/SDL.h
 SDL_main.h
@@ -651,6 +657,16 @@ close_code.h
 ../libs/SDL2/include/SDL2/begin_code.h
 
 ../libs/SDL2/include/SDL2/close_code.h
+
+../libs/SDL2Image/include/SDL2/SDL_image.h
+SDL.h
+../libs/SDL2Image/include/SDL2/SDL.h
+SDL_version.h
+../libs/SDL2Image/include/SDL2/SDL_version.h
+begin_code.h
+../libs/SDL2Image/include/SDL2/begin_code.h
+close_code.h
+../libs/SDL2Image/include/SDL2/close_code.h
 
 R:/Dev/games/GameJam/WPI-game-jam-2020/src/main.cpp
 common.hpp

@@ -7,46 +7,72 @@ constexpr int SCREEN_WIDTH = 1280;
 constexpr int SCREEN_HEIGHT = 720;
 constexpr int UPDATE_RATE = 60;
 constexpr double SECONDS_PER_UPDATE = 1.0f / (double)UPDATE_RATE;
-constexpr int MAX_FPS = 200;
+constexpr int MAX_FPS = 60;
 constexpr double MIN_FRAME_TIME = 1.0f / (double)MAX_FPS;
 
 int main(int argc, char *argv[])
 {
-        SDL_Window* window = NULL;
-        SDL_Surface* screenSurface = NULL;
-
         //Initialize SDL
-        if (SDL_Init(SDL_INIT_VIDEO) < 0)
+        if (SDL_Init(SDL_INIT_EVERYTHING) != 0)
         {
                 printf("SDL could not initialize! SDL_Error: %s\n", SDL_GetError());
+                return -1;
         }
-        else
+        if (!(IMG_Init(IMG_INIT_PNG) & IMG_INIT_PNG))
         {
-                //Create window
-                window = SDL_CreateWindow("SDL Tutorial", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, SCREEN_WIDTH, SCREEN_HEIGHT, SDL_WINDOW_SHOWN);
-                if (window == NULL)
+                std::cout << "couldn't initialize SDL_IMAGE" << std::endl;
+                return -1;
+        }
+        //Create window
+        Game::window = SDL_CreateWindow("Train Game", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, SCREEN_WIDTH, SCREEN_HEIGHT, SDL_WINDOW_SHOWN);
+        if (Game::window == nullptr)
+        {
+                printf("Window could not be created! SDL_Error: %s\n", SDL_GetError());
+                return -1;
+        }
+
+        //initialize renderer
+        Game::renderer = SDL_CreateRenderer(Game::window, -1, SDL_RENDERER_ACCELERATED);
+        if (Game::renderer == nullptr)
+        {
+                std::cout << "couldn't initialize renderer" << std::endl;
+                return -1;
+        }
+        SDL_SetRenderDrawColor(Game::renderer, 100, 149, 237, 255);
+
+        Game::push_scene(new GameWorld);
+
+        double update_accumulator = 0.0;
+        double render_accumulator = 0.0;
+        Uint64 last_time = SDL_GetPerformanceCounter();
+        while (Game::running)
+        {
+                Uint64 new_time = SDL_GetPerformanceCounter();
+                double frame_time = (new_time - last_time) / (double)SDL_GetPerformanceFrequency();
+
+                last_time = SDL_GetPerformanceCounter();
+                update_accumulator += frame_time;
+                render_accumulator += frame_time;
+
+                while (update_accumulator >= SECONDS_PER_UPDATE)
                 {
-                        printf("Window could not be created! SDL_Error: %s\n", SDL_GetError());
-                }
-                else
-                {
-                        //Get window surface
-                        screenSurface = SDL_GetWindowSurface(window);
-
-                        //Fill the surface white
-                        SDL_FillRect(screenSurface, NULL, SDL_MapRGB(screenSurface->format, 0xFF, 0xFF, 0xFF));
-
-                        //Update the surface
-                        SDL_UpdateWindowSurface(window);
-                        Game::push_scene(new GameWorld);
-
+                        //handle events
                         Game::Update();
-                        //Wait two seconds
-                        SDL_Delay(2000);
+                        update_accumulator -= SECONDS_PER_UPDATE;
+                }
+                if (render_accumulator >= MIN_FRAME_TIME)
+                {
+                        SDL_RenderClear(Game::renderer);
+                        Game::Render(update_accumulator / SECONDS_PER_UPDATE);
+                        SDL_RenderPresent(Game::renderer);
+                        while (render_accumulator >= MIN_FRAME_TIME)
+                                render_accumulator -= MIN_FRAME_TIME;
                 }
         }
+        //Destroy Renderer
+        SDL_DestroyRenderer(Game::renderer);
         //Destroy window
-        SDL_DestroyWindow(window);
+        SDL_DestroyWindow(Game::window);
 
         //Quit SDL subsystems
         SDL_Quit();

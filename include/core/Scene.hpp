@@ -8,6 +8,7 @@ class Scene
         std::array<Entity, 1000> entities;
         // void update(float alpha);
 public:
+        virtual void Init() {};
         virtual void Update() = 0;
         virtual void Render(float alpha) = 0;
 };
