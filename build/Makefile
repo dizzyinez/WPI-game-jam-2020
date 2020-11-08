@@ -195,6 +195,33 @@ src/Server.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trains.dir\build.make CMakeFiles/Trains.dir/src/Server.cpp.s
 .PHONY : src/Server.cpp.s
 
+src/game.obj: src/game.cpp.obj
+
+.PHONY : src/game.obj
+
+# target to build an object file
+src/game.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trains.dir\build.make CMakeFiles/Trains.dir/src/game.cpp.obj
+.PHONY : src/game.cpp.obj
+
+src/game.i: src/game.cpp.i
+
+.PHONY : src/game.i
+
+# target to preprocess a source file
+src/game.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trains.dir\build.make CMakeFiles/Trains.dir/src/game.cpp.i
+.PHONY : src/game.cpp.i
+
+src/game.s: src/game.cpp.s
+
+.PHONY : src/game.s
+
+# target to generate assembly for a file
+src/game.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trains.dir\build.make CMakeFiles/Trains.dir/src/game.cpp.s
+.PHONY : src/game.cpp.s
+
 src/main.obj: src/main.cpp.obj
 
 .PHONY : src/main.obj
@@ -237,6 +264,9 @@ help:
 	@echo ... src/Server.obj
 	@echo ... src/Server.i
 	@echo ... src/Server.s
+	@echo ... src/game.obj
+	@echo ... src/game.i
+	@echo ... src/game.s
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s

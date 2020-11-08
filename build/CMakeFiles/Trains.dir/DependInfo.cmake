@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "R:/Dev/games/GameJam/WPI-game-jam-2020/src/Client.cpp" "R:/Dev/games/GameJam/WPI-game-jam-2020/build/CMakeFiles/Trains.dir/src/Client.cpp.obj"
   "R:/Dev/games/GameJam/WPI-game-jam-2020/src/Server.cpp" "R:/Dev/games/GameJam/WPI-game-jam-2020/build/CMakeFiles/Trains.dir/src/Server.cpp.obj"
+  "R:/Dev/games/GameJam/WPI-game-jam-2020/src/game.cpp" "R:/Dev/games/GameJam/WPI-game-jam-2020/build/CMakeFiles/Trains.dir/src/game.cpp.obj"
   "R:/Dev/games/GameJam/WPI-game-jam-2020/src/main.cpp" "R:/Dev/games/GameJam/WPI-game-jam-2020/build/CMakeFiles/Trains.dir/src/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

@@ -11,6 +11,11 @@
 },
 {
   "directory": "R:/Dev/games/GameJam/WPI-game-jam-2020/build",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\X86_64~2.EXE  @CMakeFiles/Trains.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Trains.dir\\src\\game.cpp.obj -c R:\\Dev\\games\\GameJam\\WPI-game-jam-2020\\src\\game.cpp",
+  "file": "R:/Dev/games/GameJam/WPI-game-jam-2020/src/game.cpp"
+},
+{
+  "directory": "R:/Dev/games/GameJam/WPI-game-jam-2020/build",
   "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\X86_64~2.EXE  @CMakeFiles/Trains.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Trains.dir\\src\\main.cpp.obj -c R:\\Dev\\games\\GameJam\\WPI-game-jam-2020\\src\\main.cpp",
   "file": "R:/Dev/games/GameJam/WPI-game-jam-2020/src/main.cpp"
 }
