@@ -6,10 +6,15 @@ void Game::Update()
         SDL_Event event;
         while (SDL_PollEvent(&event))
         {
-                if (event.type == SDL_QUIT)
+                switch (event.type)
                 {
+                case SDL_QUIT:
                         std::cout << "game closed" << std::endl;
                         Game::running = false;
+                        break;
+
+                        // case SDL_WINDOWEVENT:
+                        //         break;
                 }
         }
         scenes.back()->Update();

@@ -1,8 +1,16 @@
 #include <common.hpp>
 #define SDL_MAIN_HANDLED
 #include <SDL.h>
+#include <SDL_image.h>
 #include "core/game.hpp"
-#include "scenes/gameworld.hpp"
+#include "scenes/menu.hpp"
+#include <KW_gui.h>
+#include <KW_frame.h>
+#include <KW_label.h>
+#include <KW_renderdriver_sdl2.h>
+
+// #define IMGUI_IMPLEMENTATION
+// #include <misc/single_file/imgui_single_file.h>
 constexpr int SCREEN_WIDTH = 1280;
 constexpr int SCREEN_HEIGHT = 720;
 constexpr int UPDATE_RATE = 60;
@@ -24,7 +32,7 @@ int main(int argc, char *argv[])
                 return -1;
         }
         //Create window
-        Game::window = SDL_CreateWindow("Train Game", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, SCREEN_WIDTH, SCREEN_HEIGHT, SDL_WINDOW_SHOWN);
+        Game::window = SDL_CreateWindow("Train Game", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, SCREEN_WIDTH, SCREEN_HEIGHT, SDL_WINDOW_SHOWN | SDL_WINDOW_RESIZABLE);
         if (Game::window == nullptr)
         {
                 printf("Window could not be created! SDL_Error: %s\n", SDL_GetError());
@@ -38,14 +46,30 @@ int main(int argc, char *argv[])
                 std::cout << "couldn't initialize renderer" << std::endl;
                 return -1;
         }
-        SDL_SetRenderDrawColor(Game::renderer, 100, 149, 237, 255);
 
-        Game::push_scene(new GameWorld);
+        //initialize enet
+        if (enet_initialize() != 0)
+        {
+                std::cout << "unable to initialize enet!" << std::endl;
+        }
+
+        // ImGui::CreateContext();
+        // ImGuiIO& io = ImGui::GetIO(); (void)io;
+        // ImGui::StyleColorsLight();
+        // SDL_GLContext gl_context = SDL_GL_CreateContext(Game::window);
+        // SDL_GL_MakeCurrent(Game::window, gl_context);
+        // ImGui_ImplSDL2_InitForOpenGL(Game::window, gl_context);
+
+        Game::kw_driver = KW_CreateSDL2RenderDriver(Game::renderer, Game::window);
+        KW_Surface* set = KW_LoadSurface(Game::kw_driver, "assets/tileset.png");
+        Game::gui = KW_Init(Game::kw_driver, set);
+
+        Game::push_scene(new Menu);
 
         double update_accumulator = 0.0;
         double render_accumulator = 0.0;
         Uint64 last_time = SDL_GetPerformanceCounter();
-        while (Game::running)
+        while (Game::running && !SDL_QuitRequested())
         {
                 Uint64 new_time = SDL_GetPerformanceCounter();
                 double frame_time = (new_time - last_time) / (double)SDL_GetPerformanceFrequency();
@@ -57,18 +81,30 @@ int main(int argc, char *argv[])
                 while (update_accumulator >= SECONDS_PER_UPDATE)
                 {
                         //handle events
+                        KW_ProcessEvents(Game::gui);
                         Game::Update();
                         update_accumulator -= SECONDS_PER_UPDATE;
                 }
                 if (render_accumulator >= MIN_FRAME_TIME)
                 {
+                        // ImGui_ImplSDL2_NewFrame(Game::window);
+                        // ImGui_ImplOpenGL3_NewFrame();
+                        // ImGui::NewFrame();
+
+                        SDL_SetRenderDrawColor(Game::renderer, 100, 149, 237, 255);
                         SDL_RenderClear(Game::renderer);
                         Game::Render(update_accumulator / SECONDS_PER_UPDATE);
+                        KW_Paint(Game::gui);
                         SDL_RenderPresent(Game::renderer);
                         while (render_accumulator >= MIN_FRAME_TIME)
                                 render_accumulator -= MIN_FRAME_TIME;
                 }
         }
+        std::cout << "game exited" << std::endl;
+        KW_Quit(Game::gui);
+        KW_ReleaseSurface(Game::kw_driver, set);
+        KW_ReleaseRenderDriver(Game::kw_driver);
+
         //Destroy Renderer
         SDL_DestroyRenderer(Game::renderer);
         //Destroy window

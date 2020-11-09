@@ -24,8 +24,8 @@ public:
         ~client_interface() {}
         bool Connect()
         {
-                enet_address_set_host_ip(&server_address, "127.0.0.1");
-                server_address.port = 1234;
+                enet_address_set_host_ip(&server_address, "73.14.41.127");
+                server_address.port = 76743;
                 server = enet_host_connect(client, &server_address, 2, 0);
                 if (server == NULL)
                 {
@@ -35,13 +35,17 @@ public:
                 if (enet_host_service(client, &event, 1000) > 0 && event.type == ENET_EVENT_TYPE_CONNECT)
                 {
                         std::cout << "connection successful" << std::endl;
+                        running = true;
                         return true;
                 }
                 std::cout << "connection unsuccessful" << std::endl;
                 return false;
         }
-        void Disconnect() {}
-        // bool IsConnected() {return true;}
+        void Disconnect()
+        {
+                running = false;
+        }
+        bool IsConnected() {return running;}
 
         void Update()
         {
@@ -94,5 +98,6 @@ private:
         ENetHost* client;
         ENetAddress server_address;
         ENetPeer* server;
+        bool running = false;
 };
 }

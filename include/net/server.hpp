@@ -57,22 +57,38 @@ public:
 
         bool Start()
         {
-                address.host = ENET_HOST_ANY;
-                address.port = 1234;
-                server = enet_host_create(&address, 32, 2, 0, 0);
-                if (server == NULL)
+                if (!running)
                 {
-                        std::cout << "An error occurred while trying to make a server" << std::endl;
+                        address.host = ENET_HOST_ANY;
+                        address.port = 76743;
+                        server = enet_host_create(&address, 32, 2, 0, 0);
+                        if (server == NULL)
+                        {
+                                std::cout << "An error occurred while trying to make a server" << std::endl;
+                        }
+                        else
+                        {
+                                std::cout << "Server created" << std::endl;
+                        }
+                        running = true;
+                        return true;
                 }
                 else
                 {
-                        std::cout << "Server created" << std::endl;
+                        std::cout << "server already running" << std::endl;
                 }
-                return true;
+                return false;
         }
 
         void Stop()
         {
+                if (running)
+                {
+                }
+                else
+                {
+                        std::cout << "server not running!" << std::endl;
+                }
         }
 
         void MessageClient(const message<T>& msg, ENetPeer* peer)
@@ -121,7 +137,7 @@ public:
                 // return reinterpret_cast<D*>(peer->data);
                 return (D *)peer->data;
         }
-
+        bool running = false;
 private:
         virtual bool OnClientConnect(ENetPeer* peer)
         {

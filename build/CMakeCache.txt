@@ -274,6 +274,12 @@ sdlmixer:FILEPATH=R:/Dev/games/GameJam/WPI-game-jam-2020/libs/SDL2Mixer/lib/libS
 //Path to a library.
 sdlttf:FILEPATH=R:/Dev/games/GameJam/WPI-game-jam-2020/libs/SDL2ttf/lib/libSDL2_ttf.dll.a
 
+//Path to a library.
+winmedia:FILEPATH=C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/lib/libwinmm.a
+
+//Path to a library.
+winsock:FILEPATH=C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/lib/libws2_32.a
+
 
 ########################
 # INTERNAL cache entries

@@ -2,6 +2,7 @@
 #include "core/Scene.hpp"
 #include <vector>
 #include <SDL.h>
+#include <KW_gui.h>
 
 class Game
 {
@@ -15,6 +16,8 @@ public:
         inline static bool running = true;
         inline static SDL_Renderer* renderer;
         inline static SDL_Window* window;
+        inline static KW_GUI* gui;
+        inline static KW_RenderDriver* kw_driver;
 private:
         //resizeable array of scene pointers
         inline static std::vector<Scene*> scenes;

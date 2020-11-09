@@ -10,11 +10,11 @@ SET (CMAKE_EXPORT_COMPILE_COMMANDS ON)
 SET(CMAKE_MODULE_LINKER_FLAGS "-m32 -Wl,--disable-stdcall-fixup ${CMAKE_SHARED_LINKER_FLAGS}")
 set(CMAKE_CXX_STANDARD 17)
 
-file(GLOB_RECURSE SRC_FILES "src/*.c" "src/*.cc" "src/*.cpp")
+file(GLOB_RECURSE SRC_FILES "src/*.c" "src/*.cc" "src/*.cpp" "libs/KiWi/src/*.c")
 file(GLOB_RECURSE INCS_H "include/*.h" "include/*.hpp")
 
 add_executable(${PROJECT_NAME} ${SRC_FILES} ${INCS_H})
-# set_target_properties(${PROJECT_NAME} PROPERTIES VERSION ${PROJECT_VERSION})
+set_target_properties(${PROJECT_NAME} PROPERTIES VERSION ${PROJECT_VERSION})
 
 include_directories(c   
 "${CMAKE_SOURCE_DIR}/libs/SDL2/include/SDL2"
@@ -22,6 +22,8 @@ include_directories(c
 "${CMAKE_SOURCE_DIR}/libs/SDL2ttf/include/SDL2"
 "${CMAKE_SOURCE_DIR}/libs/SDL2Mixer/include/SDL2"
 "${CMAKE_SOURCE_DIR}/libs/ENet/include/"
+"${CMAKE_SOURCE_DIR}/libs/imgui/"
+"${CMAKE_SOURCE_DIR}/libs/KiWi/src"
 )
 
 SET(CMAKE_LIBRARY_PATH ${CMAKE_LIBRARY_PATH} 
@@ -49,12 +51,16 @@ find_library_wrapper(sdlimage libSDL2_image.dll.a)
 find_library_wrapper(sdlttf libSDL2_ttf.dll.a)
 find_library_wrapper(sdlmixer libSDL2_mixer.dll.a)
 find_library_wrapper(enet libenet.a)
+find_library_wrapper(winsock ws2_32)
+find_library_wrapper(winmedia winmm)
 
 target_link_libraries(${PROJECT_NAME}
 ${sdlmain}
 ${sdl}
 ${sdlimage}
-${sdl}
-${sdl}
+${sdlttf}
+${sdlmixer}
 ${enet}
+${winsock}
+${winmedia}
 )

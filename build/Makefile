@@ -141,6 +141,600 @@ Trains/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trains.dir\build.make CMakeFiles/Trains.dir/build
 .PHONY : Trains/fast
 
+libs/KiWi/src/KW_button.obj: libs/KiWi/src/KW_button.c.obj
+
+.PHONY : libs/KiWi/src/KW_button.obj
+
+# target to build an object file
+libs/KiWi/src/KW_button.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trains.dir\build.make CMakeFiles/Trains.dir/libs/KiWi/src/KW_button.c.obj
+.PHONY : libs/KiWi/src/KW_button.c.obj
+
+libs/KiWi/src/KW_button.i: libs/KiWi/src/KW_button.c.i
+
+.PHONY : libs/KiWi/src/KW_button.i
+
+# target to preprocess a source file
+libs/KiWi/src/KW_button.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trains.dir\build.make CMakeFiles/Trains.dir/libs/KiWi/src/KW_button.c.i
+.PHONY : libs/KiWi/src/KW_button.c.i
+
+libs/KiWi/src/KW_button.s: libs/KiWi/src/KW_button.c.s
+
+.PHONY : libs/KiWi/src/KW_button.s
+
+# target to generate assembly for a file
+libs/KiWi/src/KW_button.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trains.dir\build.make CMakeFiles/Trains.dir/libs/KiWi/src/KW_button.c.s
+.PHONY : libs/KiWi/src/KW_button.c.s
+
+libs/KiWi/src/KW_checkbox.obj: libs/KiWi/src/KW_checkbox.c.obj
+
+.PHONY : libs/KiWi/src/KW_checkbox.obj
+
+# target to build an object file
+libs/KiWi/src/KW_checkbox.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trains.dir\build.make CMakeFiles/Trains.dir/libs/KiWi/src/KW_checkbox.c.obj
+.PHONY : libs/KiWi/src/KW_checkbox.c.obj
+
+libs/KiWi/src/KW_checkbox.i: libs/KiWi/src/KW_checkbox.c.i
+
+.PHONY : libs/KiWi/src/KW_checkbox.i
+
+# target to preprocess a source file
+libs/KiWi/src/KW_checkbox.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trains.dir\build.make CMakeFiles/Trains.dir/libs/KiWi/src/KW_checkbox.c.i
+.PHONY : libs/KiWi/src/KW_checkbox.c.i
+
+libs/KiWi/src/KW_checkbox.s: libs/KiWi/src/KW_checkbox.c.s
+
+.PHONY : libs/KiWi/src/KW_checkbox.s
+
+# target to generate assembly for a file
+libs/KiWi/src/KW_checkbox.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trains.dir\build.make CMakeFiles/Trains.dir/libs/KiWi/src/KW_checkbox.c.s
+.PHONY : libs/KiWi/src/KW_checkbox.c.s
+
+libs/KiWi/src/KW_checkbox_internal.obj: libs/KiWi/src/KW_checkbox_internal.c.obj
+
+.PHONY : libs/KiWi/src/KW_checkbox_internal.obj
+
+# target to build an object file
+libs/KiWi/src/KW_checkbox_internal.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trains.dir\build.make CMakeFiles/Trains.dir/libs/KiWi/src/KW_checkbox_internal.c.obj
+.PHONY : libs/KiWi/src/KW_checkbox_internal.c.obj
+
+libs/KiWi/src/KW_checkbox_internal.i: libs/KiWi/src/KW_checkbox_internal.c.i
+
+.PHONY : libs/KiWi/src/KW_checkbox_internal.i
+
+# target to preprocess a source file
+libs/KiWi/src/KW_checkbox_internal.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trains.dir\build.make CMakeFiles/Trains.dir/libs/KiWi/src/KW_checkbox_internal.c.i
+.PHONY : libs/KiWi/src/KW_checkbox_internal.c.i
+
+libs/KiWi/src/KW_checkbox_internal.s: libs/KiWi/src/KW_checkbox_internal.c.s
+
+.PHONY : libs/KiWi/src/KW_checkbox_internal.s
+
+# target to generate assembly for a file
+libs/KiWi/src/KW_checkbox_internal.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trains.dir\build.make CMakeFiles/Trains.dir/libs/KiWi/src/KW_checkbox_internal.c.s
+.PHONY : libs/KiWi/src/KW_checkbox_internal.c.s
+
+libs/KiWi/src/KW_editbox.obj: libs/KiWi/src/KW_editbox.c.obj
+
+.PHONY : libs/KiWi/src/KW_editbox.obj
+
+# target to build an object file
+libs/KiWi/src/KW_editbox.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trains.dir\build.make CMakeFiles/Trains.dir/libs/KiWi/src/KW_editbox.c.obj
+.PHONY : libs/KiWi/src/KW_editbox.c.obj
+
+libs/KiWi/src/KW_editbox.i: libs/KiWi/src/KW_editbox.c.i
+
+.PHONY : libs/KiWi/src/KW_editbox.i
+
+# target to preprocess a source file
+libs/KiWi/src/KW_editbox.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trains.dir\build.make CMakeFiles/Trains.dir/libs/KiWi/src/KW_editbox.c.i
+.PHONY : libs/KiWi/src/KW_editbox.c.i
+
+libs/KiWi/src/KW_editbox.s: libs/KiWi/src/KW_editbox.c.s
+
+.PHONY : libs/KiWi/src/KW_editbox.s
+
+# target to generate assembly for a file
+libs/KiWi/src/KW_editbox.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trains.dir\build.make CMakeFiles/Trains.dir/libs/KiWi/src/KW_editbox.c.s
+.PHONY : libs/KiWi/src/KW_editbox.c.s
+
+libs/KiWi/src/KW_editbox_internal.obj: libs/KiWi/src/KW_editbox_internal.c.obj
+
+.PHONY : libs/KiWi/src/KW_editbox_internal.obj
+
+# target to build an object file
+libs/KiWi/src/KW_editbox_internal.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trains.dir\build.make CMakeFiles/Trains.dir/libs/KiWi/src/KW_editbox_internal.c.obj
+.PHONY : libs/KiWi/src/KW_editbox_internal.c.obj
+
+libs/KiWi/src/KW_editbox_internal.i: libs/KiWi/src/KW_editbox_internal.c.i
+
+.PHONY : libs/KiWi/src/KW_editbox_internal.i
+
+# target to preprocess a source file
+libs/KiWi/src/KW_editbox_internal.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trains.dir\build.make CMakeFiles/Trains.dir/libs/KiWi/src/KW_editbox_internal.c.i
+.PHONY : libs/KiWi/src/KW_editbox_internal.c.i
+
+libs/KiWi/src/KW_editbox_internal.s: libs/KiWi/src/KW_editbox_internal.c.s
+
+.PHONY : libs/KiWi/src/KW_editbox_internal.s
+
+# target to generate assembly for a file
+libs/KiWi/src/KW_editbox_internal.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trains.dir\build.make CMakeFiles/Trains.dir/libs/KiWi/src/KW_editbox_internal.c.s
+.PHONY : libs/KiWi/src/KW_editbox_internal.c.s
+
+libs/KiWi/src/KW_eventwatcher.obj: libs/KiWi/src/KW_eventwatcher.c.obj
+
+.PHONY : libs/KiWi/src/KW_eventwatcher.obj
+
+# target to build an object file
+libs/KiWi/src/KW_eventwatcher.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trains.dir\build.make CMakeFiles/Trains.dir/libs/KiWi/src/KW_eventwatcher.c.obj
+.PHONY : libs/KiWi/src/KW_eventwatcher.c.obj
+
+libs/KiWi/src/KW_eventwatcher.i: libs/KiWi/src/KW_eventwatcher.c.i
+
+.PHONY : libs/KiWi/src/KW_eventwatcher.i
+
+# target to preprocess a source file
+libs/KiWi/src/KW_eventwatcher.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trains.dir\build.make CMakeFiles/Trains.dir/libs/KiWi/src/KW_eventwatcher.c.i
+.PHONY : libs/KiWi/src/KW_eventwatcher.c.i
+
+libs/KiWi/src/KW_eventwatcher.s: libs/KiWi/src/KW_eventwatcher.c.s
+
+.PHONY : libs/KiWi/src/KW_eventwatcher.s
+
+# target to generate assembly for a file
+libs/KiWi/src/KW_eventwatcher.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trains.dir\build.make CMakeFiles/Trains.dir/libs/KiWi/src/KW_eventwatcher.c.s
+.PHONY : libs/KiWi/src/KW_eventwatcher.c.s
+
+libs/KiWi/src/KW_frame.obj: libs/KiWi/src/KW_frame.c.obj
+
+.PHONY : libs/KiWi/src/KW_frame.obj
+
+# target to build an object file
+libs/KiWi/src/KW_frame.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trains.dir\build.make CMakeFiles/Trains.dir/libs/KiWi/src/KW_frame.c.obj
+.PHONY : libs/KiWi/src/KW_frame.c.obj
+
+libs/KiWi/src/KW_frame.i: libs/KiWi/src/KW_frame.c.i
+
+.PHONY : libs/KiWi/src/KW_frame.i
+
+# target to preprocess a source file
+libs/KiWi/src/KW_frame.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trains.dir\build.make CMakeFiles/Trains.dir/libs/KiWi/src/KW_frame.c.i
+.PHONY : libs/KiWi/src/KW_frame.c.i
+
+libs/KiWi/src/KW_frame.s: libs/KiWi/src/KW_frame.c.s
+
+.PHONY : libs/KiWi/src/KW_frame.s
+
+# target to generate assembly for a file
+libs/KiWi/src/KW_frame.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trains.dir\build.make CMakeFiles/Trains.dir/libs/KiWi/src/KW_frame.c.s
+.PHONY : libs/KiWi/src/KW_frame.c.s
+
+libs/KiWi/src/KW_frame_internal.obj: libs/KiWi/src/KW_frame_internal.c.obj
+
+.PHONY : libs/KiWi/src/KW_frame_internal.obj
+
+# target to build an object file
+libs/KiWi/src/KW_frame_internal.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trains.dir\build.make CMakeFiles/Trains.dir/libs/KiWi/src/KW_frame_internal.c.obj
+.PHONY : libs/KiWi/src/KW_frame_internal.c.obj
+
+libs/KiWi/src/KW_frame_internal.i: libs/KiWi/src/KW_frame_internal.c.i
+
+.PHONY : libs/KiWi/src/KW_frame_internal.i
+
+# target to preprocess a source file
+libs/KiWi/src/KW_frame_internal.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trains.dir\build.make CMakeFiles/Trains.dir/libs/KiWi/src/KW_frame_internal.c.i
+.PHONY : libs/KiWi/src/KW_frame_internal.c.i
+
+libs/KiWi/src/KW_frame_internal.s: libs/KiWi/src/KW_frame_internal.c.s
+
+.PHONY : libs/KiWi/src/KW_frame_internal.s
+
+# target to generate assembly for a file
+libs/KiWi/src/KW_frame_internal.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trains.dir\build.make CMakeFiles/Trains.dir/libs/KiWi/src/KW_frame_internal.c.s
+.PHONY : libs/KiWi/src/KW_frame_internal.c.s
+
+libs/KiWi/src/KW_gui.obj: libs/KiWi/src/KW_gui.c.obj
+
+.PHONY : libs/KiWi/src/KW_gui.obj
+
+# target to build an object file
+libs/KiWi/src/KW_gui.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trains.dir\build.make CMakeFiles/Trains.dir/libs/KiWi/src/KW_gui.c.obj
+.PHONY : libs/KiWi/src/KW_gui.c.obj
+
+libs/KiWi/src/KW_gui.i: libs/KiWi/src/KW_gui.c.i
+
+.PHONY : libs/KiWi/src/KW_gui.i
+
+# target to preprocess a source file
+libs/KiWi/src/KW_gui.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trains.dir\build.make CMakeFiles/Trains.dir/libs/KiWi/src/KW_gui.c.i
+.PHONY : libs/KiWi/src/KW_gui.c.i
+
+libs/KiWi/src/KW_gui.s: libs/KiWi/src/KW_gui.c.s
+
+.PHONY : libs/KiWi/src/KW_gui.s
+
+# target to generate assembly for a file
+libs/KiWi/src/KW_gui.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trains.dir\build.make CMakeFiles/Trains.dir/libs/KiWi/src/KW_gui.c.s
+.PHONY : libs/KiWi/src/KW_gui.c.s
+
+libs/KiWi/src/KW_label.obj: libs/KiWi/src/KW_label.c.obj
+
+.PHONY : libs/KiWi/src/KW_label.obj
+
+# target to build an object file
+libs/KiWi/src/KW_label.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trains.dir\build.make CMakeFiles/Trains.dir/libs/KiWi/src/KW_label.c.obj
+.PHONY : libs/KiWi/src/KW_label.c.obj
+
+libs/KiWi/src/KW_label.i: libs/KiWi/src/KW_label.c.i
+
+.PHONY : libs/KiWi/src/KW_label.i
+
+# target to preprocess a source file
+libs/KiWi/src/KW_label.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trains.dir\build.make CMakeFiles/Trains.dir/libs/KiWi/src/KW_label.c.i
+.PHONY : libs/KiWi/src/KW_label.c.i
+
+libs/KiWi/src/KW_label.s: libs/KiWi/src/KW_label.c.s
+
+.PHONY : libs/KiWi/src/KW_label.s
+
+# target to generate assembly for a file
+libs/KiWi/src/KW_label.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trains.dir\build.make CMakeFiles/Trains.dir/libs/KiWi/src/KW_label.c.s
+.PHONY : libs/KiWi/src/KW_label.c.s
+
+libs/KiWi/src/KW_label_internal.obj: libs/KiWi/src/KW_label_internal.c.obj
+
+.PHONY : libs/KiWi/src/KW_label_internal.obj
+
+# target to build an object file
+libs/KiWi/src/KW_label_internal.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trains.dir\build.make CMakeFiles/Trains.dir/libs/KiWi/src/KW_label_internal.c.obj
+.PHONY : libs/KiWi/src/KW_label_internal.c.obj
+
+libs/KiWi/src/KW_label_internal.i: libs/KiWi/src/KW_label_internal.c.i
+
+.PHONY : libs/KiWi/src/KW_label_internal.i
+
+# target to preprocess a source file
+libs/KiWi/src/KW_label_internal.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trains.dir\build.make CMakeFiles/Trains.dir/libs/KiWi/src/KW_label_internal.c.i
+.PHONY : libs/KiWi/src/KW_label_internal.c.i
+
+libs/KiWi/src/KW_label_internal.s: libs/KiWi/src/KW_label_internal.c.s
+
+.PHONY : libs/KiWi/src/KW_label_internal.s
+
+# target to generate assembly for a file
+libs/KiWi/src/KW_label_internal.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trains.dir\build.make CMakeFiles/Trains.dir/libs/KiWi/src/KW_label_internal.c.s
+.PHONY : libs/KiWi/src/KW_label_internal.c.s
+
+libs/KiWi/src/KW_radio.obj: libs/KiWi/src/KW_radio.c.obj
+
+.PHONY : libs/KiWi/src/KW_radio.obj
+
+# target to build an object file
+libs/KiWi/src/KW_radio.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trains.dir\build.make CMakeFiles/Trains.dir/libs/KiWi/src/KW_radio.c.obj
+.PHONY : libs/KiWi/src/KW_radio.c.obj
+
+libs/KiWi/src/KW_radio.i: libs/KiWi/src/KW_radio.c.i
+
+.PHONY : libs/KiWi/src/KW_radio.i
+
+# target to preprocess a source file
+libs/KiWi/src/KW_radio.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trains.dir\build.make CMakeFiles/Trains.dir/libs/KiWi/src/KW_radio.c.i
+.PHONY : libs/KiWi/src/KW_radio.c.i
+
+libs/KiWi/src/KW_radio.s: libs/KiWi/src/KW_radio.c.s
+
+.PHONY : libs/KiWi/src/KW_radio.s
+
+# target to generate assembly for a file
+libs/KiWi/src/KW_radio.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trains.dir\build.make CMakeFiles/Trains.dir/libs/KiWi/src/KW_radio.c.s
+.PHONY : libs/KiWi/src/KW_radio.c.s
+
+libs/KiWi/src/KW_rect.obj: libs/KiWi/src/KW_rect.c.obj
+
+.PHONY : libs/KiWi/src/KW_rect.obj
+
+# target to build an object file
+libs/KiWi/src/KW_rect.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trains.dir\build.make CMakeFiles/Trains.dir/libs/KiWi/src/KW_rect.c.obj
+.PHONY : libs/KiWi/src/KW_rect.c.obj
+
+libs/KiWi/src/KW_rect.i: libs/KiWi/src/KW_rect.c.i
+
+.PHONY : libs/KiWi/src/KW_rect.i
+
+# target to preprocess a source file
+libs/KiWi/src/KW_rect.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trains.dir\build.make CMakeFiles/Trains.dir/libs/KiWi/src/KW_rect.c.i
+.PHONY : libs/KiWi/src/KW_rect.c.i
+
+libs/KiWi/src/KW_rect.s: libs/KiWi/src/KW_rect.c.s
+
+.PHONY : libs/KiWi/src/KW_rect.s
+
+# target to generate assembly for a file
+libs/KiWi/src/KW_rect.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trains.dir\build.make CMakeFiles/Trains.dir/libs/KiWi/src/KW_rect.c.s
+.PHONY : libs/KiWi/src/KW_rect.c.s
+
+libs/KiWi/src/KW_renderdriver.obj: libs/KiWi/src/KW_renderdriver.c.obj
+
+.PHONY : libs/KiWi/src/KW_renderdriver.obj
+
+# target to build an object file
+libs/KiWi/src/KW_renderdriver.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trains.dir\build.make CMakeFiles/Trains.dir/libs/KiWi/src/KW_renderdriver.c.obj
+.PHONY : libs/KiWi/src/KW_renderdriver.c.obj
+
+libs/KiWi/src/KW_renderdriver.i: libs/KiWi/src/KW_renderdriver.c.i
+
+.PHONY : libs/KiWi/src/KW_renderdriver.i
+
+# target to preprocess a source file
+libs/KiWi/src/KW_renderdriver.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trains.dir\build.make CMakeFiles/Trains.dir/libs/KiWi/src/KW_renderdriver.c.i
+.PHONY : libs/KiWi/src/KW_renderdriver.c.i
+
+libs/KiWi/src/KW_renderdriver.s: libs/KiWi/src/KW_renderdriver.c.s
+
+.PHONY : libs/KiWi/src/KW_renderdriver.s
+
+# target to generate assembly for a file
+libs/KiWi/src/KW_renderdriver.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trains.dir\build.make CMakeFiles/Trains.dir/libs/KiWi/src/KW_renderdriver.c.s
+.PHONY : libs/KiWi/src/KW_renderdriver.c.s
+
+libs/KiWi/src/KW_renderdriver_sdl2.obj: libs/KiWi/src/KW_renderdriver_sdl2.c.obj
+
+.PHONY : libs/KiWi/src/KW_renderdriver_sdl2.obj
+
+# target to build an object file
+libs/KiWi/src/KW_renderdriver_sdl2.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trains.dir\build.make CMakeFiles/Trains.dir/libs/KiWi/src/KW_renderdriver_sdl2.c.obj
+.PHONY : libs/KiWi/src/KW_renderdriver_sdl2.c.obj
+
+libs/KiWi/src/KW_renderdriver_sdl2.i: libs/KiWi/src/KW_renderdriver_sdl2.c.i
+
+.PHONY : libs/KiWi/src/KW_renderdriver_sdl2.i
+
+# target to preprocess a source file
+libs/KiWi/src/KW_renderdriver_sdl2.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trains.dir\build.make CMakeFiles/Trains.dir/libs/KiWi/src/KW_renderdriver_sdl2.c.i
+.PHONY : libs/KiWi/src/KW_renderdriver_sdl2.c.i
+
+libs/KiWi/src/KW_renderdriver_sdl2.s: libs/KiWi/src/KW_renderdriver_sdl2.c.s
+
+.PHONY : libs/KiWi/src/KW_renderdriver_sdl2.s
+
+# target to generate assembly for a file
+libs/KiWi/src/KW_renderdriver_sdl2.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trains.dir\build.make CMakeFiles/Trains.dir/libs/KiWi/src/KW_renderdriver_sdl2.c.s
+.PHONY : libs/KiWi/src/KW_renderdriver_sdl2.c.s
+
+libs/KiWi/src/KW_scrollbox.obj: libs/KiWi/src/KW_scrollbox.c.obj
+
+.PHONY : libs/KiWi/src/KW_scrollbox.obj
+
+# target to build an object file
+libs/KiWi/src/KW_scrollbox.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trains.dir\build.make CMakeFiles/Trains.dir/libs/KiWi/src/KW_scrollbox.c.obj
+.PHONY : libs/KiWi/src/KW_scrollbox.c.obj
+
+libs/KiWi/src/KW_scrollbox.i: libs/KiWi/src/KW_scrollbox.c.i
+
+.PHONY : libs/KiWi/src/KW_scrollbox.i
+
+# target to preprocess a source file
+libs/KiWi/src/KW_scrollbox.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trains.dir\build.make CMakeFiles/Trains.dir/libs/KiWi/src/KW_scrollbox.c.i
+.PHONY : libs/KiWi/src/KW_scrollbox.c.i
+
+libs/KiWi/src/KW_scrollbox.s: libs/KiWi/src/KW_scrollbox.c.s
+
+.PHONY : libs/KiWi/src/KW_scrollbox.s
+
+# target to generate assembly for a file
+libs/KiWi/src/KW_scrollbox.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trains.dir\build.make CMakeFiles/Trains.dir/libs/KiWi/src/KW_scrollbox.c.s
+.PHONY : libs/KiWi/src/KW_scrollbox.c.s
+
+libs/KiWi/src/KW_scrollbox_internal.obj: libs/KiWi/src/KW_scrollbox_internal.c.obj
+
+.PHONY : libs/KiWi/src/KW_scrollbox_internal.obj
+
+# target to build an object file
+libs/KiWi/src/KW_scrollbox_internal.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trains.dir\build.make CMakeFiles/Trains.dir/libs/KiWi/src/KW_scrollbox_internal.c.obj
+.PHONY : libs/KiWi/src/KW_scrollbox_internal.c.obj
+
+libs/KiWi/src/KW_scrollbox_internal.i: libs/KiWi/src/KW_scrollbox_internal.c.i
+
+.PHONY : libs/KiWi/src/KW_scrollbox_internal.i
+
+# target to preprocess a source file
+libs/KiWi/src/KW_scrollbox_internal.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trains.dir\build.make CMakeFiles/Trains.dir/libs/KiWi/src/KW_scrollbox_internal.c.i
+.PHONY : libs/KiWi/src/KW_scrollbox_internal.c.i
+
+libs/KiWi/src/KW_scrollbox_internal.s: libs/KiWi/src/KW_scrollbox_internal.c.s
+
+.PHONY : libs/KiWi/src/KW_scrollbox_internal.s
+
+# target to generate assembly for a file
+libs/KiWi/src/KW_scrollbox_internal.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trains.dir\build.make CMakeFiles/Trains.dir/libs/KiWi/src/KW_scrollbox_internal.c.s
+.PHONY : libs/KiWi/src/KW_scrollbox_internal.c.s
+
+libs/KiWi/src/KW_tilerenderer.obj: libs/KiWi/src/KW_tilerenderer.c.obj
+
+.PHONY : libs/KiWi/src/KW_tilerenderer.obj
+
+# target to build an object file
+libs/KiWi/src/KW_tilerenderer.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trains.dir\build.make CMakeFiles/Trains.dir/libs/KiWi/src/KW_tilerenderer.c.obj
+.PHONY : libs/KiWi/src/KW_tilerenderer.c.obj
+
+libs/KiWi/src/KW_tilerenderer.i: libs/KiWi/src/KW_tilerenderer.c.i
+
+.PHONY : libs/KiWi/src/KW_tilerenderer.i
+
+# target to preprocess a source file
+libs/KiWi/src/KW_tilerenderer.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trains.dir\build.make CMakeFiles/Trains.dir/libs/KiWi/src/KW_tilerenderer.c.i
+.PHONY : libs/KiWi/src/KW_tilerenderer.c.i
+
+libs/KiWi/src/KW_tilerenderer.s: libs/KiWi/src/KW_tilerenderer.c.s
+
+.PHONY : libs/KiWi/src/KW_tilerenderer.s
+
+# target to generate assembly for a file
+libs/KiWi/src/KW_tilerenderer.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trains.dir\build.make CMakeFiles/Trains.dir/libs/KiWi/src/KW_tilerenderer.c.s
+.PHONY : libs/KiWi/src/KW_tilerenderer.c.s
+
+libs/KiWi/src/KW_toggle.obj: libs/KiWi/src/KW_toggle.c.obj
+
+.PHONY : libs/KiWi/src/KW_toggle.obj
+
+# target to build an object file
+libs/KiWi/src/KW_toggle.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trains.dir\build.make CMakeFiles/Trains.dir/libs/KiWi/src/KW_toggle.c.obj
+.PHONY : libs/KiWi/src/KW_toggle.c.obj
+
+libs/KiWi/src/KW_toggle.i: libs/KiWi/src/KW_toggle.c.i
+
+.PHONY : libs/KiWi/src/KW_toggle.i
+
+# target to preprocess a source file
+libs/KiWi/src/KW_toggle.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trains.dir\build.make CMakeFiles/Trains.dir/libs/KiWi/src/KW_toggle.c.i
+.PHONY : libs/KiWi/src/KW_toggle.c.i
+
+libs/KiWi/src/KW_toggle.s: libs/KiWi/src/KW_toggle.c.s
+
+.PHONY : libs/KiWi/src/KW_toggle.s
+
+# target to generate assembly for a file
+libs/KiWi/src/KW_toggle.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trains.dir\build.make CMakeFiles/Trains.dir/libs/KiWi/src/KW_toggle.c.s
+.PHONY : libs/KiWi/src/KW_toggle.c.s
+
+libs/KiWi/src/KW_widget.obj: libs/KiWi/src/KW_widget.c.obj
+
+.PHONY : libs/KiWi/src/KW_widget.obj
+
+# target to build an object file
+libs/KiWi/src/KW_widget.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trains.dir\build.make CMakeFiles/Trains.dir/libs/KiWi/src/KW_widget.c.obj
+.PHONY : libs/KiWi/src/KW_widget.c.obj
+
+libs/KiWi/src/KW_widget.i: libs/KiWi/src/KW_widget.c.i
+
+.PHONY : libs/KiWi/src/KW_widget.i
+
+# target to preprocess a source file
+libs/KiWi/src/KW_widget.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trains.dir\build.make CMakeFiles/Trains.dir/libs/KiWi/src/KW_widget.c.i
+.PHONY : libs/KiWi/src/KW_widget.c.i
+
+libs/KiWi/src/KW_widget.s: libs/KiWi/src/KW_widget.c.s
+
+.PHONY : libs/KiWi/src/KW_widget.s
+
+# target to generate assembly for a file
+libs/KiWi/src/KW_widget.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trains.dir\build.make CMakeFiles/Trains.dir/libs/KiWi/src/KW_widget.c.s
+.PHONY : libs/KiWi/src/KW_widget.c.s
+
+libs/KiWi/src/KW_widget_eventhandlers.obj: libs/KiWi/src/KW_widget_eventhandlers.c.obj
+
+.PHONY : libs/KiWi/src/KW_widget_eventhandlers.obj
+
+# target to build an object file
+libs/KiWi/src/KW_widget_eventhandlers.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trains.dir\build.make CMakeFiles/Trains.dir/libs/KiWi/src/KW_widget_eventhandlers.c.obj
+.PHONY : libs/KiWi/src/KW_widget_eventhandlers.c.obj
+
+libs/KiWi/src/KW_widget_eventhandlers.i: libs/KiWi/src/KW_widget_eventhandlers.c.i
+
+.PHONY : libs/KiWi/src/KW_widget_eventhandlers.i
+
+# target to preprocess a source file
+libs/KiWi/src/KW_widget_eventhandlers.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trains.dir\build.make CMakeFiles/Trains.dir/libs/KiWi/src/KW_widget_eventhandlers.c.i
+.PHONY : libs/KiWi/src/KW_widget_eventhandlers.c.i
+
+libs/KiWi/src/KW_widget_eventhandlers.s: libs/KiWi/src/KW_widget_eventhandlers.c.s
+
+.PHONY : libs/KiWi/src/KW_widget_eventhandlers.s
+
+# target to generate assembly for a file
+libs/KiWi/src/KW_widget_eventhandlers.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trains.dir\build.make CMakeFiles/Trains.dir/libs/KiWi/src/KW_widget_eventhandlers.c.s
+.PHONY : libs/KiWi/src/KW_widget_eventhandlers.c.s
+
+libs/KiWi/src/utf8.obj: libs/KiWi/src/utf8.c.obj
+
+.PHONY : libs/KiWi/src/utf8.obj
+
+# target to build an object file
+libs/KiWi/src/utf8.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trains.dir\build.make CMakeFiles/Trains.dir/libs/KiWi/src/utf8.c.obj
+.PHONY : libs/KiWi/src/utf8.c.obj
+
+libs/KiWi/src/utf8.i: libs/KiWi/src/utf8.c.i
+
+.PHONY : libs/KiWi/src/utf8.i
+
+# target to preprocess a source file
+libs/KiWi/src/utf8.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trains.dir\build.make CMakeFiles/Trains.dir/libs/KiWi/src/utf8.c.i
+.PHONY : libs/KiWi/src/utf8.c.i
+
+libs/KiWi/src/utf8.s: libs/KiWi/src/utf8.c.s
+
+.PHONY : libs/KiWi/src/utf8.s
+
+# target to generate assembly for a file
+libs/KiWi/src/utf8.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trains.dir\build.make CMakeFiles/Trains.dir/libs/KiWi/src/utf8.c.s
+.PHONY : libs/KiWi/src/utf8.c.s
+
 src/Client.obj: src/Client.cpp.obj
 
 .PHONY : src/Client.obj
@@ -167,6 +761,33 @@ src/Client.s: src/Client.cpp.s
 src/Client.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trains.dir\build.make CMakeFiles/Trains.dir/src/Client.cpp.s
 .PHONY : src/Client.cpp.s
+
+src/Menu.obj: src/Menu.cpp.obj
+
+.PHONY : src/Menu.obj
+
+# target to build an object file
+src/Menu.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trains.dir\build.make CMakeFiles/Trains.dir/src/Menu.cpp.obj
+.PHONY : src/Menu.cpp.obj
+
+src/Menu.i: src/Menu.cpp.i
+
+.PHONY : src/Menu.i
+
+# target to preprocess a source file
+src/Menu.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trains.dir\build.make CMakeFiles/Trains.dir/src/Menu.cpp.i
+.PHONY : src/Menu.cpp.i
+
+src/Menu.s: src/Menu.cpp.s
+
+.PHONY : src/Menu.s
+
+# target to generate assembly for a file
+src/Menu.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trains.dir\build.make CMakeFiles/Trains.dir/src/Menu.cpp.s
+.PHONY : src/Menu.cpp.s
 
 src/Server.obj: src/Server.cpp.obj
 
@@ -258,9 +879,78 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Trains
+	@echo ... libs/KiWi/src/KW_button.obj
+	@echo ... libs/KiWi/src/KW_button.i
+	@echo ... libs/KiWi/src/KW_button.s
+	@echo ... libs/KiWi/src/KW_checkbox.obj
+	@echo ... libs/KiWi/src/KW_checkbox.i
+	@echo ... libs/KiWi/src/KW_checkbox.s
+	@echo ... libs/KiWi/src/KW_checkbox_internal.obj
+	@echo ... libs/KiWi/src/KW_checkbox_internal.i
+	@echo ... libs/KiWi/src/KW_checkbox_internal.s
+	@echo ... libs/KiWi/src/KW_editbox.obj
+	@echo ... libs/KiWi/src/KW_editbox.i
+	@echo ... libs/KiWi/src/KW_editbox.s
+	@echo ... libs/KiWi/src/KW_editbox_internal.obj
+	@echo ... libs/KiWi/src/KW_editbox_internal.i
+	@echo ... libs/KiWi/src/KW_editbox_internal.s
+	@echo ... libs/KiWi/src/KW_eventwatcher.obj
+	@echo ... libs/KiWi/src/KW_eventwatcher.i
+	@echo ... libs/KiWi/src/KW_eventwatcher.s
+	@echo ... libs/KiWi/src/KW_frame.obj
+	@echo ... libs/KiWi/src/KW_frame.i
+	@echo ... libs/KiWi/src/KW_frame.s
+	@echo ... libs/KiWi/src/KW_frame_internal.obj
+	@echo ... libs/KiWi/src/KW_frame_internal.i
+	@echo ... libs/KiWi/src/KW_frame_internal.s
+	@echo ... libs/KiWi/src/KW_gui.obj
+	@echo ... libs/KiWi/src/KW_gui.i
+	@echo ... libs/KiWi/src/KW_gui.s
+	@echo ... libs/KiWi/src/KW_label.obj
+	@echo ... libs/KiWi/src/KW_label.i
+	@echo ... libs/KiWi/src/KW_label.s
+	@echo ... libs/KiWi/src/KW_label_internal.obj
+	@echo ... libs/KiWi/src/KW_label_internal.i
+	@echo ... libs/KiWi/src/KW_label_internal.s
+	@echo ... libs/KiWi/src/KW_radio.obj
+	@echo ... libs/KiWi/src/KW_radio.i
+	@echo ... libs/KiWi/src/KW_radio.s
+	@echo ... libs/KiWi/src/KW_rect.obj
+	@echo ... libs/KiWi/src/KW_rect.i
+	@echo ... libs/KiWi/src/KW_rect.s
+	@echo ... libs/KiWi/src/KW_renderdriver.obj
+	@echo ... libs/KiWi/src/KW_renderdriver.i
+	@echo ... libs/KiWi/src/KW_renderdriver.s
+	@echo ... libs/KiWi/src/KW_renderdriver_sdl2.obj
+	@echo ... libs/KiWi/src/KW_renderdriver_sdl2.i
+	@echo ... libs/KiWi/src/KW_renderdriver_sdl2.s
+	@echo ... libs/KiWi/src/KW_scrollbox.obj
+	@echo ... libs/KiWi/src/KW_scrollbox.i
+	@echo ... libs/KiWi/src/KW_scrollbox.s
+	@echo ... libs/KiWi/src/KW_scrollbox_internal.obj
+	@echo ... libs/KiWi/src/KW_scrollbox_internal.i
+	@echo ... libs/KiWi/src/KW_scrollbox_internal.s
+	@echo ... libs/KiWi/src/KW_tilerenderer.obj
+	@echo ... libs/KiWi/src/KW_tilerenderer.i
+	@echo ... libs/KiWi/src/KW_tilerenderer.s
+	@echo ... libs/KiWi/src/KW_toggle.obj
+	@echo ... libs/KiWi/src/KW_toggle.i
+	@echo ... libs/KiWi/src/KW_toggle.s
+	@echo ... libs/KiWi/src/KW_widget.obj
+	@echo ... libs/KiWi/src/KW_widget.i
+	@echo ... libs/KiWi/src/KW_widget.s
+	@echo ... libs/KiWi/src/KW_widget_eventhandlers.obj
+	@echo ... libs/KiWi/src/KW_widget_eventhandlers.i
+	@echo ... libs/KiWi/src/KW_widget_eventhandlers.s
+	@echo ... libs/KiWi/src/utf8.obj
+	@echo ... libs/KiWi/src/utf8.i
+	@echo ... libs/KiWi/src/utf8.s
 	@echo ... src/Client.obj
 	@echo ... src/Client.i
 	@echo ... src/Client.s
+	@echo ... src/Menu.obj
+	@echo ... src/Menu.i
+	@echo ... src/Menu.s
 	@echo ... src/Server.obj
 	@echo ... src/Server.i
 	@echo ... src/Server.s

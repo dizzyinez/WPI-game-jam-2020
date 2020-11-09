@@ -1,9 +1,10 @@
 #pragma once
 #include "math/v2d.hpp"
+#include <SDL.h>
 
-class Entity
+struct Entity
 {
         v2d position;
-public:
-        Entity() = default;
+        v2d size;
+        SDL_Texture* texture;
 };
