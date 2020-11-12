@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+R:/Dev/games/GameJam/WPI-game-jam-2020/libs/miniupnpc-2.1/minixml.c
+string.h
+-
+minixml.h
+R:/Dev/games/GameJam/WPI-game-jam-2020/libs/miniupnpc-2.1/minixml.h
+
+R:/Dev/games/GameJam/WPI-game-jam-2020/libs/miniupnpc-2.1/minixml.h
+
+R:/Dev/games/GameJam/WPI-game-jam-2020/libs/miniupnpc-2.1/minixmlvalid.c
+stdlib.h
+-
+stdio.h
+-
+string.h
+-
+minixml.h
+R:/Dev/games/GameJam/WPI-game-jam-2020/libs/miniupnpc-2.1/minixml.h
+

@@ -870,6 +870,33 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trains.dir\build.make CMakeFiles/Trains.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/utils/upnp.obj: src/utils/upnp.cpp.obj
+
+.PHONY : src/utils/upnp.obj
+
+# target to build an object file
+src/utils/upnp.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trains.dir\build.make CMakeFiles/Trains.dir/src/utils/upnp.cpp.obj
+.PHONY : src/utils/upnp.cpp.obj
+
+src/utils/upnp.i: src/utils/upnp.cpp.i
+
+.PHONY : src/utils/upnp.i
+
+# target to preprocess a source file
+src/utils/upnp.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trains.dir\build.make CMakeFiles/Trains.dir/src/utils/upnp.cpp.i
+.PHONY : src/utils/upnp.cpp.i
+
+src/utils/upnp.s: src/utils/upnp.cpp.s
+
+.PHONY : src/utils/upnp.s
+
+# target to generate assembly for a file
+src/utils/upnp.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trains.dir\build.make CMakeFiles/Trains.dir/src/utils/upnp.cpp.s
+.PHONY : src/utils/upnp.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -960,6 +987,9 @@ help:
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s
+	@echo ... src/utils/upnp.obj
+	@echo ... src/utils/upnp.i
+	@echo ... src/utils/upnp.s
 .PHONY : help
 
 

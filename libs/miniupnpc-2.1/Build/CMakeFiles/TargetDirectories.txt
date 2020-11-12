@@ -1,0 +1,15 @@
+R:/Dev/games/GameJam/WPI-game-jam-2020/libs/miniupnpc-2.1/Build/CMakeFiles/libminiupnpc-static.dir
+R:/Dev/games/GameJam/WPI-game-jam-2020/libs/miniupnpc-2.1/Build/CMakeFiles/upnpc-static.dir
+R:/Dev/games/GameJam/WPI-game-jam-2020/libs/miniupnpc-2.1/Build/CMakeFiles/install/strip.dir
+R:/Dev/games/GameJam/WPI-game-jam-2020/libs/miniupnpc-2.1/Build/CMakeFiles/libminiupnpc-shared.dir
+R:/Dev/games/GameJam/WPI-game-jam-2020/libs/miniupnpc-2.1/Build/CMakeFiles/upnpc-shared.dir
+R:/Dev/games/GameJam/WPI-game-jam-2020/libs/miniupnpc-2.1/Build/CMakeFiles/minixmlvalid.dir
+R:/Dev/games/GameJam/WPI-game-jam-2020/libs/miniupnpc-2.1/Build/CMakeFiles/testminixml.dir
+R:/Dev/games/GameJam/WPI-game-jam-2020/libs/miniupnpc-2.1/Build/CMakeFiles/testigddescparse.dir
+R:/Dev/games/GameJam/WPI-game-jam-2020/libs/miniupnpc-2.1/Build/CMakeFiles/testupnpreplyparse.dir
+R:/Dev/games/GameJam/WPI-game-jam-2020/libs/miniupnpc-2.1/Build/CMakeFiles/testminiwget.dir
+R:/Dev/games/GameJam/WPI-game-jam-2020/libs/miniupnpc-2.1/Build/CMakeFiles/edit_cache.dir
+R:/Dev/games/GameJam/WPI-game-jam-2020/libs/miniupnpc-2.1/Build/CMakeFiles/rebuild_cache.dir
+R:/Dev/games/GameJam/WPI-game-jam-2020/libs/miniupnpc-2.1/Build/CMakeFiles/list_install_components.dir
+R:/Dev/games/GameJam/WPI-game-jam-2020/libs/miniupnpc-2.1/Build/CMakeFiles/install/local.dir
+R:/Dev/games/GameJam/WPI-game-jam-2020/libs/miniupnpc-2.1/Build/CMakeFiles/install.dir

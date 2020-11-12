@@ -8,6 +8,7 @@
 #include <KW_frame.h>
 #include <KW_label.h>
 #include <KW_renderdriver_sdl2.h>
+#include <enet/enet.h>
 
 // #define IMGUI_IMPLEMENTATION
 // #include <misc/single_file/imgui_single_file.h>

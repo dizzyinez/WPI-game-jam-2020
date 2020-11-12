@@ -1,0 +1,3 @@
+R:\Dev\applications\cmake\bin\cmake.exe -E rm -f CMakeFiles\upnpc-shared.dir/objects.a
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\ar.exe cr CMakeFiles\upnpc-shared.dir/objects.a @CMakeFiles\upnpc-shared.dir\objects1.rsp
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe -Wl,--whole-archive CMakeFiles\upnpc-shared.dir/objects.a -Wl,--no-whole-archive -o upnpc-shared.exe -Wl,--out-implib,libupnpc-shared.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\upnpc-shared.dir\linklibs.rsp

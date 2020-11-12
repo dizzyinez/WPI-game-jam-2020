@@ -60,7 +60,7 @@ public:
                 if (!running)
                 {
                         address.host = ENET_HOST_ANY;
-                        address.port = 76743;
+                        address.port = 6743;
                         server = enet_host_create(&address, 32, 2, 0, 0);
                         if (server == NULL)
                         {

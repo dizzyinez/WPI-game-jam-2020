@@ -260,6 +260,9 @@ Trains_SOURCE_DIR:STATIC=R:/Dev/games/GameJam/WPI-game-jam-2020
 enet:FILEPATH=R:/Dev/games/GameJam/WPI-game-jam-2020/libs/ENet/lib/libenet.a
 
 //Path to a library.
+miniupnpc:FILEPATH=R:/Dev/games/GameJam/WPI-game-jam-2020/libs/miniupnpc-2.1/Build/libminiupnpc.dll.a
+
+//Path to a library.
 sdl:FILEPATH=R:/Dev/games/GameJam/WPI-game-jam-2020/libs/SDL2/lib/libSDL2.dll.a
 
 //Path to a library.

@@ -12,6 +12,8 @@ iostream
 stdio.h
 -
 
+../include/config.h
+
 ../include/core/Entity.hpp
 math/v2d.hpp
 ../include/core/math/v2d.hpp
@@ -43,6 +45,12 @@ net/server.hpp
 ../include/core/net/server.hpp
 net/client.hpp
 ../include/core/net/client.hpp
+array
+-
+scenes/menu.hpp
+../include/core/scenes/menu.hpp
+KW_gui.h
+-
 
 ../include/math/v2d.hpp
 
@@ -89,8 +97,8 @@ net/message.hpp
 ../include/scenes/menu.hpp
 core/Scene.hpp
 ../include/scenes/core/Scene.hpp
-core/net.hpp
-../include/scenes/core/net.hpp
+KW_gui.h
+-
 
 ../libs/ENet/include/enet/callbacks.h
 stdlib.h
@@ -145,10 +153,6 @@ winsock2.h
 -
 
 ../libs/KiWi/src/KW_bool.h
-
-../libs/KiWi/src/KW_button.h
-KW_widget.h
-../libs/KiWi/src/KW_widget.h
 
 ../libs/KiWi/src/KW_frame.h
 KW_widget.h
@@ -806,17 +810,25 @@ close_code.h
 
 ../libs/SDL2/include/SDL2/close_code.h
 
-R:/Dev/games/GameJam/WPI-game-jam-2020/src/Menu.cpp
-scenes/menu.hpp
-R:/Dev/games/GameJam/WPI-game-jam-2020/src/scenes/menu.hpp
+R:/Dev/games/GameJam/WPI-game-jam-2020/src/Client.cpp
+core/net.hpp
+R:/Dev/games/GameJam/WPI-game-jam-2020/src/core/net.hpp
 core/game.hpp
 R:/Dev/games/GameJam/WPI-game-jam-2020/src/core/game.hpp
-KW_gui.h
--
 KW_frame.h
 -
 KW_label.h
 -
-KW_button.h
+
+R:/Dev/games/GameJam/WPI-game-jam-2020/src/Server.cpp
+core/net.hpp
+R:/Dev/games/GameJam/WPI-game-jam-2020/src/core/net.hpp
+config.h
+R:/Dev/games/GameJam/WPI-game-jam-2020/src/config.h
+core/game.hpp
+R:/Dev/games/GameJam/WPI-game-jam-2020/src/core/game.hpp
+KW_frame.h
+-
+KW_label.h
 -
 

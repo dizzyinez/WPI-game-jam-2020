@@ -1,5 +1,7 @@
 #include "core/net.hpp"
 #include "core/game.hpp"
+#include <KW_frame.h>
+#include <KW_label.h>
 
 void Client::OnMessage(Message& msg)
 {
@@ -7,11 +9,11 @@ void Client::OnMessage(Message& msg)
         {
         case message_types::CONNECTION_APPROVED:
         {
-                std::cout << "connection approved" << std::endl;
-                Message out;
-                out.header.id = message_types::NEW_PLAYER;
-                out << short_string{"Dondomin"};
-                MessageServer(out);
+                // std::cout << "connection approved" << std::endl;
+                // Message out;
+                // out.header.id = message_types::NEW_PLAYER;
+                // out << short_string{"Client"};
+                // MessageServer(out);
         }
         break;
 
@@ -30,5 +32,25 @@ void Client::OnMessage(Message& msg)
                 // }
                 // l_main_menu = nullptr;
                 break;
+
+        case message_types::NEW_PLAYER:
+        {
+                int id;
+                msg >> id;
+                Player &player = player_list[id];
+                player.id = id;
+                player.exists;
+                msg >> player.color;
+                msg >> player.name;
+                std::cout << "new player | name: " << (char*)&player.name << " | id: " << player.id << std::endl;
+
+                KW_Rect geom = {0, player.id * 50, 270, 50};
+                player.widget = KW_CreateFrame(Game::gui, menu->players_frame, &geom);
+                geom = {0, 0, 270, 50};
+                player.name_label = KW_CreateLabel(Game::gui, player.widget, (char*)&player.name, &geom);
+                KW_SetLabelTextColor(player.name_label, player.color);
+
+                break;
+        }
         }
 }

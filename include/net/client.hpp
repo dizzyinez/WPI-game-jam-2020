@@ -24,8 +24,9 @@ public:
         ~client_interface() {}
         bool Connect()
         {
+                // enet_address_set_host_ip(&server_address, "127.0.0.1");
                 enet_address_set_host_ip(&server_address, "73.14.41.127");
-                server_address.port = 76743;
+                server_address.port = 6743;
                 server = enet_host_connect(client, &server_address, 2, 0);
                 if (server == NULL)
                 {

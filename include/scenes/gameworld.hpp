@@ -6,6 +6,9 @@
 #include "game/Rail.hpp"
 #include <array>
 
+class Client;
+class Server;
+
 class GameWorld : public Scene
 {
 public:

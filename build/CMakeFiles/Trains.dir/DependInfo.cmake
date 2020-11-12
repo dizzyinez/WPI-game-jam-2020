@@ -41,6 +41,7 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "../libs/ENet/include"
   "../libs/imgui"
   "../libs/KiWi/src"
+  "../libs/miniupnpc-2.1"
   )
 set(CMAKE_DEPENDS_CHECK_CXX
   "R:/Dev/games/GameJam/WPI-game-jam-2020/src/Client.cpp" "R:/Dev/games/GameJam/WPI-game-jam-2020/build/CMakeFiles/Trains.dir/src/Client.cpp.obj"
@@ -48,6 +49,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "R:/Dev/games/GameJam/WPI-game-jam-2020/src/Server.cpp" "R:/Dev/games/GameJam/WPI-game-jam-2020/build/CMakeFiles/Trains.dir/src/Server.cpp.obj"
   "R:/Dev/games/GameJam/WPI-game-jam-2020/src/game.cpp" "R:/Dev/games/GameJam/WPI-game-jam-2020/build/CMakeFiles/Trains.dir/src/game.cpp.obj"
   "R:/Dev/games/GameJam/WPI-game-jam-2020/src/main.cpp" "R:/Dev/games/GameJam/WPI-game-jam-2020/build/CMakeFiles/Trains.dir/src/main.cpp.obj"
+  "R:/Dev/games/GameJam/WPI-game-jam-2020/src/utils/upnp.cpp" "R:/Dev/games/GameJam/WPI-game-jam-2020/build/CMakeFiles/Trains.dir/src/utils/upnp.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -62,6 +64,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../libs/ENet/include"
   "../libs/imgui"
   "../libs/KiWi/src"
+  "../libs/miniupnpc-2.1"
   )
 
 # Targets to which this target links.

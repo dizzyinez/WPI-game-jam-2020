@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+R:/Dev/games/GameJam/WPI-game-jam-2020/libs/miniupnpc-2.1/minixml.c
+string.h
+-
+minixml.h
+R:/Dev/games/GameJam/WPI-game-jam-2020/libs/miniupnpc-2.1/minixml.h
+
+R:/Dev/games/GameJam/WPI-game-jam-2020/libs/miniupnpc-2.1/minixml.h
+
+R:/Dev/games/GameJam/WPI-game-jam-2020/libs/miniupnpc-2.1/testupnpreplyparse.c
+stdio.h
+-
+string.h
+-
+stdlib.h
+-
+upnpreplyparse.h
+R:/Dev/games/GameJam/WPI-game-jam-2020/libs/miniupnpc-2.1/upnpreplyparse.h
+
+R:/Dev/games/GameJam/WPI-game-jam-2020/libs/miniupnpc-2.1/upnpreplyparse.c
+stdlib.h
+-
+string.h
+-
+stdio.h
+-
+upnpreplyparse.h
+R:/Dev/games/GameJam/WPI-game-jam-2020/libs/miniupnpc-2.1/upnpreplyparse.h
+minixml.h
+R:/Dev/games/GameJam/WPI-game-jam-2020/libs/miniupnpc-2.1/minixml.h
+
+R:/Dev/games/GameJam/WPI-game-jam-2020/libs/miniupnpc-2.1/upnpreplyparse.h
+

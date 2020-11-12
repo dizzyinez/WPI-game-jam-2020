@@ -24,6 +24,7 @@ include_directories(c
 "${CMAKE_SOURCE_DIR}/libs/ENet/include/"
 "${CMAKE_SOURCE_DIR}/libs/imgui/"
 "${CMAKE_SOURCE_DIR}/libs/KiWi/src"
+"${CMAKE_SOURCE_DIR}/libs/miniupnpc-2.1"
 )
 
 SET(CMAKE_LIBRARY_PATH ${CMAKE_LIBRARY_PATH} 
@@ -32,6 +33,7 @@ SET(CMAKE_LIBRARY_PATH ${CMAKE_LIBRARY_PATH}
 "${CMAKE_SOURCE_DIR}/libs/SDL2ttf/lib"
 "${CMAKE_SOURCE_DIR}/libs/SDL2Mixer/lib"
 "${CMAKE_SOURCE_DIR}/libs/ENet/lib"
+"${CMAKE_SOURCE_DIR}/libs/miniupnpc-2.1/Build"
 "C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/lib"
 )
 
@@ -53,6 +55,7 @@ find_library_wrapper(sdlmixer libSDL2_mixer.dll.a)
 find_library_wrapper(enet libenet.a)
 find_library_wrapper(winsock ws2_32)
 find_library_wrapper(winmedia winmm)
+find_library_wrapper(miniupnpc libminiupnpc.dll.a)
 
 target_link_libraries(${PROJECT_NAME}
 ${sdlmain}
@@ -63,4 +66,5 @@ ${sdlmixer}
 ${enet}
 ${winsock}
 ${winmedia}
+${miniupnpc}
 )
