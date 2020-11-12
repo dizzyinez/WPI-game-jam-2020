@@ -19,6 +19,10 @@ struct City : public Entity
                 KW_SetWidgetTilesetSurface(button, tileset);
                 KW_AddWidgetMouseDownHandler(button, [](KW_Widget * widget, int b) {std::cout << "pressed" << std::endl;});
         }
+        ~City()
+        {
+                KW_DestroyWidget(button, 1);
+        }
         void UpdateUI()
         {
                 KW_Rect geom = {.x = (int)position.x, .y = (int)position.y, .w = (int)size.x, .h = (int)size.y};

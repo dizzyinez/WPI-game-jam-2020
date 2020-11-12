@@ -4,6 +4,7 @@
 #include "net/client.hpp"
 #include <array>
 #include "scenes/menu.hpp"
+#include "scenes/gameworld.hpp"
 #include <KW_gui.h>
 
 enum class message_types : uint32_t
@@ -43,6 +44,7 @@ public:
         void AddLocalPlayer(short_string name) {AddPlayer(name, true);}
         void OnStart();
         Menu* menu;
+        GameWorld* gameworld;
 private:
         int AddPlayer(short_string name, bool is_local);
         void AddPlayer(short_string name, ENetPeer* peer);
@@ -56,6 +58,7 @@ class Client : public net::client_interface<message_types>
 {
 public:
         Menu* menu;
+        GameWorld* gameworld;
 private:
         void OnMessage(Message &msg);
         std::array<Player, 256> player_list;

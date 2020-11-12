@@ -9,6 +9,7 @@
 #include <KW_label.h>
 #include <KW_renderdriver_sdl2.h>
 #include <enet/enet.h>
+#include <utils/upnp.hpp>
 
 // #define IMGUI_IMPLEMENTATION
 // #include <misc/single_file/imgui_single_file.h>
@@ -65,7 +66,7 @@ int main(int argc, char *argv[])
         KW_Surface* set = KW_LoadSurface(Game::kw_driver, "assets/tileset.png");
         Game::gui = KW_Init(Game::kw_driver, set);
 
-        Game::push_scene(new Menu);
+        Game::PushScene(new Menu);
 
         double update_accumulator = 0.0;
         double render_accumulator = 0.0;
@@ -101,6 +102,9 @@ int main(int argc, char *argv[])
                                 render_accumulator -= MIN_FRAME_TIME;
                 }
         }
+        if (upnp::upnp_initialized)
+                upnp::upnp_close(6743);
+
         std::cout << "game exited" << std::endl;
         KW_Quit(Game::gui);
         KW_ReleaseSurface(Game::kw_driver, set);

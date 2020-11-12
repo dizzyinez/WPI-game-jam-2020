@@ -9,16 +9,27 @@
 #include <KW_scrollbox.h>
 #include <KW_editbox.h>
 #include "utils/upnp.hpp"
+#include "scenes/gameworld.hpp"
 
 Server* translation_unit_server;
 Client* translation_unit_client;
 
-KW_Widget* players_frame;
 KW_Widget* name_box;
 KW_Widget* ip_box;
+Menu* tu_this;
 
+void Menu::OnWindowResize(int w, int h)
+{
+        // int y_off = 0;
+        // KW_Rect geom;
+        // KW_GetWidgetGeometry(players_frame, &geom);
+        // geom.x = ((float)w / 2.0);
+        // KW_SetWidgetGeometry(players_frame, &geom);
+}
 void Menu::Init()
 {
+        std::cout << "init\n";
+        tu_this = this;
         server = new Server();
         client = new Client();
         translation_unit_server = server;
@@ -38,7 +49,7 @@ void Menu::Init()
 
 
         geom = {20, 120, 220, 150};
-        KW_Widget* join_frame = KW_CreateFrame(Game::gui, NULL, &geom);
+        join_frame = KW_CreateFrame(Game::gui, NULL, &geom);
 
         geom = {20, 10, 180, 20};
         KW_Widget* ip_label = KW_CreateLabel(Game::gui, join_frame, "IP to connect to:", &geom);
@@ -80,13 +91,22 @@ void Menu::Init()
 
 
 
-        geom = {20, 280, 220, 110};
-        KW_Widget* host_frame = KW_CreateFrame(Game::gui, NULL, &geom);
+        geom = {20, 280, 220, 180};
+        host_frame = KW_CreateFrame(Game::gui, NULL, &geom);
+
+        KW_Widget* upnp_label = KW_CreateLabel(Game::gui, NULL, "Open Port With UPNP (lag)", NULL);
+        KW_SetLabelAlignment(upnp_label, KW_LABEL_ALIGN_CENTER, 0, KW_LABEL_ALIGN_MIDDLE, 0);
+
+        geom = {20, 20, 180, 40};
+        KW_Widget* upnp_button = KW_CreateButton(Game::gui, host_frame, upnp_label, &geom);
+        KW_AddWidgetMouseDownHandler(upnp_button, [](KW_Widget * widget, int b) {
+                upnp::upnp_open(6743);
+        });
 
         KW_Widget* host_label = KW_CreateLabel(Game::gui, NULL, "Host", NULL);
         KW_SetLabelAlignment(host_label, KW_LABEL_ALIGN_CENTER, 0, KW_LABEL_ALIGN_MIDDLE, 0);
 
-        geom = {20, 10, 180, 40};
+        geom = {20, 70, 180, 40};
         KW_Widget* host_button = KW_CreateButton(Game::gui, host_frame, host_label, &geom);
         KW_AddWidgetMouseDownHandler(host_button, [](KW_Widget * widget, int b) {
                 const char* name_char = KW_GetEditboxText(name_box);
@@ -106,13 +126,20 @@ void Menu::Init()
                 }
         });
 
-        KW_Widget* upnp_label = KW_CreateLabel(Game::gui, NULL, "Open Port With UPNP (lag)", NULL);
+        KW_Widget* play_label = KW_CreateLabel(Game::gui, NULL, "Start Game", NULL);
         KW_SetLabelAlignment(upnp_label, KW_LABEL_ALIGN_CENTER, 0, KW_LABEL_ALIGN_MIDDLE, 0);
 
-        geom = {20, 60, 180, 40};
-        KW_Widget* upnp_button = KW_CreateButton(Game::gui, host_frame, upnp_label, &geom);
-        KW_AddWidgetMouseDownHandler(upnp_button, [](KW_Widget * widget, int b) {
-                upnp::upnp_open(6743);
+        geom = {20, 120, 180, 40};
+        KW_Widget* play_button = KW_CreateButton(Game::gui, host_frame, play_label, &geom);
+        KW_AddWidgetMouseDownHandler(play_button, [](KW_Widget * widget, int b) {
+                if (translation_unit_server->running)
+                {
+                        GameWorld* gw = new GameWorld;
+                        Game::PushScene(gw);
+                        translation_unit_server->gameworld = gw;
+                        translation_unit_server->menu = nullptr;
+                        Game::PopScene(tu_this);
+                }
         });
 
 
@@ -137,4 +164,8 @@ void Menu::Render(float alpha)
 }
 void Menu::Clean()
 {
+        KW_DestroyWidget(players_frame, 1);
+        KW_DestroyWidget(host_frame, 1);
+        KW_DestroyWidget(name_frame, 1);
+        KW_DestroyWidget(join_frame, 1);
 }

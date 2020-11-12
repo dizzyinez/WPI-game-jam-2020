@@ -90,7 +90,11 @@ struct upnp
                         nullptr
                         );
                 if (error != 0)
+                {
                         std::cout << "upnp error code: " << error << std::endl;
+                        return false;
+                }
+                return true;
         }
 
         static char* get_wan_address()

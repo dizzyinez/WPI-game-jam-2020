@@ -1053,11 +1053,14 @@ CMakeFiles/Trains.dir/src/Client.cpp.obj: ../include/core/Entity.hpp
 CMakeFiles/Trains.dir/src/Client.cpp.obj: ../include/core/Scene.hpp
 CMakeFiles/Trains.dir/src/Client.cpp.obj: ../include/core/game.hpp
 CMakeFiles/Trains.dir/src/Client.cpp.obj: ../include/core/net.hpp
+CMakeFiles/Trains.dir/src/Client.cpp.obj: ../include/game/City.hpp
+CMakeFiles/Trains.dir/src/Client.cpp.obj: ../include/game/Rail.hpp
 CMakeFiles/Trains.dir/src/Client.cpp.obj: ../include/math/v2d.hpp
 CMakeFiles/Trains.dir/src/Client.cpp.obj: ../include/net/client.hpp
 CMakeFiles/Trains.dir/src/Client.cpp.obj: ../include/net/common.hpp
 CMakeFiles/Trains.dir/src/Client.cpp.obj: ../include/net/message.hpp
 CMakeFiles/Trains.dir/src/Client.cpp.obj: ../include/net/server.hpp
+CMakeFiles/Trains.dir/src/Client.cpp.obj: ../include/scenes/gameworld.hpp
 CMakeFiles/Trains.dir/src/Client.cpp.obj: ../include/scenes/menu.hpp
 CMakeFiles/Trains.dir/src/Client.cpp.obj: ../libs/ENet/include/enet/callbacks.h
 CMakeFiles/Trains.dir/src/Client.cpp.obj: ../libs/ENet/include/enet/enet.h
@@ -1067,6 +1070,7 @@ CMakeFiles/Trains.dir/src/Client.cpp.obj: ../libs/ENet/include/enet/types.h
 CMakeFiles/Trains.dir/src/Client.cpp.obj: ../libs/ENet/include/enet/unix.h
 CMakeFiles/Trains.dir/src/Client.cpp.obj: ../libs/ENet/include/enet/win32.h
 CMakeFiles/Trains.dir/src/Client.cpp.obj: ../libs/KiWi/src/KW_bool.h
+CMakeFiles/Trains.dir/src/Client.cpp.obj: ../libs/KiWi/src/KW_button.h
 CMakeFiles/Trains.dir/src/Client.cpp.obj: ../libs/KiWi/src/KW_frame.h
 CMakeFiles/Trains.dir/src/Client.cpp.obj: ../libs/KiWi/src/KW_gui.h
 CMakeFiles/Trains.dir/src/Client.cpp.obj: ../libs/KiWi/src/KW_label.h
@@ -1120,6 +1124,7 @@ CMakeFiles/Trains.dir/src/Client.cpp.obj: ../libs/SDL2/include/SDL2/SDL_version.
 CMakeFiles/Trains.dir/src/Client.cpp.obj: ../libs/SDL2/include/SDL2/SDL_video.h
 CMakeFiles/Trains.dir/src/Client.cpp.obj: ../libs/SDL2/include/SDL2/begin_code.h
 CMakeFiles/Trains.dir/src/Client.cpp.obj: ../libs/SDL2/include/SDL2/close_code.h
+CMakeFiles/Trains.dir/src/Client.cpp.obj: ../libs/SDL2Image/include/SDL2/SDL_image.h
 CMakeFiles/Trains.dir/src/Client.cpp.obj: ../src/Client.cpp
 
 CMakeFiles/Trains.dir/src/Menu.cpp.obj: ../include/Config.h
@@ -1128,11 +1133,14 @@ CMakeFiles/Trains.dir/src/Menu.cpp.obj: ../include/core/Entity.hpp
 CMakeFiles/Trains.dir/src/Menu.cpp.obj: ../include/core/Scene.hpp
 CMakeFiles/Trains.dir/src/Menu.cpp.obj: ../include/core/game.hpp
 CMakeFiles/Trains.dir/src/Menu.cpp.obj: ../include/core/net.hpp
+CMakeFiles/Trains.dir/src/Menu.cpp.obj: ../include/game/City.hpp
+CMakeFiles/Trains.dir/src/Menu.cpp.obj: ../include/game/Rail.hpp
 CMakeFiles/Trains.dir/src/Menu.cpp.obj: ../include/math/v2d.hpp
 CMakeFiles/Trains.dir/src/Menu.cpp.obj: ../include/net/client.hpp
 CMakeFiles/Trains.dir/src/Menu.cpp.obj: ../include/net/common.hpp
 CMakeFiles/Trains.dir/src/Menu.cpp.obj: ../include/net/message.hpp
 CMakeFiles/Trains.dir/src/Menu.cpp.obj: ../include/net/server.hpp
+CMakeFiles/Trains.dir/src/Menu.cpp.obj: ../include/scenes/gameworld.hpp
 CMakeFiles/Trains.dir/src/Menu.cpp.obj: ../include/scenes/menu.hpp
 CMakeFiles/Trains.dir/src/Menu.cpp.obj: ../include/utils/upnp.hpp
 CMakeFiles/Trains.dir/src/Menu.cpp.obj: ../libs/ENet/include/enet/callbacks.h
@@ -1199,6 +1207,7 @@ CMakeFiles/Trains.dir/src/Menu.cpp.obj: ../libs/SDL2/include/SDL2/SDL_version.h
 CMakeFiles/Trains.dir/src/Menu.cpp.obj: ../libs/SDL2/include/SDL2/SDL_video.h
 CMakeFiles/Trains.dir/src/Menu.cpp.obj: ../libs/SDL2/include/SDL2/begin_code.h
 CMakeFiles/Trains.dir/src/Menu.cpp.obj: ../libs/SDL2/include/SDL2/close_code.h
+CMakeFiles/Trains.dir/src/Menu.cpp.obj: ../libs/SDL2Image/include/SDL2/SDL_image.h
 CMakeFiles/Trains.dir/src/Menu.cpp.obj: ../libs/SDL2ttf/include/SDL2/SDL_ttf.h
 CMakeFiles/Trains.dir/src/Menu.cpp.obj: ../libs/miniupnpc-2.1/igd_desc_parse.h
 CMakeFiles/Trains.dir/src/Menu.cpp.obj: ../libs/miniupnpc-2.1/miniupnpc.h
@@ -1210,17 +1219,20 @@ CMakeFiles/Trains.dir/src/Menu.cpp.obj: ../libs/miniupnpc-2.1/upnpdev.h
 CMakeFiles/Trains.dir/src/Menu.cpp.obj: ../libs/miniupnpc-2.1/upnpreplyparse.h
 CMakeFiles/Trains.dir/src/Menu.cpp.obj: ../src/Menu.cpp
 
+CMakeFiles/Trains.dir/src/Server.cpp.obj: ../include/Config.h
 CMakeFiles/Trains.dir/src/Server.cpp.obj: ../include/common.hpp
-CMakeFiles/Trains.dir/src/Server.cpp.obj: ../include/config.h
 CMakeFiles/Trains.dir/src/Server.cpp.obj: ../include/core/Entity.hpp
 CMakeFiles/Trains.dir/src/Server.cpp.obj: ../include/core/Scene.hpp
 CMakeFiles/Trains.dir/src/Server.cpp.obj: ../include/core/game.hpp
 CMakeFiles/Trains.dir/src/Server.cpp.obj: ../include/core/net.hpp
+CMakeFiles/Trains.dir/src/Server.cpp.obj: ../include/game/City.hpp
+CMakeFiles/Trains.dir/src/Server.cpp.obj: ../include/game/Rail.hpp
 CMakeFiles/Trains.dir/src/Server.cpp.obj: ../include/math/v2d.hpp
 CMakeFiles/Trains.dir/src/Server.cpp.obj: ../include/net/client.hpp
 CMakeFiles/Trains.dir/src/Server.cpp.obj: ../include/net/common.hpp
 CMakeFiles/Trains.dir/src/Server.cpp.obj: ../include/net/message.hpp
 CMakeFiles/Trains.dir/src/Server.cpp.obj: ../include/net/server.hpp
+CMakeFiles/Trains.dir/src/Server.cpp.obj: ../include/scenes/gameworld.hpp
 CMakeFiles/Trains.dir/src/Server.cpp.obj: ../include/scenes/menu.hpp
 CMakeFiles/Trains.dir/src/Server.cpp.obj: ../libs/ENet/include/enet/callbacks.h
 CMakeFiles/Trains.dir/src/Server.cpp.obj: ../libs/ENet/include/enet/enet.h
@@ -1230,6 +1242,7 @@ CMakeFiles/Trains.dir/src/Server.cpp.obj: ../libs/ENet/include/enet/types.h
 CMakeFiles/Trains.dir/src/Server.cpp.obj: ../libs/ENet/include/enet/unix.h
 CMakeFiles/Trains.dir/src/Server.cpp.obj: ../libs/ENet/include/enet/win32.h
 CMakeFiles/Trains.dir/src/Server.cpp.obj: ../libs/KiWi/src/KW_bool.h
+CMakeFiles/Trains.dir/src/Server.cpp.obj: ../libs/KiWi/src/KW_button.h
 CMakeFiles/Trains.dir/src/Server.cpp.obj: ../libs/KiWi/src/KW_frame.h
 CMakeFiles/Trains.dir/src/Server.cpp.obj: ../libs/KiWi/src/KW_gui.h
 CMakeFiles/Trains.dir/src/Server.cpp.obj: ../libs/KiWi/src/KW_label.h
@@ -1283,6 +1296,7 @@ CMakeFiles/Trains.dir/src/Server.cpp.obj: ../libs/SDL2/include/SDL2/SDL_version.
 CMakeFiles/Trains.dir/src/Server.cpp.obj: ../libs/SDL2/include/SDL2/SDL_video.h
 CMakeFiles/Trains.dir/src/Server.cpp.obj: ../libs/SDL2/include/SDL2/begin_code.h
 CMakeFiles/Trains.dir/src/Server.cpp.obj: ../libs/SDL2/include/SDL2/close_code.h
+CMakeFiles/Trains.dir/src/Server.cpp.obj: ../libs/SDL2Image/include/SDL2/SDL_image.h
 CMakeFiles/Trains.dir/src/Server.cpp.obj: ../src/Server.cpp
 
 CMakeFiles/Trains.dir/src/game.cpp.obj: ../include/common.hpp
@@ -1350,6 +1364,7 @@ CMakeFiles/Trains.dir/src/main.cpp.obj: ../include/core/Scene.hpp
 CMakeFiles/Trains.dir/src/main.cpp.obj: ../include/core/game.hpp
 CMakeFiles/Trains.dir/src/main.cpp.obj: ../include/math/v2d.hpp
 CMakeFiles/Trains.dir/src/main.cpp.obj: ../include/scenes/menu.hpp
+CMakeFiles/Trains.dir/src/main.cpp.obj: ../include/utils/upnp.hpp
 CMakeFiles/Trains.dir/src/main.cpp.obj: ../libs/ENet/include/enet/callbacks.h
 CMakeFiles/Trains.dir/src/main.cpp.obj: ../libs/ENet/include/enet/enet.h
 CMakeFiles/Trains.dir/src/main.cpp.obj: ../libs/ENet/include/enet/list.h
@@ -1413,6 +1428,14 @@ CMakeFiles/Trains.dir/src/main.cpp.obj: ../libs/SDL2/include/SDL2/SDL_video.h
 CMakeFiles/Trains.dir/src/main.cpp.obj: ../libs/SDL2/include/SDL2/begin_code.h
 CMakeFiles/Trains.dir/src/main.cpp.obj: ../libs/SDL2/include/SDL2/close_code.h
 CMakeFiles/Trains.dir/src/main.cpp.obj: ../libs/SDL2Image/include/SDL2/SDL_image.h
+CMakeFiles/Trains.dir/src/main.cpp.obj: ../libs/miniupnpc-2.1/igd_desc_parse.h
+CMakeFiles/Trains.dir/src/main.cpp.obj: ../libs/miniupnpc-2.1/miniupnpc.h
+CMakeFiles/Trains.dir/src/main.cpp.obj: ../libs/miniupnpc-2.1/miniupnpc_declspec.h
+CMakeFiles/Trains.dir/src/main.cpp.obj: ../libs/miniupnpc-2.1/miniupnpctypes.h
+CMakeFiles/Trains.dir/src/main.cpp.obj: ../libs/miniupnpc-2.1/portlistingparse.h
+CMakeFiles/Trains.dir/src/main.cpp.obj: ../libs/miniupnpc-2.1/upnpcommands.h
+CMakeFiles/Trains.dir/src/main.cpp.obj: ../libs/miniupnpc-2.1/upnpdev.h
+CMakeFiles/Trains.dir/src/main.cpp.obj: ../libs/miniupnpc-2.1/upnpreplyparse.h
 CMakeFiles/Trains.dir/src/main.cpp.obj: ../src/main.cpp
 
 CMakeFiles/Trains.dir/src/utils/upnp.cpp.obj: ../src/utils/upnp.cpp
