@@ -920,6 +920,18 @@ miniupnpc_declspec.h
 
 ../libs/miniupnpc-2.1/upnpreplyparse.h
 
+R:/Dev/games/GameJam/WPI-game-jam-2020/src/Client.cpp
+core/net.hpp
+R:/Dev/games/GameJam/WPI-game-jam-2020/src/core/net.hpp
+core/game.hpp
+R:/Dev/games/GameJam/WPI-game-jam-2020/src/core/game.hpp
+KW_frame.h
+-
+KW_label.h
+-
+scenes/gameworld.hpp
+R:/Dev/games/GameJam/WPI-game-jam-2020/src/scenes/gameworld.hpp
+
 R:/Dev/games/GameJam/WPI-game-jam-2020/src/Menu.cpp
 scenes/menu.hpp
 R:/Dev/games/GameJam/WPI-game-jam-2020/src/scenes/menu.hpp
@@ -945,4 +957,16 @@ utils/upnp.hpp
 R:/Dev/games/GameJam/WPI-game-jam-2020/src/utils/upnp.hpp
 scenes/gameworld.hpp
 R:/Dev/games/GameJam/WPI-game-jam-2020/src/scenes/gameworld.hpp
+
+R:/Dev/games/GameJam/WPI-game-jam-2020/src/Server.cpp
+core/net.hpp
+R:/Dev/games/GameJam/WPI-game-jam-2020/src/core/net.hpp
+config.h
+R:/Dev/games/GameJam/WPI-game-jam-2020/src/config.h
+core/game.hpp
+R:/Dev/games/GameJam/WPI-game-jam-2020/src/core/game.hpp
+KW_frame.h
+-
+KW_label.h
+-
 

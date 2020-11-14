@@ -10,7 +10,7 @@ protected:
         // void update(float alpha);
 public:
         virtual void OnWindowResize(int w, int h) {};
-        virtual void Init() {};
+        virtual void Init() = 0;
         virtual void Update() = 0;
         virtual void Render(float alpha) = 0;
         virtual void Clean() = 0;

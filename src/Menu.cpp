@@ -139,6 +139,9 @@ void Menu::Init()
                         translation_unit_server->gameworld = gw;
                         translation_unit_server->menu = nullptr;
                         Game::PopScene(tu_this);
+                        Message msg;
+                        msg.header.id = message_types::START_GAME;
+                        translation_unit_server->MessageAllClients(msg);
                 }
         });
 

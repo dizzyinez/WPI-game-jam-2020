@@ -439,10 +439,24 @@ CMakeFiles/Trains.dir/src/game.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Trains.dir/src/game.cpp.s"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\X86_64~2.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S R:\Dev\games\GameJam\WPI-game-jam-2020\src\game.cpp -o CMakeFiles\Trains.dir\src\game.cpp.s
 
+CMakeFiles/Trains.dir/src/gameworld.cpp.obj: CMakeFiles/Trains.dir/flags.make
+CMakeFiles/Trains.dir/src/gameworld.cpp.obj: CMakeFiles/Trains.dir/includes_CXX.rsp
+CMakeFiles/Trains.dir/src/gameworld.cpp.obj: ../src/gameworld.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=R:\Dev\games\GameJam\WPI-game-jam-2020\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/Trains.dir/src/gameworld.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\X86_64~2.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Trains.dir\src\gameworld.cpp.obj -c R:\Dev\games\GameJam\WPI-game-jam-2020\src\gameworld.cpp
+
+CMakeFiles/Trains.dir/src/gameworld.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Trains.dir/src/gameworld.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\X86_64~2.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E R:\Dev\games\GameJam\WPI-game-jam-2020\src\gameworld.cpp > CMakeFiles\Trains.dir\src\gameworld.cpp.i
+
+CMakeFiles/Trains.dir/src/gameworld.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Trains.dir/src/gameworld.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\X86_64~2.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S R:\Dev\games\GameJam\WPI-game-jam-2020\src\gameworld.cpp -o CMakeFiles\Trains.dir\src\gameworld.cpp.s
+
 CMakeFiles/Trains.dir/src/main.cpp.obj: CMakeFiles/Trains.dir/flags.make
 CMakeFiles/Trains.dir/src/main.cpp.obj: CMakeFiles/Trains.dir/includes_CXX.rsp
 CMakeFiles/Trains.dir/src/main.cpp.obj: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=R:\Dev\games\GameJam\WPI-game-jam-2020\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/Trains.dir/src/main.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=R:\Dev\games\GameJam\WPI-game-jam-2020\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/Trains.dir/src/main.cpp.obj"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\X86_64~2.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Trains.dir\src\main.cpp.obj -c R:\Dev\games\GameJam\WPI-game-jam-2020\src\main.cpp
 
 CMakeFiles/Trains.dir/src/main.cpp.i: cmake_force
@@ -456,7 +470,7 @@ CMakeFiles/Trains.dir/src/main.cpp.s: cmake_force
 CMakeFiles/Trains.dir/src/utils/upnp.cpp.obj: CMakeFiles/Trains.dir/flags.make
 CMakeFiles/Trains.dir/src/utils/upnp.cpp.obj: CMakeFiles/Trains.dir/includes_CXX.rsp
 CMakeFiles/Trains.dir/src/utils/upnp.cpp.obj: ../src/utils/upnp.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=R:\Dev\games\GameJam\WPI-game-jam-2020\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/Trains.dir/src/utils/upnp.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=R:\Dev\games\GameJam\WPI-game-jam-2020\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/Trains.dir/src/utils/upnp.cpp.obj"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\X86_64~2.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Trains.dir\src\utils\upnp.cpp.obj -c R:\Dev\games\GameJam\WPI-game-jam-2020\src\utils\upnp.cpp
 
 CMakeFiles/Trains.dir/src/utils/upnp.cpp.i: cmake_force
@@ -495,6 +509,7 @@ Trains_OBJECTS = \
 "CMakeFiles/Trains.dir/src/Menu.cpp.obj" \
 "CMakeFiles/Trains.dir/src/Server.cpp.obj" \
 "CMakeFiles/Trains.dir/src/game.cpp.obj" \
+"CMakeFiles/Trains.dir/src/gameworld.cpp.obj" \
 "CMakeFiles/Trains.dir/src/main.cpp.obj" \
 "CMakeFiles/Trains.dir/src/utils/upnp.cpp.obj"
 
@@ -527,6 +542,7 @@ Trains.exe: CMakeFiles/Trains.dir/src/Client.cpp.obj
 Trains.exe: CMakeFiles/Trains.dir/src/Menu.cpp.obj
 Trains.exe: CMakeFiles/Trains.dir/src/Server.cpp.obj
 Trains.exe: CMakeFiles/Trains.dir/src/game.cpp.obj
+Trains.exe: CMakeFiles/Trains.dir/src/gameworld.cpp.obj
 Trains.exe: CMakeFiles/Trains.dir/src/main.cpp.obj
 Trains.exe: CMakeFiles/Trains.dir/src/utils/upnp.cpp.obj
 Trains.exe: CMakeFiles/Trains.dir/build.make
@@ -542,7 +558,7 @@ Trains.exe: ../libs/miniupnpc-2.1/Build/libminiupnpc.dll.a
 Trains.exe: CMakeFiles/Trains.dir/linklibs.rsp
 Trains.exe: CMakeFiles/Trains.dir/objects1.rsp
 Trains.exe: CMakeFiles/Trains.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=R:\Dev\games\GameJam\WPI-game-jam-2020\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Linking CXX executable Trains.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=R:\Dev\games\GameJam\WPI-game-jam-2020\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Linking CXX executable Trains.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Trains.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

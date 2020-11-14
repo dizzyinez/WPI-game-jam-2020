@@ -25,6 +25,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Trains.dir/src/Menu.cpp.obj"
   "CMakeFiles/Trains.dir/src/Server.cpp.obj"
   "CMakeFiles/Trains.dir/src/game.cpp.obj"
+  "CMakeFiles/Trains.dir/src/gameworld.cpp.obj"
   "CMakeFiles/Trains.dir/src/main.cpp.obj"
   "CMakeFiles/Trains.dir/src/utils/upnp.cpp.obj"
   "Trains.exe"

@@ -12,12 +12,13 @@ class Server;
 class GameWorld : public Scene
 {
 public:
+        void OnWindowResize(int w, int h) {}
         void Init();
-        void Update() {}
+        void Update();
         void Render(float alpha);
         void Clean();
 private:
-        City* create_city(uint8_t id, float x_pos = 0, float y_pos = 0);
+        City* create_city(uint8_t id, float x_pos, float y_pos);
         Rail* create_rail(City* city1, City* city2);
         std::vector<Rail*> rails;
         std::array<City*, 256> cities;

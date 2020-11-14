@@ -2,6 +2,7 @@
 #include "core/game.hpp"
 #include <KW_frame.h>
 #include <KW_label.h>
+#include "scenes/gameworld.hpp"
 
 void Client::OnMessage(Message& msg)
 {
@@ -19,6 +20,12 @@ void Client::OnMessage(Message& msg)
 
         case message_types::START_GAME:
                 std::cout << "Game Started" << std::endl;
+                if (menu != nullptr)
+                {
+                        gameworld = new GameWorld;
+                        Game::PushScene(gameworld);
+                        Game::PopScene(menu);
+                }
                 // if (l_main_menu != nullptr && l_game == nullptr)
                 // {
                 //         l_game = new L_Game();

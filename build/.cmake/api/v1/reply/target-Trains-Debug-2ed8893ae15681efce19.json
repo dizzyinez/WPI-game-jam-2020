@@ -192,7 +192,8 @@
 				24,
 				25,
 				26,
-				27
+				27,
+				28
 			]
 		}
 	],
@@ -301,14 +302,14 @@
 				24,
 				25,
 				26,
-				27
+				27,
+				28
 			]
 		},
 		{
 			"name" : "Header Files",
 			"sourceIndexes" : 
 			[
-				28,
 				29,
 				30,
 				31,
@@ -325,7 +326,8 @@
 				42,
 				43,
 				44,
-				45
+				45,
+				46
 			]
 		}
 	],
@@ -485,6 +487,12 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 1,
 			"path" : "src/game.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "src/gameworld.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{

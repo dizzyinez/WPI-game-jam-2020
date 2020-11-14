@@ -843,6 +843,33 @@ src/game.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trains.dir\build.make CMakeFiles/Trains.dir/src/game.cpp.s
 .PHONY : src/game.cpp.s
 
+src/gameworld.obj: src/gameworld.cpp.obj
+
+.PHONY : src/gameworld.obj
+
+# target to build an object file
+src/gameworld.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trains.dir\build.make CMakeFiles/Trains.dir/src/gameworld.cpp.obj
+.PHONY : src/gameworld.cpp.obj
+
+src/gameworld.i: src/gameworld.cpp.i
+
+.PHONY : src/gameworld.i
+
+# target to preprocess a source file
+src/gameworld.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trains.dir\build.make CMakeFiles/Trains.dir/src/gameworld.cpp.i
+.PHONY : src/gameworld.cpp.i
+
+src/gameworld.s: src/gameworld.cpp.s
+
+.PHONY : src/gameworld.s
+
+# target to generate assembly for a file
+src/gameworld.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trains.dir\build.make CMakeFiles/Trains.dir/src/gameworld.cpp.s
+.PHONY : src/gameworld.cpp.s
+
 src/main.obj: src/main.cpp.obj
 
 .PHONY : src/main.obj
@@ -984,6 +1011,9 @@ help:
 	@echo ... src/game.obj
 	@echo ... src/game.i
 	@echo ... src/game.s
+	@echo ... src/gameworld.obj
+	@echo ... src/gameworld.i
+	@echo ... src/gameworld.s
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s
