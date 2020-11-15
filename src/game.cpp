@@ -19,9 +19,14 @@ void Game::Update()
                                 event.window.data1,
                                 event.window.data2);
                         break;
+
+                case SDL_MOUSEMOTION:
+                        mouse_coords = {event.motion.x, event.motion.y};
+                        break;
                 }
         }
         scenes.back()->Update();
+        update_queue();
 }
 
 void Game::Render(float alpha)
@@ -71,3 +76,18 @@ void Game::pop_scene(Scene* scene)
         }
 }
 
+void Game::RemoveWidget(KW_Widget* widget)
+{
+        widgets_to_delete.emplace_back(widget);
+}
+
+void Game::FlushWidgets()
+{
+        for (KW_Widget* w : widgets_to_delete)
+        {
+                KW_Rect geom = {-99999, -99999, 0, 0};
+                KW_SetWidgetGeometry(w, &geom);
+                // KW_DestroyWidget(w, 1);
+        }
+        widgets_to_delete.clear();
+}

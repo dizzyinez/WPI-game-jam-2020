@@ -16,24 +16,27 @@ enum class message_types : uint32_t
         PLAYER_ACK,
         START_GAME,
         DISCONNECTION,
+        NEW_RAIL,
+        NEW_TRAIN,
 };
 
 using short_string = std::array<char, 20>;
 
 struct ClientData
 {
-        int index;
+        uint8_t index;
 };
 
 struct Player
 {
         short_string name;
-        int id = 0;
+        uint8_t id = 0;
         bool exists = false;
         bool local = false;
         KW_Widget* widget;
         KW_Widget* name_label;
         KW_Color color;
+        uint32_t money = 100;//Ə
 };
 
 using Message = net::message<message_types>;
@@ -45,13 +48,13 @@ public:
         void OnStart();
         Menu* menu;
         GameWorld* gameworld;
+        std::array<Player, 256> player_list;
 private:
         int AddPlayer(short_string name, bool is_local);
         void AddPlayer(short_string name, ENetPeer* peer);
         bool OnClientConnect(ENetPeer* peer);
         void OnClientDisconnect(ENetPeer* peer);
         void OnMessage(Message& msg, ENetPeer* peer);
-        std::array<Player, 256> player_list;
 };
 
 class Client : public net::client_interface<message_types>
@@ -59,7 +62,7 @@ class Client : public net::client_interface<message_types>
 public:
         Menu* menu;
         GameWorld* gameworld;
+        std::array<Player, 256> player_list;
 private:
         void OnMessage(Message &msg);
-        std::array<Player, 256> player_list;
 };

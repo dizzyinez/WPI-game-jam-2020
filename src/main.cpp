@@ -34,7 +34,7 @@ int main(int argc, char *argv[])
                 return -1;
         }
         //Create window
-        Game::window = SDL_CreateWindow("Train Game", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, SCREEN_WIDTH, SCREEN_HEIGHT, SDL_WINDOW_SHOWN | SDL_WINDOW_RESIZABLE);
+        Game::window = SDL_CreateWindow("Train Game", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, SCREEN_WIDTH, SCREEN_HEIGHT, SDL_WINDOW_SHOWN);
         if (Game::window == nullptr)
         {
                 printf("Window could not be created! SDL_Error: %s\n", SDL_GetError());
@@ -83,12 +83,11 @@ int main(int argc, char *argv[])
                 while (update_accumulator >= SECONDS_PER_UPDATE)
                 {
                         //handle events
-                        KW_ProcessEvents(Game::gui);
                         Game::Update();
                         update_accumulator -= SECONDS_PER_UPDATE;
-                }
-                if (render_accumulator >= MIN_FRAME_TIME)
-                {
+                        Game::FlushWidgets();
+                        KW_ProcessEvents(Game::gui);
+
                         // ImGui_ImplSDL2_NewFrame(Game::window);
                         // ImGui_ImplOpenGL3_NewFrame();
                         // ImGui::NewFrame();

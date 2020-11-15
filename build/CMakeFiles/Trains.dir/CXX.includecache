@@ -6,8 +6,6 @@
 
 #IncludeRegexTransform: 
 
-../include/Config.h
-
 ../include/common.hpp
 iostream
 -
@@ -37,6 +35,8 @@ SDL.h
 -
 KW_gui.h
 -
+math/v2d.hpp
+../include/core/math/v2d.hpp
 
 ../include/core/net.hpp
 net/message.hpp
@@ -69,6 +69,22 @@ core/Game.hpp
 ../include/game/core/Game.hpp
 game/City.hpp
 ../include/game/game/City.hpp
+cmath
+-
+utils/distance.hpp
+../include/game/utils/distance.hpp
+
+../include/game/Train.hpp
+core/Game.hpp
+../include/game/core/Game.hpp
+game/City.hpp
+../include/game/game/City.hpp
+game/Rail.hpp
+../include/game/game/Rail.hpp
+utils/distance.hpp
+../include/game/utils/distance.hpp
+vector
+-
 
 ../include/math/v2d.hpp
 
@@ -123,7 +139,11 @@ game/City.hpp
 ../include/scenes/game/City.hpp
 game/Rail.hpp
 ../include/scenes/game/Rail.hpp
+game/Train.hpp
+../include/scenes/game/Train.hpp
 array
+-
+KW_gui.h
 -
 
 ../include/scenes/menu.hpp
@@ -132,16 +152,8 @@ core/Scene.hpp
 KW_gui.h
 -
 
-../include/utils/upnp.hpp
-miniupnpc.h
--
-upnpcommands.h
--
-portlistingparse.h
-../include/utils/portlistingparse.h
-upnpreplyparse.h
-../include/utils/upnpreplyparse.h
-iostream
+../include/utils/distance.hpp
+cmath
 -
 
 ../libs/ENet/include/enet/callbacks.h
@@ -888,59 +900,15 @@ begin_code.h
 close_code.h
 ../libs/SDL2ttf/include/SDL2/close_code.h
 
-../libs/miniupnpc-2.1/igd_desc_parse.h
-
-../libs/miniupnpc-2.1/miniupnpc.h
-miniupnpc_declspec.h
-../libs/miniupnpc-2.1/miniupnpc_declspec.h
-igd_desc_parse.h
-../libs/miniupnpc-2.1/igd_desc_parse.h
-upnpdev.h
-../libs/miniupnpc-2.1/upnpdev.h
-
-../libs/miniupnpc-2.1/miniupnpc_declspec.h
-
-../libs/miniupnpc-2.1/miniupnpctypes.h
-
-../libs/miniupnpc-2.1/portlistingparse.h
-miniupnpc_declspec.h
-../libs/miniupnpc-2.1/miniupnpc_declspec.h
-miniupnpctypes.h
-../libs/miniupnpc-2.1/miniupnpctypes.h
-
-../libs/miniupnpc-2.1/upnpcommands.h
-miniupnpc_declspec.h
-../libs/miniupnpc-2.1/miniupnpc_declspec.h
-miniupnpctypes.h
-../libs/miniupnpc-2.1/miniupnpctypes.h
-
-../libs/miniupnpc-2.1/upnpdev.h
-miniupnpc_declspec.h
-../libs/miniupnpc-2.1/miniupnpc_declspec.h
-
-../libs/miniupnpc-2.1/upnpreplyparse.h
-
-R:/Dev/games/GameJam/WPI-game-jam-2020/src/Client.cpp
-core/net.hpp
-R:/Dev/games/GameJam/WPI-game-jam-2020/src/core/net.hpp
-core/game.hpp
-R:/Dev/games/GameJam/WPI-game-jam-2020/src/core/game.hpp
-KW_frame.h
--
-KW_label.h
--
+R:/Dev/games/GameJam/WPI-game-jam-2020/src/gameworld.cpp
 scenes/gameworld.hpp
 R:/Dev/games/GameJam/WPI-game-jam-2020/src/scenes/gameworld.hpp
-
-R:/Dev/games/GameJam/WPI-game-jam-2020/src/Menu.cpp
-scenes/menu.hpp
-R:/Dev/games/GameJam/WPI-game-jam-2020/src/scenes/menu.hpp
 core/game.hpp
 R:/Dev/games/GameJam/WPI-game-jam-2020/src/core/game.hpp
 core/net.hpp
 R:/Dev/games/GameJam/WPI-game-jam-2020/src/core/net.hpp
-Config.h
-R:/Dev/games/GameJam/WPI-game-jam-2020/src/Config.h
+algorithm
+-
 KW_gui.h
 -
 KW_frame.h
@@ -953,20 +921,6 @@ KW_scrollbox.h
 -
 KW_editbox.h
 -
-utils/upnp.hpp
-R:/Dev/games/GameJam/WPI-game-jam-2020/src/utils/upnp.hpp
-scenes/gameworld.hpp
-R:/Dev/games/GameJam/WPI-game-jam-2020/src/scenes/gameworld.hpp
-
-R:/Dev/games/GameJam/WPI-game-jam-2020/src/Server.cpp
-core/net.hpp
-R:/Dev/games/GameJam/WPI-game-jam-2020/src/core/net.hpp
-config.h
-R:/Dev/games/GameJam/WPI-game-jam-2020/src/config.h
-core/game.hpp
-R:/Dev/games/GameJam/WPI-game-jam-2020/src/core/game.hpp
-KW_frame.h
--
-KW_label.h
+string
 -
 

@@ -16,6 +16,7 @@ Client* translation_unit_client;
 
 KW_Widget* name_box;
 KW_Widget* ip_box;
+KW_Widget* tu_pf;
 Menu* tu_this;
 
 void Menu::OnWindowResize(int w, int h)
@@ -65,14 +66,18 @@ void Menu::Init()
         KW_Widget* join_button = KW_CreateButton(Game::gui, join_frame, join_label, &geom);
         KW_AddWidgetMouseDownHandler(join_button, [](KW_Widget * widget, int b) {
                 const char* name_char = KW_GetEditboxText(name_box);
-                if (strlen(name_char) > 0)
+                int length = strlen(name_char);
+                if (length > 0)
                 {
                         if (!translation_unit_server->running && !translation_unit_client->IsConnected())
                         {
                                 if (translation_unit_client->Connect())
                                 {
                                         short_string name;
-                                        memcpy(&name, KW_GetEditboxText(name_box), strlen(name_char) < sizeof(short_string) ? strlen(name_char) : sizeof(short_string));
+                                        strncpy(reinterpret_cast<char*>(&name), name_char, sizeof(short_string));
+                                        char end = '\0';
+                                        memcpy(&name + sizeof(short_string), &end, 1);
+                                        translation_unit_server->AddLocalPlayer(name);
                                         Message msg;
                                         msg.header.id = message_types::CONNECTION_REQUEST;
                                         int version_major = VERSION_MAJOR;
@@ -110,13 +115,17 @@ void Menu::Init()
         KW_Widget* host_button = KW_CreateButton(Game::gui, host_frame, host_label, &geom);
         KW_AddWidgetMouseDownHandler(host_button, [](KW_Widget * widget, int b) {
                 const char* name_char = KW_GetEditboxText(name_box);
-                if (strlen(name_char) > 0)
+                int length = strlen(name_char);
+                if (length > 0)
                 {
                         if (!translation_unit_server->running && !translation_unit_client->IsConnected())
                         {
                                 translation_unit_server->Start();
+                                translation_unit_server->OnStart();
                                 short_string name;
-                                memcpy(&name, KW_GetEditboxText(name_box), strlen(name_char) < sizeof(short_string) ? strlen(name_char) : sizeof(short_string));
+                                strncpy(reinterpret_cast<char*>(&name), name_char, sizeof(short_string));
+                                char end = '\0';
+                                memcpy(&name + sizeof(short_string), &end, 1);
                                 translation_unit_server->AddLocalPlayer(name);
                         }
                 }
@@ -138,6 +147,9 @@ void Menu::Init()
                         Game::PushScene(gw);
                         translation_unit_server->gameworld = gw;
                         translation_unit_server->menu = nullptr;
+                        gw->server = translation_unit_server;
+                        gw->client = translation_unit_client;
+                        gw->players_frame = tu_pf;
                         Game::PopScene(tu_this);
                         Message msg;
                         msg.header.id = message_types::START_GAME;
@@ -145,10 +157,10 @@ void Menu::Init()
                 }
         });
 
-
-        geom = {260, 10, 280, 300};
+        geom = {13, 460, 235, 250};
         players_frame = KW_CreateScrollbox(Game::gui, NULL, &geom);
         KW_ScrollboxHideHorizontal(players_frame);
+        tu_pf = players_frame;
 }
 void Menu::Update()
 {
@@ -167,8 +179,8 @@ void Menu::Render(float alpha)
 }
 void Menu::Clean()
 {
-        KW_DestroyWidget(players_frame, 1);
-        KW_DestroyWidget(host_frame, 1);
-        KW_DestroyWidget(name_frame, 1);
-        KW_DestroyWidget(join_frame, 1);
+        // Game::RemoveWidget(players_frame);
+        Game::RemoveWidget(host_frame);
+        Game::RemoveWidget(name_frame);
+        Game::RemoveWidget(join_frame);
 }

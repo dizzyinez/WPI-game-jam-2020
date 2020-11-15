@@ -18,7 +18,7 @@ public:
         KW_Widget* name_frame;
         KW_Widget* join_frame;
         KW_Widget* host_frame;
-private:
+
         Server* server;
         Client* client;
 };

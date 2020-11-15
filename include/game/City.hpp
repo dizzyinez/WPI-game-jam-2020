@@ -7,17 +7,24 @@
 struct City : public Entity
 {
         uint8_t city_id;
-        inline static SDL_Texture* city_icon;
+        uint8_t city_size;
+        v2d center;
+        inline static SDL_Texture* city_icons[3];
+        inline static v2d sizes[3] = {
+                {17, 9},
+                {19, 22},
+                {25, 46}
+        };
         inline static KW_Surface* tileset;
         KW_Widget* button;
-        City(uint8_t city_id_)
-                : city_id(city_id_)
+        City(uint8_t city_id_, uint8_t city_size_)
+                : city_id(city_id_), city_size(city_size_)
         {
-                texture = city_icon;
-                KW_Rect geom = {.x = 10, .y = 8, .w = 32, .h = 32};
+                texture = city_icons[city_size];
+                size = sizes[city_size] * 2;
+                KW_Rect geom = {10, 8, 32, 2};
                 button = KW_CreateButton(Game::gui, NULL, NULL, &geom);
                 KW_SetWidgetTilesetSurface(button, tileset);
-                KW_AddWidgetMouseDownHandler(button, [](KW_Widget * widget, int b) {std::cout << "pressed" << std::endl;});
         }
         ~City()
         {
@@ -25,7 +32,9 @@ struct City : public Entity
         }
         void UpdateUI()
         {
-                KW_Rect geom = {.x = (int)position.x, .y = (int)position.y, .w = (int)size.x, .h = (int)size.y};
+                KW_Rect geom = {(int)position.x, (int)position.y, (int)size.x, (int)size.y};
                 KW_SetWidgetGeometry(button, &geom);
+
+                center = {position.x + (float)size.x / 2.0f, position.y + (float)size.y / 2.0f};
         }
 };

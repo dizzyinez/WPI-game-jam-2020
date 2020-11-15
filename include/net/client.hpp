@@ -63,6 +63,7 @@ public:
                         {
                                 message<T> msg;
                                 memcpy(&msg.header, event.packet->data, sizeof(message_header<T>));
+                                std::cout << "message" << std::endl;
                                 if (msg.header.body_size > 0)
                                 {
                                         msg.body.resize(msg.header.body_size);
