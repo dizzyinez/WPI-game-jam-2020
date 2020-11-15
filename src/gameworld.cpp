@@ -9,6 +9,8 @@
 #include <KW_scrollbox.h>
 #include <KW_editbox.h>
 #include <string>
+#include "utils/distance.hpp"
+#include <SDL_mixer.h>
 
 City* from_city = nullptr;
 City* to_city = nullptr;
@@ -25,6 +27,7 @@ KW_Widget* players_frame;
 
 KW_Widget* confirm_frame;
 KW_Widget* confirm_button;
+KW_Widget* decline_button;
 KW_Widget* confirm_label;
 void remove_frame()
 {
@@ -32,6 +35,7 @@ void remove_frame()
         KW_SetWidgetGeometry(select_frame, &geom);
 }
 
+int temp_cost;
 City* temp_city;
 std::vector<City*> train_stops;
 //the gui library was written in c, so I can't use lambda captures, so I have to do this -_-
@@ -44,6 +48,102 @@ City* get_city_from_button(KW_Widget* button)
         }
         return nullptr;
 };
+
+void train_confirm(KW_Widget * widget, int b);
+void train_decline(KW_Widget * widget, int b) {
+        Mix_PlayChannel(0, Game::select, 0);
+        KW_Rect geom = {-9999, 0, 135, 80}; KW_SetWidgetGeometry(confirm_frame, &geom);
+        train_stops.clear();
+        KW_RemoveWidgetMouseDownHandler(confirm_button, train_confirm);
+        KW_RemoveWidgetMouseDownHandler(decline_button, train_decline);
+}
+
+void train_confirm(KW_Widget * widget, int b) {
+        Mix_PlayChannel(2, Game::train, 0);
+        KW_Rect geom = {-9999, 0, 135, 80}; KW_SetWidgetGeometry(confirm_frame, &geom);
+        Message msg;
+        msg.header.id = message_types::NEW_TRAIN;
+        for (auto it = train_stops.rbegin(); it != train_stops.rend(); ++it)
+        {
+                msg << (*it)->city_id;
+        }
+        msg << train_stops.size();
+        if (tu_server->running)
+        {
+                if (player_list->at(player_id).money >= temp_cost)
+                {
+                        Train* train = tu_gw->create_train(player_id);
+
+                        for (City * stop : train_stops)
+                        {
+                                train->stops.emplace_back(stop);
+                        }
+                        msg << player_id;
+                        tu_server->MessageAllClients(msg);
+
+                        // player_list->at(player_id).money -= temp_cost;
+                        // Message md;
+                        // md.header.id = message_types::MONEY_DELTA;
+                        // // md << temp_cost << player_id;
+                        // md << temp_cost;
+                        // md << player_id;
+                        // tu_server->MessageAllClients(md);
+                        // tu_server->flush();
+                }
+        }
+        else if (tu_client->IsConnected())
+        {
+                msg << temp_cost;
+                tu_client->MessageServer(msg);
+        }
+        train_stops.clear();
+        KW_RemoveWidgetMouseDownHandler(confirm_button, train_confirm);
+        KW_RemoveWidgetMouseDownHandler(decline_button, train_decline);
+}
+
+void rail_decline(KW_Widget * widget, int b);
+void rail_confirm(KW_Widget * widget, int b) {
+        Mix_PlayChannel(1, Game::rail, 0);
+        KW_Rect geom = {-9999, 0, 135, 80}; KW_SetWidgetGeometry(confirm_frame, &geom);
+        if (tu_client->IsConnected())
+        {
+                Message msg;
+                msg.header.id = message_types::NEW_RAIL;
+                msg << to_city->city_id << from_city->city_id << temp_cost;
+                tu_client->MessageServer(msg);
+        }
+        else if (tu_server->running)
+        {
+                if (player_list->at(player_id).money >= temp_cost)
+                {
+                        tu_gw->create_rail(from_city, to_city, player_id);
+                        Message msg;
+                        msg.header.id = message_types::NEW_RAIL;
+                        msg << to_city->city_id << from_city->city_id << player_id;
+                        tu_server->MessageAllClients(msg);
+
+                        player_list->at(player_id).money -= temp_cost;
+                        Message md;
+                        md.header.id = message_types::MONEY_DELTA;
+                        md << temp_cost << player_id;
+                        tu_server->MessageAllClients(md);
+                }
+        }
+        from_city = nullptr;
+        to_city = nullptr;
+
+        KW_RemoveWidgetMouseDownHandler(confirm_button, rail_confirm);
+        KW_RemoveWidgetMouseDownHandler(decline_button, rail_decline);
+}
+void rail_decline(KW_Widget * widget, int b) {
+        Mix_PlayChannel(0, Game::select, 0);
+        KW_Rect geom = {-9999, 0, 135, 80}; KW_SetWidgetGeometry(confirm_frame, &geom);
+        from_city = nullptr;
+        to_city = nullptr;
+        KW_RemoveWidgetMouseDownHandler(confirm_button, rail_confirm);
+        KW_RemoveWidgetMouseDownHandler(decline_button, rail_decline);
+}
+
 
 
 void GameWorld::Init()
@@ -91,11 +191,14 @@ void GameWorld::Init()
         geom = {80, 0, 10, 10};
         KW_Widget* exit_label = KW_CreateLabel(Game::gui, NULL, "X", NULL);
         KW_Widget* exit_button = KW_CreateButton(Game::gui, select_frame, exit_label, &geom);
-        KW_AddWidgetMouseDownHandler(exit_button, [](KW_Widget * widget, int b) {remove_frame();});
+        KW_AddWidgetMouseDownHandler(exit_button, [](KW_Widget * widget, int b) {
+                Mix_PlayChannel(0, Game::select, 0); remove_frame();
+        });
         geom = {5, 10, 80, 30};
         KW_Widget* track_label = KW_CreateLabel(Game::gui, NULL, "New Track", NULL);
         KW_Widget* track_button = KW_CreateButton(Game::gui, select_frame, track_label, &geom);
         KW_AddWidgetMouseDownHandler(track_button, [](KW_Widget * widget, int b) {
+                Mix_PlayChannel(0, Game::select, 0);
                 remove_frame();
                 select_mode = 1;
                 if (temp_city != nullptr)
@@ -116,6 +219,7 @@ void GameWorld::Init()
         KW_Widget* train_label = KW_CreateLabel(Game::gui, NULL, "New Train", NULL);
         KW_Widget* train_button = KW_CreateButton(Game::gui, select_frame, train_label, &geom);
         KW_AddWidgetMouseDownHandler(train_button, [](KW_Widget * widget, int b) {
+                Mix_PlayChannel(0, Game::select, 0);
                 remove_frame();
                 if (temp_city != nullptr)
                 {
@@ -130,51 +234,74 @@ void GameWorld::Init()
         KW_Widget* line_end_label = KW_CreateLabel(Game::gui, NULL, "End Line", NULL);
         line_end_button = KW_CreateButton(Game::gui, NULL, line_end_label, &geom);
         KW_AddWidgetMouseDownHandler(line_end_button, [](KW_Widget * widget, int b) {
+                Mix_PlayChannel(0, Game::select, 0);
                 KW_Rect geom = {-999, -999, 80, 30};
                 KW_SetWidgetGeometry(line_end_button, &geom);
+                geom = {(1080 / 2) - (135 / 2), (780 / 2) - (80 / 2), 135, 80};
+                KW_SetWidgetGeometry(confirm_frame, &geom);
                 select_mode = 0;
                 from_city = nullptr;
 
-                Message msg;
-                msg.header.id = message_types::NEW_TRAIN;
-                for (auto it = train_stops.rbegin(); it != train_stops.rend(); ++it)
-                {
-                        msg << (*it)->city_id;
-                }
-                msg << train_stops.size();
-                if (tu_server->running)
-                {
-                        Train* train = tu_gw->create_train(player_id);
+                int cost = 25;
+                temp_cost = cost;
+                std::string cnf;
+                cnf += "Buy Train for Ə" + std::to_string(cost) + "?";
+                KW_SetLabelText(confirm_label, cnf.data());
 
-                        for (City * stop : train_stops)
-                        {
-                                train->stops.emplace_back(stop);
-                        }
-                        msg << player_id;
-                        tu_server->MessageAllClients(msg);
-                }
-                else
-                {
-                        tu_client->MessageServer(msg);
-                }
-                train_stops.clear();
+
+                KW_AddWidgetMouseDownHandler(confirm_button, train_confirm);
+                KW_AddWidgetMouseDownHandler(decline_button, train_decline);
         });
 
 
-        geom = {-999, -999, 120, 80};
+
+
+        geom = {-999, 0, 135, 80};
         confirm_frame = KW_CreateFrame(Game::gui, NULL, &geom);
+
+        geom = {5, 40, 60, 30};
+        KW_Widget* decline_button_label = KW_CreateLabel(Game::gui, NULL, "Decline", NULL);
+        decline_button = KW_CreateButton(Game::gui, confirm_frame, decline_button_label, &geom);
+        KW_AddWidgetMouseDownHandler(decline_button, [](KW_Widget * widget, int b) {
+                Mix_PlayChannel(0, Game::select, 0); KW_Rect geom = {-9999, 0, 135, 80}; KW_SetWidgetGeometry(confirm_frame, &geom);
+        });
+
+        geom = {65, 40, 60, 30};
         KW_Widget* confirm_button_label = KW_CreateLabel(Game::gui, NULL, "Confirm", NULL);
-        geom = {10, 40, 100, 30};
         confirm_button = KW_CreateButton(Game::gui, confirm_frame, confirm_button_label, &geom);
-        confirm_label = KW_CreateLabel(Game::gui, NULL, "Buy?", NULL);;
+
+        geom = {0, 0, 125, 35};
+        confirm_label = KW_CreateLabel(Game::gui, confirm_frame, "Buy Track for Ə100000?", &geom);
+        KW_SetLabelAlignment(confirm_label, KW_LABEL_ALIGN_CENTER, 0, KW_LABEL_ALIGN_BOTTOM, 0);
+
+
 
 
         City::tileset = KW_LoadSurface(Game::kw_driver, "assets/city_tileset.png");
         cities.fill(nullptr);
 
-        auto c1 = create_city(0, 0, 200, 600);
-        auto c2 = create_city(1, 1, 700, 350);
-        create_city(2, 2, 200, 250);
+
+
+        create_city(0, 0, 951, 295);
+        create_city(1, 0, 830, 21);
+        create_city(2, 0, 570, 657);
+        create_city(3, 1, 273, 665);
+        create_city(4, 1, 312, 642);
+        create_city(5, 1, 648, 9);
+        create_city(6, 1, 264, 507);
+        create_city(7, 1, 339, 413);
+        create_city(8, 2, 566, 510);
+        create_city(9, 1, 735, 218);
+        create_city(10, 0, 228, 580);
+        create_city(11, 1, 448, 383);
+        create_city(12, 2, 239, 600);
+        create_city(13, 1, 866, 650);
+        create_city(14, 0, 460, 687);
+        create_city(15, 1, 826, 575);
+        create_city(16, 0, 806, 211);
+        create_city(17, 1, 415, 602);
+        create_city(18, 2, 963, 316);
+        create_city(19, 1, 397, 101);
 }
 void GameWorld::Update()
 {
@@ -282,6 +409,7 @@ City* GameWorld::create_city(uint8_t id, uint8_t city_size, float x_pos = 0, flo
         entities.emplace_back((Entity*)city);
         city->position = {x_pos, y_pos};
         KW_AddWidgetMouseDownHandler(city->button, [](KW_Widget * widget, int b) {
+                Mix_PlayChannel(0, Game::select, 0);
                 City* city = get_city_from_button(widget);
                 if (city != nullptr)
                 {
@@ -309,23 +437,17 @@ City* GameWorld::create_city(uint8_t id, uint8_t city_size, float x_pos = 0, flo
                                         }
                                         if (!rail_exists)
                                         {
-                                                if (tu_client->IsConnected())
-                                                {
-                                                        Message msg;
-                                                        msg.header.id = message_types::NEW_RAIL;
-                                                        msg << to_city->city_id << from_city->city_id;
-                                                        tu_client->MessageServer(msg);
-                                                }
-                                                else if (tu_server->running)
-                                                {
-                                                        tu_gw->create_rail(from_city, to_city, player_id);
-                                                        Message msg;
-                                                        msg.header.id = message_types::NEW_RAIL;
-                                                        msg << to_city->city_id << from_city->city_id << player_id;
-                                                        tu_server->MessageAllClients(msg);
-                                                }
-                                                from_city = nullptr;
-                                                to_city = nullptr;
+                                                KW_Rect geom = {(1080 / 2) - (135 / 2), (780 / 2) - (80 / 2), 135, 80};
+                                                KW_SetWidgetGeometry(confirm_frame, &geom);
+                                                int cost = floor(utils::distance(from_city->center.x, from_city->center.y, to_city->center.x, to_city->center.y));
+                                                temp_cost = cost;
+                                                std::string cnf;
+                                                cnf += "Buy Rail for Ə" + std::to_string(cost) + "?";
+                                                KW_SetLabelText(confirm_label, cnf.data());
+
+                                                KW_AddWidgetMouseDownHandler(confirm_button, rail_confirm);
+                                                KW_AddWidgetMouseDownHandler(decline_button, rail_decline);
+
                                                 select_mode = 0;
                                         }
                                 }
@@ -375,3 +497,5 @@ Train* GameWorld::create_train(uint8_t owner_id_)
         train->position = v2d(-999, -999);
         return train;
 }
+
+

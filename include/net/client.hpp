@@ -22,9 +22,9 @@ public:
                 }
         }
         ~client_interface() {}
-        bool Connect()
+        bool Connect(const char* hostname)
         {
-                enet_address_set_host_ip(&server_address, "127.0.0.1");
+                enet_address_set_host_ip(&server_address, hostname);
                 // enet_address_set_host_ip(&server_address, "73.169.120.183");
                 server_address.port = 6743;
                 server = enet_host_connect(client, &server_address, 2, 0);

@@ -1127,6 +1127,7 @@ CMakeFiles/Trains.dir/src/Client.cpp.obj: ../libs/SDL2/include/SDL2/SDL_video.h
 CMakeFiles/Trains.dir/src/Client.cpp.obj: ../libs/SDL2/include/SDL2/begin_code.h
 CMakeFiles/Trains.dir/src/Client.cpp.obj: ../libs/SDL2/include/SDL2/close_code.h
 CMakeFiles/Trains.dir/src/Client.cpp.obj: ../libs/SDL2Image/include/SDL2/SDL_image.h
+CMakeFiles/Trains.dir/src/Client.cpp.obj: ../libs/SDL2Mixer/include/SDL2/SDL_mixer.h
 CMakeFiles/Trains.dir/src/Client.cpp.obj: ../src/Client.cpp
 
 CMakeFiles/Trains.dir/src/Menu.cpp.obj: ../include/Config.h
@@ -1212,6 +1213,7 @@ CMakeFiles/Trains.dir/src/Menu.cpp.obj: ../libs/SDL2/include/SDL2/SDL_video.h
 CMakeFiles/Trains.dir/src/Menu.cpp.obj: ../libs/SDL2/include/SDL2/begin_code.h
 CMakeFiles/Trains.dir/src/Menu.cpp.obj: ../libs/SDL2/include/SDL2/close_code.h
 CMakeFiles/Trains.dir/src/Menu.cpp.obj: ../libs/SDL2Image/include/SDL2/SDL_image.h
+CMakeFiles/Trains.dir/src/Menu.cpp.obj: ../libs/SDL2Mixer/include/SDL2/SDL_mixer.h
 CMakeFiles/Trains.dir/src/Menu.cpp.obj: ../libs/SDL2ttf/include/SDL2/SDL_ttf.h
 CMakeFiles/Trains.dir/src/Menu.cpp.obj: ../libs/miniupnpc-2.1/igd_desc_parse.h
 CMakeFiles/Trains.dir/src/Menu.cpp.obj: ../libs/miniupnpc-2.1/miniupnpc.h
@@ -1303,6 +1305,7 @@ CMakeFiles/Trains.dir/src/Server.cpp.obj: ../libs/SDL2/include/SDL2/SDL_video.h
 CMakeFiles/Trains.dir/src/Server.cpp.obj: ../libs/SDL2/include/SDL2/begin_code.h
 CMakeFiles/Trains.dir/src/Server.cpp.obj: ../libs/SDL2/include/SDL2/close_code.h
 CMakeFiles/Trains.dir/src/Server.cpp.obj: ../libs/SDL2Image/include/SDL2/SDL_image.h
+CMakeFiles/Trains.dir/src/Server.cpp.obj: ../libs/SDL2Mixer/include/SDL2/SDL_mixer.h
 CMakeFiles/Trains.dir/src/Server.cpp.obj: ../src/Server.cpp
 
 CMakeFiles/Trains.dir/src/game.cpp.obj: ../include/common.hpp
@@ -1362,6 +1365,7 @@ CMakeFiles/Trains.dir/src/game.cpp.obj: ../libs/SDL2/include/SDL2/SDL_version.h
 CMakeFiles/Trains.dir/src/game.cpp.obj: ../libs/SDL2/include/SDL2/SDL_video.h
 CMakeFiles/Trains.dir/src/game.cpp.obj: ../libs/SDL2/include/SDL2/begin_code.h
 CMakeFiles/Trains.dir/src/game.cpp.obj: ../libs/SDL2/include/SDL2/close_code.h
+CMakeFiles/Trains.dir/src/game.cpp.obj: ../libs/SDL2Mixer/include/SDL2/SDL_mixer.h
 CMakeFiles/Trains.dir/src/game.cpp.obj: ../src/game.cpp
 
 CMakeFiles/Trains.dir/src/gameworld.cpp.obj: ../include/common.hpp
@@ -1445,6 +1449,7 @@ CMakeFiles/Trains.dir/src/gameworld.cpp.obj: ../libs/SDL2/include/SDL2/SDL_video
 CMakeFiles/Trains.dir/src/gameworld.cpp.obj: ../libs/SDL2/include/SDL2/begin_code.h
 CMakeFiles/Trains.dir/src/gameworld.cpp.obj: ../libs/SDL2/include/SDL2/close_code.h
 CMakeFiles/Trains.dir/src/gameworld.cpp.obj: ../libs/SDL2Image/include/SDL2/SDL_image.h
+CMakeFiles/Trains.dir/src/gameworld.cpp.obj: ../libs/SDL2Mixer/include/SDL2/SDL_mixer.h
 CMakeFiles/Trains.dir/src/gameworld.cpp.obj: ../libs/SDL2ttf/include/SDL2/SDL_ttf.h
 CMakeFiles/Trains.dir/src/gameworld.cpp.obj: ../src/gameworld.cpp
 
@@ -1518,6 +1523,7 @@ CMakeFiles/Trains.dir/src/main.cpp.obj: ../libs/SDL2/include/SDL2/SDL_video.h
 CMakeFiles/Trains.dir/src/main.cpp.obj: ../libs/SDL2/include/SDL2/begin_code.h
 CMakeFiles/Trains.dir/src/main.cpp.obj: ../libs/SDL2/include/SDL2/close_code.h
 CMakeFiles/Trains.dir/src/main.cpp.obj: ../libs/SDL2Image/include/SDL2/SDL_image.h
+CMakeFiles/Trains.dir/src/main.cpp.obj: ../libs/SDL2Mixer/include/SDL2/SDL_mixer.h
 CMakeFiles/Trains.dir/src/main.cpp.obj: ../libs/miniupnpc-2.1/igd_desc_parse.h
 CMakeFiles/Trains.dir/src/main.cpp.obj: ../libs/miniupnpc-2.1/miniupnpc.h
 CMakeFiles/Trains.dir/src/main.cpp.obj: ../libs/miniupnpc-2.1/miniupnpc_declspec.h

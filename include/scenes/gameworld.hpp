@@ -26,9 +26,6 @@ public:
         std::array<City*, 256> cities;
         Train* create_train(uint8_t owner_id_);
         KW_Widget* players_frame;
-private:
-        friend class Server;
-        friend class Client;
         City* create_city(uint8_t id, uint8_t city_size, float x_pos, float y_pos);
         Rail* create_rail(City* city1, City* city2, uint8_t owner_id);
         Rail* find_rail(City* city1, City* city2);

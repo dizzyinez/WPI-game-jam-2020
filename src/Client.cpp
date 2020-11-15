@@ -49,14 +49,14 @@ void Client::OnMessage(Message& msg)
                 msg >> id;
                 Player &player = player_list[id];
                 player.id = id;
-                player.exists;
+                player.exists = true;
                 msg >> player.color;
                 msg >> player.name;
                 std::cout << "new player | name: " << (char*)&player.name << " | id: " << player.id << std::endl;
 
-                KW_Rect geom = {0, player.id * 42, 215, 40};
+                KW_Rect geom = {0, player.id * 42, 205, 40};
                 player.widget = KW_CreateFrame(Game::gui, menu->players_frame, &geom);
-                geom = {0, 0, 215, 50};
+                geom = {0, 0, 205, 50};
                 player.name_label = KW_CreateLabel(Game::gui, player.widget, (char*)&player.name, &geom);
                 KW_SetLabelTextColor(player.name_label, player.color);
 
@@ -89,6 +89,17 @@ void Client::OnMessage(Message& msg)
                         uint8_t city_id;
                         msg >> city_id;
                         train->stops.emplace_back(gameworld->cities.at(city_id));
+                }
+        }
+
+        case message_types::MONEY_DELTA:
+        {
+                if (msg.size() == 5)
+                {
+                        uint8_t id;
+                        int cost;
+                        msg >> id >> cost;
+                        player_list.at(id).money -= cost;
                 }
         }
         break;

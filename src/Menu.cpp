@@ -29,6 +29,13 @@ void Menu::OnWindowResize(int w, int h)
 }
 void Menu::Init()
 {
+        Game::music = Mix_LoadMUS("assets/Audio/Scott_Elias_-_Drift_Locomotion_Commotion_OST.mp3");
+        Mix_PlayMusic(Game::music, -1);
+        Game::select = Mix_LoadWAV("assets/Audio/select2.wav");
+        Game::rail = Mix_LoadWAV("assets/Audio/RailBuildSound.wav");
+        Game::train = Mix_LoadWAV("TrainWhistle.wav");
+
+
         std::cout << "init\n";
         tu_this = this;
         server = new Server();
@@ -65,17 +72,23 @@ void Menu::Init()
         geom = {20, 90, 180, 40};
         KW_Widget* join_button = KW_CreateButton(Game::gui, join_frame, join_label, &geom);
         KW_AddWidgetMouseDownHandler(join_button, [](KW_Widget * widget, int b) {
+                Mix_PlayChannel(0, Game::select, 0);
                 const char* name_char = KW_GetEditboxText(name_box);
+                const char* ip = KW_GetEditboxText(ip_box);
                 int length = strlen(name_char);
-                if (length > 0)
+                if (length > 0 && strlen(ip) > 0)
                 {
                         if (!translation_unit_server->running && !translation_unit_client->IsConnected())
                         {
-                                if (translation_unit_client->Connect())
+                                if (translation_unit_client->Connect(ip))
                                 {
+                                        std::cout << "ip: " << ip << std::endl;
                                         short_string name;
                                         strncpy(reinterpret_cast<char*>(&name), name_char, sizeof(short_string));
                                         char end = '\0';
+                                        std::string ip;
+
+
                                         memcpy(&name + sizeof(short_string), &end, 1);
                                         translation_unit_server->AddLocalPlayer(name);
                                         Message msg;
@@ -90,7 +103,7 @@ void Menu::Init()
                 }
                 else
                 {
-                        std::cout << "player name cannot be empty!" << std::endl;
+                        std::cout << "player name and IP can't be empty!" << std::endl;
                 }
         });
 
@@ -105,6 +118,7 @@ void Menu::Init()
         geom = {20, 20, 180, 40};
         KW_Widget* upnp_button = KW_CreateButton(Game::gui, host_frame, upnp_label, &geom);
         KW_AddWidgetMouseDownHandler(upnp_button, [](KW_Widget * widget, int b) {
+                Mix_PlayChannel(0, Game::select, 0);
                 upnp::upnp_open(6743);
         });
 
@@ -114,6 +128,7 @@ void Menu::Init()
         geom = {20, 70, 180, 40};
         KW_Widget* host_button = KW_CreateButton(Game::gui, host_frame, host_label, &geom);
         KW_AddWidgetMouseDownHandler(host_button, [](KW_Widget * widget, int b) {
+                Mix_PlayChannel(0, Game::select, 0);
                 const char* name_char = KW_GetEditboxText(name_box);
                 int length = strlen(name_char);
                 if (length > 0)
@@ -141,6 +156,7 @@ void Menu::Init()
         geom = {20, 120, 180, 40};
         KW_Widget* play_button = KW_CreateButton(Game::gui, host_frame, play_label, &geom);
         KW_AddWidgetMouseDownHandler(play_button, [](KW_Widget * widget, int b) {
+                Mix_PlayChannel(0, Game::select, 0);
                 if (translation_unit_server->running)
                 {
                         GameWorld* gw = new GameWorld;

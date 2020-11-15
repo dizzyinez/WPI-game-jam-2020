@@ -18,6 +18,7 @@ enum class message_types : uint32_t
         DISCONNECTION,
         NEW_RAIL,
         NEW_TRAIN,
+        MONEY_DELTA,
 };
 
 using short_string = std::array<char, 20>;
@@ -36,7 +37,7 @@ struct Player
         KW_Widget* widget;
         KW_Widget* name_label;
         KW_Color color;
-        uint32_t money = 100;//Ə
+        int money = 5000;//Ə
 };
 
 using Message = net::message<message_types>;

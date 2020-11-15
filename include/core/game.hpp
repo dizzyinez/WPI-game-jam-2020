@@ -4,10 +4,17 @@
 #include <SDL.h>
 #include <KW_gui.h>
 #include "math/v2d.hpp"
+#include <SDL_mixer.h>
 
 class Game
 {
 public:
+        inline static Mix_Music *music;
+        inline static Mix_Chunk *select;
+        inline static Mix_Chunk *rail;
+        inline static Mix_Chunk *train;
+
+
         static void Update();
         static void Render(float alpha);
         static void PushScene(Scene* scene);

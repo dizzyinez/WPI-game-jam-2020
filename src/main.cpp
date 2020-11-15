@@ -10,6 +10,7 @@
 #include <KW_renderdriver_sdl2.h>
 #include <enet/enet.h>
 #include <utils/upnp.hpp>
+#include <SDL_mixer.h>
 
 // #define IMGUI_IMPLEMENTATION
 // #include <misc/single_file/imgui_single_file.h>
@@ -33,8 +34,16 @@ int main(int argc, char *argv[])
                 std::cout << "couldn't initialize SDL_IMAGE" << std::endl;
                 return -1;
         }
+
+        //Initialize SDL_mixer
+        if (Mix_OpenAudio(22050, MIX_DEFAULT_FORMAT, 2, 4096) == -1)
+        {
+                std::cout << "couldn't initialize SDL_AUDIO" << std::endl;
+                return -1;
+        }
+
         //Create window
-        Game::window = SDL_CreateWindow("Train Game", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, SCREEN_WIDTH, SCREEN_HEIGHT, SDL_WINDOW_SHOWN);
+        Game::window = SDL_CreateWindow("Locomotion Commotion", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, SCREEN_WIDTH, SCREEN_HEIGHT, SDL_WINDOW_SHOWN);
         if (Game::window == nullptr)
         {
                 printf("Window could not be created! SDL_Error: %s\n", SDL_GetError());
