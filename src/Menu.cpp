@@ -19,6 +19,8 @@ KW_Widget* ip_box;
 KW_Widget* tu_pf;
 Menu* tu_this;
 
+SDL_Texture * texture;
+
 void Menu::OnWindowResize(int w, int h)
 {
         // int y_off = 0;
@@ -29,6 +31,9 @@ void Menu::OnWindowResize(int w, int h)
 }
 void Menu::Init()
 {
+        SDL_Surface * surface1 = IMG_Load("assets/TitleScreen.png");
+        texture = SDL_CreateTextureFromSurface(Game::renderer, surface1);
+        SDL_FreeSurface(surface1);
         std::cout << "init\n";
         tu_this = this;
         server = new Server();
@@ -176,6 +181,7 @@ void Menu::Update()
 }
 void Menu::Render(float alpha)
 {
+        SDL_RenderCopy(Game::renderer, texture, NULL, NULL);
 }
 void Menu::Clean()
 {

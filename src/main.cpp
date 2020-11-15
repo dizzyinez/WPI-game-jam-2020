@@ -35,6 +35,9 @@ int main(int argc, char *argv[])
         }
         //Create window
         Game::window = SDL_CreateWindow("Train Game", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, SCREEN_WIDTH, SCREEN_HEIGHT, SDL_WINDOW_SHOWN);
+        
+        
+
         if (Game::window == nullptr)
         {
                 printf("Window could not be created! SDL_Error: %s\n", SDL_GetError());
@@ -65,6 +68,7 @@ int main(int argc, char *argv[])
         Game::kw_driver = KW_CreateSDL2RenderDriver(Game::renderer, Game::window);
         KW_Surface* set = KW_LoadSurface(Game::kw_driver, "assets/tileset.png");
         Game::gui = KW_Init(Game::kw_driver, set);
+        
 
         Game::PushScene(new Menu);
 
@@ -92,8 +96,9 @@ int main(int argc, char *argv[])
                         // ImGui_ImplOpenGL3_NewFrame();
                         // ImGui::NewFrame();
 
-                        SDL_SetRenderDrawColor(Game::renderer, 100, 149, 237, 255);
                         SDL_RenderClear(Game::renderer);
+                        
+
                         Game::Render(update_accumulator / SECONDS_PER_UPDATE);
                         KW_Paint(Game::gui);
                         SDL_RenderPresent(Game::renderer);
@@ -108,7 +113,7 @@ int main(int argc, char *argv[])
         KW_Quit(Game::gui);
         KW_ReleaseSurface(Game::kw_driver, set);
         KW_ReleaseRenderDriver(Game::kw_driver);
-
+        
         //Destroy Renderer
         SDL_DestroyRenderer(Game::renderer);
         //Destroy window

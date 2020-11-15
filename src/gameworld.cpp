@@ -26,6 +26,9 @@ KW_Widget* players_frame;
 KW_Widget* confirm_frame;
 KW_Widget* confirm_button;
 KW_Widget* confirm_label;
+
+SDL_Texture * backgroundTexture;
+
 void remove_frame()
 {
         KW_Rect geom = {-999, -999, 0, 0};
@@ -48,6 +51,10 @@ City* get_city_from_button(KW_Widget* button)
 
 void GameWorld::Init()
 {
+        SDL_Surface * surfaceBack = IMG_Load("assets/Background.png");
+        backgroundTexture = SDL_CreateTextureFromSurface(Game::renderer, surfaceBack);
+        SDL_FreeSurface(surfaceBack);
+
         KW_Rect geom = {0, 0, 235, 250};
         KW_SetWidgetGeometry(players_frame, &geom);
         if (client->IsConnected())
@@ -230,6 +237,7 @@ void GameWorld::Update()
 }
 void GameWorld::Render(float alpha)
 {
+        SDL_RenderCopy(Game::renderer, backgroundTexture, NULL, NULL);
         for (Rail* r : rails)
         {
                 r->Render(player_list->at(r->owner_id).color);
