@@ -65,43 +65,43 @@
 			[
 				{
 					"backtrace" : 3,
-					"path" : "R:/Dev/games/GameJam/WPI-game-jam-2020/include"
+					"path" : "C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/include"
 				},
 				{
 					"backtrace" : 4,
-					"path" : "R:/Dev/games/GameJam/WPI-game-jam-2020/c"
+					"path" : "C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/c"
 				},
 				{
 					"backtrace" : 4,
-					"path" : "R:/Dev/games/GameJam/WPI-game-jam-2020/libs/SDL2/include/SDL2"
+					"path" : "C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/libs/SDL2/include/SDL2"
 				},
 				{
 					"backtrace" : 4,
-					"path" : "R:/Dev/games/GameJam/WPI-game-jam-2020/libs/SDL2Image/include/SDL2"
+					"path" : "C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/libs/SDL2Image/include/SDL2"
 				},
 				{
 					"backtrace" : 4,
-					"path" : "R:/Dev/games/GameJam/WPI-game-jam-2020/libs/SDL2ttf/include/SDL2"
+					"path" : "C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/libs/SDL2ttf/include/SDL2"
 				},
 				{
 					"backtrace" : 4,
-					"path" : "R:/Dev/games/GameJam/WPI-game-jam-2020/libs/SDL2Mixer/include/SDL2"
+					"path" : "C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/libs/SDL2Mixer/include/SDL2"
 				},
 				{
 					"backtrace" : 4,
-					"path" : "R:/Dev/games/GameJam/WPI-game-jam-2020/libs/ENet/include"
+					"path" : "C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/libs/ENet/include"
 				},
 				{
 					"backtrace" : 4,
-					"path" : "R:/Dev/games/GameJam/WPI-game-jam-2020/libs/imgui"
+					"path" : "C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/libs/imgui"
 				},
 				{
 					"backtrace" : 4,
-					"path" : "R:/Dev/games/GameJam/WPI-game-jam-2020/libs/KiWi/src"
+					"path" : "C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/libs/KiWi/src"
 				},
 				{
 					"backtrace" : 4,
-					"path" : "R:/Dev/games/GameJam/WPI-game-jam-2020/libs/miniupnpc-2.1"
+					"path" : "C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/libs/miniupnpc-2.1"
 				}
 			],
 			"language" : "C",
@@ -145,46 +145,54 @@
 			[
 				{
 					"backtrace" : 3,
-					"path" : "R:/Dev/games/GameJam/WPI-game-jam-2020/include"
+					"path" : "C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/include"
 				},
 				{
 					"backtrace" : 4,
-					"path" : "R:/Dev/games/GameJam/WPI-game-jam-2020/c"
+					"path" : "C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/c"
 				},
 				{
 					"backtrace" : 4,
-					"path" : "R:/Dev/games/GameJam/WPI-game-jam-2020/libs/SDL2/include/SDL2"
+					"path" : "C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/libs/SDL2/include/SDL2"
 				},
 				{
 					"backtrace" : 4,
-					"path" : "R:/Dev/games/GameJam/WPI-game-jam-2020/libs/SDL2Image/include/SDL2"
+					"path" : "C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/libs/SDL2Image/include/SDL2"
 				},
 				{
 					"backtrace" : 4,
-					"path" : "R:/Dev/games/GameJam/WPI-game-jam-2020/libs/SDL2ttf/include/SDL2"
+					"path" : "C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/libs/SDL2ttf/include/SDL2"
 				},
 				{
 					"backtrace" : 4,
-					"path" : "R:/Dev/games/GameJam/WPI-game-jam-2020/libs/SDL2Mixer/include/SDL2"
+					"path" : "C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/libs/SDL2Mixer/include/SDL2"
 				},
 				{
 					"backtrace" : 4,
-					"path" : "R:/Dev/games/GameJam/WPI-game-jam-2020/libs/ENet/include"
+					"path" : "C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/libs/ENet/include"
 				},
 				{
 					"backtrace" : 4,
-					"path" : "R:/Dev/games/GameJam/WPI-game-jam-2020/libs/imgui"
+					"path" : "C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/libs/imgui"
 				},
 				{
 					"backtrace" : 4,
-					"path" : "R:/Dev/games/GameJam/WPI-game-jam-2020/libs/KiWi/src"
+					"path" : "C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/libs/KiWi/src"
 				},
 				{
 					"backtrace" : 4,
-					"path" : "R:/Dev/games/GameJam/WPI-game-jam-2020/libs/miniupnpc-2.1"
+					"path" : "C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/libs/miniupnpc-2.1"
 				}
 			],
 			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					1
+				],
+				"standard" : "17"
+			},
 			"sourceIndexes" : 
 			[
 				22,

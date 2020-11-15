@@ -6,6 +6,8 @@
 
 #IncludeRegexTransform: 
 
+../include/Config.h
+
 ../include/common.hpp
 iostream
 -
@@ -154,6 +156,18 @@ KW_gui.h
 
 ../include/utils/distance.hpp
 cmath
+-
+
+../include/utils/upnp.hpp
+miniupnpc.h
+-
+upnpcommands.h
+-
+portlistingparse.h
+../include/utils/portlistingparse.h
+upnpreplyparse.h
+../include/utils/upnpreplyparse.h
+iostream
 -
 
 ../libs/ENet/include/enet/callbacks.h
@@ -900,15 +914,47 @@ begin_code.h
 close_code.h
 ../libs/SDL2ttf/include/SDL2/close_code.h
 
-R:/Dev/games/GameJam/WPI-game-jam-2020/src/gameworld.cpp
-scenes/gameworld.hpp
-R:/Dev/games/GameJam/WPI-game-jam-2020/src/scenes/gameworld.hpp
+../libs/miniupnpc-2.1/igd_desc_parse.h
+
+../libs/miniupnpc-2.1/miniupnpc.h
+miniupnpc_declspec.h
+../libs/miniupnpc-2.1/miniupnpc_declspec.h
+igd_desc_parse.h
+../libs/miniupnpc-2.1/igd_desc_parse.h
+upnpdev.h
+../libs/miniupnpc-2.1/upnpdev.h
+
+../libs/miniupnpc-2.1/miniupnpc_declspec.h
+
+../libs/miniupnpc-2.1/miniupnpctypes.h
+
+../libs/miniupnpc-2.1/portlistingparse.h
+miniupnpc_declspec.h
+../libs/miniupnpc-2.1/miniupnpc_declspec.h
+miniupnpctypes.h
+../libs/miniupnpc-2.1/miniupnpctypes.h
+
+../libs/miniupnpc-2.1/upnpcommands.h
+miniupnpc_declspec.h
+../libs/miniupnpc-2.1/miniupnpc_declspec.h
+miniupnpctypes.h
+../libs/miniupnpc-2.1/miniupnpctypes.h
+
+../libs/miniupnpc-2.1/upnpdev.h
+miniupnpc_declspec.h
+../libs/miniupnpc-2.1/miniupnpc_declspec.h
+
+../libs/miniupnpc-2.1/upnpreplyparse.h
+
+C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/src/Menu.cpp
+scenes/menu.hpp
+C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/src/scenes/menu.hpp
 core/game.hpp
-R:/Dev/games/GameJam/WPI-game-jam-2020/src/core/game.hpp
+C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/src/core/game.hpp
 core/net.hpp
-R:/Dev/games/GameJam/WPI-game-jam-2020/src/core/net.hpp
-algorithm
--
+C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/src/core/net.hpp
+Config.h
+C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/src/Config.h
 KW_gui.h
 -
 KW_frame.h
@@ -921,6 +967,8 @@ KW_scrollbox.h
 -
 KW_editbox.h
 -
-string
--
+utils/upnp.hpp
+C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/src/utils/upnp.hpp
+scenes/gameworld.hpp
+C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/src/scenes/gameworld.hpp
 

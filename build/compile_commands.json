@@ -1,147 +1,147 @@
 [
 {
-  "directory": "R:/Dev/games/GameJam/WPI-game-jam-2020/build",
-  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\X8EAA8~1.EXE  @CMakeFiles/Trains.dir/includes_C.rsp -g -o CMakeFiles\\Trains.dir\\libs\\KiWi\\src\\KW_button.c.obj -c R:\\Dev\\games\\GameJam\\WPI-game-jam-2020\\libs\\KiWi\\src\\KW_button.c",
-  "file": "R:/Dev/games/GameJam/WPI-game-jam-2020/libs/KiWi/src/KW_button.c"
+  "directory": "C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/build",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\X8EAA8~1.EXE  @CMakeFiles/Trains.dir/includes_C.rsp -g -o CMakeFiles\\Trains.dir\\libs\\KiWi\\src\\KW_button.c.obj -c C:\\Users\\Ryan\\Documents\\GitHub\\WPI-game-jam-2020\\libs\\KiWi\\src\\KW_button.c",
+  "file": "C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/libs/KiWi/src/KW_button.c"
 },
 {
-  "directory": "R:/Dev/games/GameJam/WPI-game-jam-2020/build",
-  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\X8EAA8~1.EXE  @CMakeFiles/Trains.dir/includes_C.rsp -g -o CMakeFiles\\Trains.dir\\libs\\KiWi\\src\\KW_checkbox.c.obj -c R:\\Dev\\games\\GameJam\\WPI-game-jam-2020\\libs\\KiWi\\src\\KW_checkbox.c",
-  "file": "R:/Dev/games/GameJam/WPI-game-jam-2020/libs/KiWi/src/KW_checkbox.c"
+  "directory": "C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/build",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\X8EAA8~1.EXE  @CMakeFiles/Trains.dir/includes_C.rsp -g -o CMakeFiles\\Trains.dir\\libs\\KiWi\\src\\KW_checkbox.c.obj -c C:\\Users\\Ryan\\Documents\\GitHub\\WPI-game-jam-2020\\libs\\KiWi\\src\\KW_checkbox.c",
+  "file": "C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/libs/KiWi/src/KW_checkbox.c"
 },
 {
-  "directory": "R:/Dev/games/GameJam/WPI-game-jam-2020/build",
-  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\X8EAA8~1.EXE  @CMakeFiles/Trains.dir/includes_C.rsp -g -o CMakeFiles\\Trains.dir\\libs\\KiWi\\src\\KW_checkbox_internal.c.obj -c R:\\Dev\\games\\GameJam\\WPI-game-jam-2020\\libs\\KiWi\\src\\KW_checkbox_internal.c",
-  "file": "R:/Dev/games/GameJam/WPI-game-jam-2020/libs/KiWi/src/KW_checkbox_internal.c"
+  "directory": "C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/build",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\X8EAA8~1.EXE  @CMakeFiles/Trains.dir/includes_C.rsp -g -o CMakeFiles\\Trains.dir\\libs\\KiWi\\src\\KW_checkbox_internal.c.obj -c C:\\Users\\Ryan\\Documents\\GitHub\\WPI-game-jam-2020\\libs\\KiWi\\src\\KW_checkbox_internal.c",
+  "file": "C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/libs/KiWi/src/KW_checkbox_internal.c"
 },
 {
-  "directory": "R:/Dev/games/GameJam/WPI-game-jam-2020/build",
-  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\X8EAA8~1.EXE  @CMakeFiles/Trains.dir/includes_C.rsp -g -o CMakeFiles\\Trains.dir\\libs\\KiWi\\src\\KW_editbox.c.obj -c R:\\Dev\\games\\GameJam\\WPI-game-jam-2020\\libs\\KiWi\\src\\KW_editbox.c",
-  "file": "R:/Dev/games/GameJam/WPI-game-jam-2020/libs/KiWi/src/KW_editbox.c"
+  "directory": "C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/build",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\X8EAA8~1.EXE  @CMakeFiles/Trains.dir/includes_C.rsp -g -o CMakeFiles\\Trains.dir\\libs\\KiWi\\src\\KW_editbox.c.obj -c C:\\Users\\Ryan\\Documents\\GitHub\\WPI-game-jam-2020\\libs\\KiWi\\src\\KW_editbox.c",
+  "file": "C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/libs/KiWi/src/KW_editbox.c"
 },
 {
-  "directory": "R:/Dev/games/GameJam/WPI-game-jam-2020/build",
-  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\X8EAA8~1.EXE  @CMakeFiles/Trains.dir/includes_C.rsp -g -o CMakeFiles\\Trains.dir\\libs\\KiWi\\src\\KW_editbox_internal.c.obj -c R:\\Dev\\games\\GameJam\\WPI-game-jam-2020\\libs\\KiWi\\src\\KW_editbox_internal.c",
-  "file": "R:/Dev/games/GameJam/WPI-game-jam-2020/libs/KiWi/src/KW_editbox_internal.c"
+  "directory": "C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/build",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\X8EAA8~1.EXE  @CMakeFiles/Trains.dir/includes_C.rsp -g -o CMakeFiles\\Trains.dir\\libs\\KiWi\\src\\KW_editbox_internal.c.obj -c C:\\Users\\Ryan\\Documents\\GitHub\\WPI-game-jam-2020\\libs\\KiWi\\src\\KW_editbox_internal.c",
+  "file": "C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/libs/KiWi/src/KW_editbox_internal.c"
 },
 {
-  "directory": "R:/Dev/games/GameJam/WPI-game-jam-2020/build",
-  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\X8EAA8~1.EXE  @CMakeFiles/Trains.dir/includes_C.rsp -g -o CMakeFiles\\Trains.dir\\libs\\KiWi\\src\\KW_eventwatcher.c.obj -c R:\\Dev\\games\\GameJam\\WPI-game-jam-2020\\libs\\KiWi\\src\\KW_eventwatcher.c",
-  "file": "R:/Dev/games/GameJam/WPI-game-jam-2020/libs/KiWi/src/KW_eventwatcher.c"
+  "directory": "C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/build",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\X8EAA8~1.EXE  @CMakeFiles/Trains.dir/includes_C.rsp -g -o CMakeFiles\\Trains.dir\\libs\\KiWi\\src\\KW_eventwatcher.c.obj -c C:\\Users\\Ryan\\Documents\\GitHub\\WPI-game-jam-2020\\libs\\KiWi\\src\\KW_eventwatcher.c",
+  "file": "C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/libs/KiWi/src/KW_eventwatcher.c"
 },
 {
-  "directory": "R:/Dev/games/GameJam/WPI-game-jam-2020/build",
-  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\X8EAA8~1.EXE  @CMakeFiles/Trains.dir/includes_C.rsp -g -o CMakeFiles\\Trains.dir\\libs\\KiWi\\src\\KW_frame.c.obj -c R:\\Dev\\games\\GameJam\\WPI-game-jam-2020\\libs\\KiWi\\src\\KW_frame.c",
-  "file": "R:/Dev/games/GameJam/WPI-game-jam-2020/libs/KiWi/src/KW_frame.c"
+  "directory": "C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/build",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\X8EAA8~1.EXE  @CMakeFiles/Trains.dir/includes_C.rsp -g -o CMakeFiles\\Trains.dir\\libs\\KiWi\\src\\KW_frame.c.obj -c C:\\Users\\Ryan\\Documents\\GitHub\\WPI-game-jam-2020\\libs\\KiWi\\src\\KW_frame.c",
+  "file": "C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/libs/KiWi/src/KW_frame.c"
 },
 {
-  "directory": "R:/Dev/games/GameJam/WPI-game-jam-2020/build",
-  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\X8EAA8~1.EXE  @CMakeFiles/Trains.dir/includes_C.rsp -g -o CMakeFiles\\Trains.dir\\libs\\KiWi\\src\\KW_frame_internal.c.obj -c R:\\Dev\\games\\GameJam\\WPI-game-jam-2020\\libs\\KiWi\\src\\KW_frame_internal.c",
-  "file": "R:/Dev/games/GameJam/WPI-game-jam-2020/libs/KiWi/src/KW_frame_internal.c"
+  "directory": "C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/build",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\X8EAA8~1.EXE  @CMakeFiles/Trains.dir/includes_C.rsp -g -o CMakeFiles\\Trains.dir\\libs\\KiWi\\src\\KW_frame_internal.c.obj -c C:\\Users\\Ryan\\Documents\\GitHub\\WPI-game-jam-2020\\libs\\KiWi\\src\\KW_frame_internal.c",
+  "file": "C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/libs/KiWi/src/KW_frame_internal.c"
 },
 {
-  "directory": "R:/Dev/games/GameJam/WPI-game-jam-2020/build",
-  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\X8EAA8~1.EXE  @CMakeFiles/Trains.dir/includes_C.rsp -g -o CMakeFiles\\Trains.dir\\libs\\KiWi\\src\\KW_gui.c.obj -c R:\\Dev\\games\\GameJam\\WPI-game-jam-2020\\libs\\KiWi\\src\\KW_gui.c",
-  "file": "R:/Dev/games/GameJam/WPI-game-jam-2020/libs/KiWi/src/KW_gui.c"
+  "directory": "C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/build",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\X8EAA8~1.EXE  @CMakeFiles/Trains.dir/includes_C.rsp -g -o CMakeFiles\\Trains.dir\\libs\\KiWi\\src\\KW_gui.c.obj -c C:\\Users\\Ryan\\Documents\\GitHub\\WPI-game-jam-2020\\libs\\KiWi\\src\\KW_gui.c",
+  "file": "C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/libs/KiWi/src/KW_gui.c"
 },
 {
-  "directory": "R:/Dev/games/GameJam/WPI-game-jam-2020/build",
-  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\X8EAA8~1.EXE  @CMakeFiles/Trains.dir/includes_C.rsp -g -o CMakeFiles\\Trains.dir\\libs\\KiWi\\src\\KW_label.c.obj -c R:\\Dev\\games\\GameJam\\WPI-game-jam-2020\\libs\\KiWi\\src\\KW_label.c",
-  "file": "R:/Dev/games/GameJam/WPI-game-jam-2020/libs/KiWi/src/KW_label.c"
+  "directory": "C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/build",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\X8EAA8~1.EXE  @CMakeFiles/Trains.dir/includes_C.rsp -g -o CMakeFiles\\Trains.dir\\libs\\KiWi\\src\\KW_label.c.obj -c C:\\Users\\Ryan\\Documents\\GitHub\\WPI-game-jam-2020\\libs\\KiWi\\src\\KW_label.c",
+  "file": "C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/libs/KiWi/src/KW_label.c"
 },
 {
-  "directory": "R:/Dev/games/GameJam/WPI-game-jam-2020/build",
-  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\X8EAA8~1.EXE  @CMakeFiles/Trains.dir/includes_C.rsp -g -o CMakeFiles\\Trains.dir\\libs\\KiWi\\src\\KW_label_internal.c.obj -c R:\\Dev\\games\\GameJam\\WPI-game-jam-2020\\libs\\KiWi\\src\\KW_label_internal.c",
-  "file": "R:/Dev/games/GameJam/WPI-game-jam-2020/libs/KiWi/src/KW_label_internal.c"
+  "directory": "C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/build",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\X8EAA8~1.EXE  @CMakeFiles/Trains.dir/includes_C.rsp -g -o CMakeFiles\\Trains.dir\\libs\\KiWi\\src\\KW_label_internal.c.obj -c C:\\Users\\Ryan\\Documents\\GitHub\\WPI-game-jam-2020\\libs\\KiWi\\src\\KW_label_internal.c",
+  "file": "C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/libs/KiWi/src/KW_label_internal.c"
 },
 {
-  "directory": "R:/Dev/games/GameJam/WPI-game-jam-2020/build",
-  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\X8EAA8~1.EXE  @CMakeFiles/Trains.dir/includes_C.rsp -g -o CMakeFiles\\Trains.dir\\libs\\KiWi\\src\\KW_radio.c.obj -c R:\\Dev\\games\\GameJam\\WPI-game-jam-2020\\libs\\KiWi\\src\\KW_radio.c",
-  "file": "R:/Dev/games/GameJam/WPI-game-jam-2020/libs/KiWi/src/KW_radio.c"
+  "directory": "C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/build",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\X8EAA8~1.EXE  @CMakeFiles/Trains.dir/includes_C.rsp -g -o CMakeFiles\\Trains.dir\\libs\\KiWi\\src\\KW_radio.c.obj -c C:\\Users\\Ryan\\Documents\\GitHub\\WPI-game-jam-2020\\libs\\KiWi\\src\\KW_radio.c",
+  "file": "C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/libs/KiWi/src/KW_radio.c"
 },
 {
-  "directory": "R:/Dev/games/GameJam/WPI-game-jam-2020/build",
-  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\X8EAA8~1.EXE  @CMakeFiles/Trains.dir/includes_C.rsp -g -o CMakeFiles\\Trains.dir\\libs\\KiWi\\src\\KW_rect.c.obj -c R:\\Dev\\games\\GameJam\\WPI-game-jam-2020\\libs\\KiWi\\src\\KW_rect.c",
-  "file": "R:/Dev/games/GameJam/WPI-game-jam-2020/libs/KiWi/src/KW_rect.c"
+  "directory": "C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/build",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\X8EAA8~1.EXE  @CMakeFiles/Trains.dir/includes_C.rsp -g -o CMakeFiles\\Trains.dir\\libs\\KiWi\\src\\KW_rect.c.obj -c C:\\Users\\Ryan\\Documents\\GitHub\\WPI-game-jam-2020\\libs\\KiWi\\src\\KW_rect.c",
+  "file": "C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/libs/KiWi/src/KW_rect.c"
 },
 {
-  "directory": "R:/Dev/games/GameJam/WPI-game-jam-2020/build",
-  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\X8EAA8~1.EXE  @CMakeFiles/Trains.dir/includes_C.rsp -g -o CMakeFiles\\Trains.dir\\libs\\KiWi\\src\\KW_renderdriver.c.obj -c R:\\Dev\\games\\GameJam\\WPI-game-jam-2020\\libs\\KiWi\\src\\KW_renderdriver.c",
-  "file": "R:/Dev/games/GameJam/WPI-game-jam-2020/libs/KiWi/src/KW_renderdriver.c"
+  "directory": "C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/build",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\X8EAA8~1.EXE  @CMakeFiles/Trains.dir/includes_C.rsp -g -o CMakeFiles\\Trains.dir\\libs\\KiWi\\src\\KW_renderdriver.c.obj -c C:\\Users\\Ryan\\Documents\\GitHub\\WPI-game-jam-2020\\libs\\KiWi\\src\\KW_renderdriver.c",
+  "file": "C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/libs/KiWi/src/KW_renderdriver.c"
 },
 {
-  "directory": "R:/Dev/games/GameJam/WPI-game-jam-2020/build",
-  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\X8EAA8~1.EXE  @CMakeFiles/Trains.dir/includes_C.rsp -g -o CMakeFiles\\Trains.dir\\libs\\KiWi\\src\\KW_renderdriver_sdl2.c.obj -c R:\\Dev\\games\\GameJam\\WPI-game-jam-2020\\libs\\KiWi\\src\\KW_renderdriver_sdl2.c",
-  "file": "R:/Dev/games/GameJam/WPI-game-jam-2020/libs/KiWi/src/KW_renderdriver_sdl2.c"
+  "directory": "C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/build",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\X8EAA8~1.EXE  @CMakeFiles/Trains.dir/includes_C.rsp -g -o CMakeFiles\\Trains.dir\\libs\\KiWi\\src\\KW_renderdriver_sdl2.c.obj -c C:\\Users\\Ryan\\Documents\\GitHub\\WPI-game-jam-2020\\libs\\KiWi\\src\\KW_renderdriver_sdl2.c",
+  "file": "C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/libs/KiWi/src/KW_renderdriver_sdl2.c"
 },
 {
-  "directory": "R:/Dev/games/GameJam/WPI-game-jam-2020/build",
-  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\X8EAA8~1.EXE  @CMakeFiles/Trains.dir/includes_C.rsp -g -o CMakeFiles\\Trains.dir\\libs\\KiWi\\src\\KW_scrollbox.c.obj -c R:\\Dev\\games\\GameJam\\WPI-game-jam-2020\\libs\\KiWi\\src\\KW_scrollbox.c",
-  "file": "R:/Dev/games/GameJam/WPI-game-jam-2020/libs/KiWi/src/KW_scrollbox.c"
+  "directory": "C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/build",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\X8EAA8~1.EXE  @CMakeFiles/Trains.dir/includes_C.rsp -g -o CMakeFiles\\Trains.dir\\libs\\KiWi\\src\\KW_scrollbox.c.obj -c C:\\Users\\Ryan\\Documents\\GitHub\\WPI-game-jam-2020\\libs\\KiWi\\src\\KW_scrollbox.c",
+  "file": "C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/libs/KiWi/src/KW_scrollbox.c"
 },
 {
-  "directory": "R:/Dev/games/GameJam/WPI-game-jam-2020/build",
-  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\X8EAA8~1.EXE  @CMakeFiles/Trains.dir/includes_C.rsp -g -o CMakeFiles\\Trains.dir\\libs\\KiWi\\src\\KW_scrollbox_internal.c.obj -c R:\\Dev\\games\\GameJam\\WPI-game-jam-2020\\libs\\KiWi\\src\\KW_scrollbox_internal.c",
-  "file": "R:/Dev/games/GameJam/WPI-game-jam-2020/libs/KiWi/src/KW_scrollbox_internal.c"
+  "directory": "C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/build",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\X8EAA8~1.EXE  @CMakeFiles/Trains.dir/includes_C.rsp -g -o CMakeFiles\\Trains.dir\\libs\\KiWi\\src\\KW_scrollbox_internal.c.obj -c C:\\Users\\Ryan\\Documents\\GitHub\\WPI-game-jam-2020\\libs\\KiWi\\src\\KW_scrollbox_internal.c",
+  "file": "C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/libs/KiWi/src/KW_scrollbox_internal.c"
 },
 {
-  "directory": "R:/Dev/games/GameJam/WPI-game-jam-2020/build",
-  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\X8EAA8~1.EXE  @CMakeFiles/Trains.dir/includes_C.rsp -g -o CMakeFiles\\Trains.dir\\libs\\KiWi\\src\\KW_tilerenderer.c.obj -c R:\\Dev\\games\\GameJam\\WPI-game-jam-2020\\libs\\KiWi\\src\\KW_tilerenderer.c",
-  "file": "R:/Dev/games/GameJam/WPI-game-jam-2020/libs/KiWi/src/KW_tilerenderer.c"
+  "directory": "C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/build",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\X8EAA8~1.EXE  @CMakeFiles/Trains.dir/includes_C.rsp -g -o CMakeFiles\\Trains.dir\\libs\\KiWi\\src\\KW_tilerenderer.c.obj -c C:\\Users\\Ryan\\Documents\\GitHub\\WPI-game-jam-2020\\libs\\KiWi\\src\\KW_tilerenderer.c",
+  "file": "C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/libs/KiWi/src/KW_tilerenderer.c"
 },
 {
-  "directory": "R:/Dev/games/GameJam/WPI-game-jam-2020/build",
-  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\X8EAA8~1.EXE  @CMakeFiles/Trains.dir/includes_C.rsp -g -o CMakeFiles\\Trains.dir\\libs\\KiWi\\src\\KW_toggle.c.obj -c R:\\Dev\\games\\GameJam\\WPI-game-jam-2020\\libs\\KiWi\\src\\KW_toggle.c",
-  "file": "R:/Dev/games/GameJam/WPI-game-jam-2020/libs/KiWi/src/KW_toggle.c"
+  "directory": "C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/build",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\X8EAA8~1.EXE  @CMakeFiles/Trains.dir/includes_C.rsp -g -o CMakeFiles\\Trains.dir\\libs\\KiWi\\src\\KW_toggle.c.obj -c C:\\Users\\Ryan\\Documents\\GitHub\\WPI-game-jam-2020\\libs\\KiWi\\src\\KW_toggle.c",
+  "file": "C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/libs/KiWi/src/KW_toggle.c"
 },
 {
-  "directory": "R:/Dev/games/GameJam/WPI-game-jam-2020/build",
-  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\X8EAA8~1.EXE  @CMakeFiles/Trains.dir/includes_C.rsp -g -o CMakeFiles\\Trains.dir\\libs\\KiWi\\src\\KW_widget.c.obj -c R:\\Dev\\games\\GameJam\\WPI-game-jam-2020\\libs\\KiWi\\src\\KW_widget.c",
-  "file": "R:/Dev/games/GameJam/WPI-game-jam-2020/libs/KiWi/src/KW_widget.c"
+  "directory": "C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/build",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\X8EAA8~1.EXE  @CMakeFiles/Trains.dir/includes_C.rsp -g -o CMakeFiles\\Trains.dir\\libs\\KiWi\\src\\KW_widget.c.obj -c C:\\Users\\Ryan\\Documents\\GitHub\\WPI-game-jam-2020\\libs\\KiWi\\src\\KW_widget.c",
+  "file": "C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/libs/KiWi/src/KW_widget.c"
 },
 {
-  "directory": "R:/Dev/games/GameJam/WPI-game-jam-2020/build",
-  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\X8EAA8~1.EXE  @CMakeFiles/Trains.dir/includes_C.rsp -g -o CMakeFiles\\Trains.dir\\libs\\KiWi\\src\\KW_widget_eventhandlers.c.obj -c R:\\Dev\\games\\GameJam\\WPI-game-jam-2020\\libs\\KiWi\\src\\KW_widget_eventhandlers.c",
-  "file": "R:/Dev/games/GameJam/WPI-game-jam-2020/libs/KiWi/src/KW_widget_eventhandlers.c"
+  "directory": "C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/build",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\X8EAA8~1.EXE  @CMakeFiles/Trains.dir/includes_C.rsp -g -o CMakeFiles\\Trains.dir\\libs\\KiWi\\src\\KW_widget_eventhandlers.c.obj -c C:\\Users\\Ryan\\Documents\\GitHub\\WPI-game-jam-2020\\libs\\KiWi\\src\\KW_widget_eventhandlers.c",
+  "file": "C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/libs/KiWi/src/KW_widget_eventhandlers.c"
 },
 {
-  "directory": "R:/Dev/games/GameJam/WPI-game-jam-2020/build",
-  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\X8EAA8~1.EXE  @CMakeFiles/Trains.dir/includes_C.rsp -g -o CMakeFiles\\Trains.dir\\libs\\KiWi\\src\\utf8.c.obj -c R:\\Dev\\games\\GameJam\\WPI-game-jam-2020\\libs\\KiWi\\src\\utf8.c",
-  "file": "R:/Dev/games/GameJam/WPI-game-jam-2020/libs/KiWi/src/utf8.c"
+  "directory": "C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/build",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\X8EAA8~1.EXE  @CMakeFiles/Trains.dir/includes_C.rsp -g -o CMakeFiles\\Trains.dir\\libs\\KiWi\\src\\utf8.c.obj -c C:\\Users\\Ryan\\Documents\\GitHub\\WPI-game-jam-2020\\libs\\KiWi\\src\\utf8.c",
+  "file": "C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/libs/KiWi/src/utf8.c"
 },
 {
-  "directory": "R:/Dev/games/GameJam/WPI-game-jam-2020/build",
-  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\X86_64~2.EXE  @CMakeFiles/Trains.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Trains.dir\\src\\Client.cpp.obj -c R:\\Dev\\games\\GameJam\\WPI-game-jam-2020\\src\\Client.cpp",
-  "file": "R:/Dev/games/GameJam/WPI-game-jam-2020/src/Client.cpp"
+  "directory": "C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/build",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\X86_64~2.EXE  @CMakeFiles/Trains.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Trains.dir\\src\\Client.cpp.obj -c C:\\Users\\Ryan\\Documents\\GitHub\\WPI-game-jam-2020\\src\\Client.cpp",
+  "file": "C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/src/Client.cpp"
 },
 {
-  "directory": "R:/Dev/games/GameJam/WPI-game-jam-2020/build",
-  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\X86_64~2.EXE  @CMakeFiles/Trains.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Trains.dir\\src\\Menu.cpp.obj -c R:\\Dev\\games\\GameJam\\WPI-game-jam-2020\\src\\Menu.cpp",
-  "file": "R:/Dev/games/GameJam/WPI-game-jam-2020/src/Menu.cpp"
+  "directory": "C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/build",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\X86_64~2.EXE  @CMakeFiles/Trains.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Trains.dir\\src\\Menu.cpp.obj -c C:\\Users\\Ryan\\Documents\\GitHub\\WPI-game-jam-2020\\src\\Menu.cpp",
+  "file": "C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/src/Menu.cpp"
 },
 {
-  "directory": "R:/Dev/games/GameJam/WPI-game-jam-2020/build",
-  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\X86_64~2.EXE  @CMakeFiles/Trains.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Trains.dir\\src\\Server.cpp.obj -c R:\\Dev\\games\\GameJam\\WPI-game-jam-2020\\src\\Server.cpp",
-  "file": "R:/Dev/games/GameJam/WPI-game-jam-2020/src/Server.cpp"
+  "directory": "C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/build",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\X86_64~2.EXE  @CMakeFiles/Trains.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Trains.dir\\src\\Server.cpp.obj -c C:\\Users\\Ryan\\Documents\\GitHub\\WPI-game-jam-2020\\src\\Server.cpp",
+  "file": "C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/src/Server.cpp"
 },
 {
-  "directory": "R:/Dev/games/GameJam/WPI-game-jam-2020/build",
-  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\X86_64~2.EXE  @CMakeFiles/Trains.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Trains.dir\\src\\game.cpp.obj -c R:\\Dev\\games\\GameJam\\WPI-game-jam-2020\\src\\game.cpp",
-  "file": "R:/Dev/games/GameJam/WPI-game-jam-2020/src/game.cpp"
+  "directory": "C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/build",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\X86_64~2.EXE  @CMakeFiles/Trains.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Trains.dir\\src\\game.cpp.obj -c C:\\Users\\Ryan\\Documents\\GitHub\\WPI-game-jam-2020\\src\\game.cpp",
+  "file": "C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/src/game.cpp"
 },
 {
-  "directory": "R:/Dev/games/GameJam/WPI-game-jam-2020/build",
-  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\X86_64~2.EXE  @CMakeFiles/Trains.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Trains.dir\\src\\gameworld.cpp.obj -c R:\\Dev\\games\\GameJam\\WPI-game-jam-2020\\src\\gameworld.cpp",
-  "file": "R:/Dev/games/GameJam/WPI-game-jam-2020/src/gameworld.cpp"
+  "directory": "C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/build",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\X86_64~2.EXE  @CMakeFiles/Trains.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Trains.dir\\src\\gameworld.cpp.obj -c C:\\Users\\Ryan\\Documents\\GitHub\\WPI-game-jam-2020\\src\\gameworld.cpp",
+  "file": "C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/src/gameworld.cpp"
 },
 {
-  "directory": "R:/Dev/games/GameJam/WPI-game-jam-2020/build",
-  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\X86_64~2.EXE  @CMakeFiles/Trains.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Trains.dir\\src\\main.cpp.obj -c R:\\Dev\\games\\GameJam\\WPI-game-jam-2020\\src\\main.cpp",
-  "file": "R:/Dev/games/GameJam/WPI-game-jam-2020/src/main.cpp"
+  "directory": "C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/build",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\X86_64~2.EXE  @CMakeFiles/Trains.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Trains.dir\\src\\main.cpp.obj -c C:\\Users\\Ryan\\Documents\\GitHub\\WPI-game-jam-2020\\src\\main.cpp",
+  "file": "C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/src/main.cpp"
 },
 {
-  "directory": "R:/Dev/games/GameJam/WPI-game-jam-2020/build",
-  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\X86_64~2.EXE  @CMakeFiles/Trains.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Trains.dir\\src\\utils\\upnp.cpp.obj -c R:\\Dev\\games\\GameJam\\WPI-game-jam-2020\\src\\utils\\upnp.cpp",
-  "file": "R:/Dev/games/GameJam/WPI-game-jam-2020/src/utils/upnp.cpp"
+  "directory": "C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/build",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\X86_64~2.EXE  @CMakeFiles/Trains.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Trains.dir\\src\\utils\\upnp.cpp.obj -c C:\\Users\\Ryan\\Documents\\GitHub\\WPI-game-jam-2020\\src\\utils\\upnp.cpp",
+  "file": "C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/src/utils/upnp.cpp"
 }
 ]
