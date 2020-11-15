@@ -1,3 +1,0 @@
-C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/build/CMakeFiles/Trains.dir
-C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/build/CMakeFiles/edit_cache.dir
-C:/Users/Ryan/Documents/GitHub/WPI-game-jam-2020/build/CMakeFiles/rebuild_cache.dir
