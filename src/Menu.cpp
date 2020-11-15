@@ -19,6 +19,7 @@ KW_Widget* ip_box;
 KW_Widget* tu_pf;
 Menu* tu_this;
 
+SDL_Texture* background;
 void Menu::OnWindowResize(int w, int h)
 {
         // int y_off = 0;
@@ -35,6 +36,9 @@ void Menu::Init()
         Game::rail = Mix_LoadWAV("assets/Audio/RailBuildSound.wav");
         Game::train = Mix_LoadWAV("TrainWhistle.wav");
 
+        SDL_Surface* surface6 = IMG_Load("assets/TitleScreen.png");
+        background = SDL_CreateTextureFromSurface(Game::renderer, surface6);
+        SDL_FreeSurface(surface6);
 
         std::cout << "init\n";
         tu_this = this;
@@ -192,6 +196,7 @@ void Menu::Update()
 }
 void Menu::Render(float alpha)
 {
+        SDL_RenderCopy(Game::renderer, background, NULL, NULL);
 }
 void Menu::Clean()
 {

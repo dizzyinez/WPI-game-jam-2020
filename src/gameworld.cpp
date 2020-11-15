@@ -19,6 +19,7 @@ Server* tu_server;
 Client* tu_client;
 std::array<Player, 256>* player_list;
 uint8_t player_id;
+SDL_Texture* backgroundg;
 
 int select_mode = 0;
 KW_Widget* select_frame;
@@ -185,6 +186,9 @@ void GameWorld::Init()
         SDL_Surface* surface5 = IMG_Load("assets/train.png");
         Train::train_tex = SDL_CreateTextureFromSurface(Game::renderer, surface5);
         SDL_FreeSurface(surface5);
+        SDL_Surface* surface6 = IMG_Load("assets/game_bg.png");
+        backgroundg = SDL_CreateTextureFromSurface(Game::renderer, surface6);
+        SDL_FreeSurface(surface6);
 
         geom = {-999, -999, 0, 0};
         select_frame = KW_CreateFrame(Game::gui, NULL, &geom);
@@ -357,6 +361,7 @@ void GameWorld::Update()
 }
 void GameWorld::Render(float alpha)
 {
+        SDL_RenderCopy(Game::renderer, backgroundg, NULL, NULL);
         for (Rail* r : rails)
         {
                 r->Render(player_list->at(r->owner_id).color);
