@@ -25,4 +25,4 @@ Compiling only works on windows, only tested on windows 10 but other versions sh
 
 `mingw32-make`
 
-If it says either of these aren't found, you'll need their \bin\ folder to your system path. Information on how to do that [here](https://helpdeskgeek.com/windows-10/add-windows-path-environment-variable/). Default directories to add are as follows:
+If it says either of these aren't found, you'll need their \bin\ folder to your system path. Information on how to do that [here](https://helpdeskgeek.com/windows-10/add-windows-path-environment-variable/).
